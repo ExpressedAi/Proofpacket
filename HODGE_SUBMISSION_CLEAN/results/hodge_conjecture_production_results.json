@@ -1,0 +1,485 @@
+{
+  "parameters": {
+    "n_trials": 10,
+    "dimension": 3,
+    "max_order": 6
+  },
+  "results": [
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          7,
+          6,
+          7,
+          4
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 24,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.001477956771850586,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          5,
+          3,
+          7,
+          9
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 24,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.0014700889587402344,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          2,
+          8,
+          1,
+          9
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 552,
+      "expected_algebraic": 20,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 552 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 552 eligible, 552 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.006 (FAIL), (p,p) locks=552"
+        }
+      },
+      "resources": {
+        "time": 0.0014801025390625,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          9,
+          5,
+          1,
+          5
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 540,
+      "expected_algebraic": 20,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 540 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 540 eligible, 540 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.002 (FAIL), (p,p) locks=540"
+        }
+      },
+      "resources": {
+        "time": 0.0014650821685791016,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          4,
+          1,
+          8,
+          7
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 540,
+      "expected_algebraic": 20,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 540 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 540 eligible, 540 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.002 (FAIL), (p,p) locks=540"
+        }
+      },
+      "resources": {
+        "time": 0.001416921615600586,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          7,
+          9,
+          4,
+          6
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 26,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.0014357566833496094,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          5,
+          5,
+          4,
+          3
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 17,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.0014047622680664062,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          5,
+          8,
+          9,
+          4
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 26,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.001399993896484375,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          2,
+          5,
+          10,
+          9
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 540,
+      "expected_algebraic": 26,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 540 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 540 eligible, 540 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.005 (FAIL), (p,p) locks=540"
+        }
+      },
+      "resources": {
+        "time": 0.0014102458953857422,
+        "calls": 816
+      }
+    },
+    {
+      "variety": {
+        "dimension": 3,
+        "hodge_numbers": [
+          9,
+          10,
+          10,
+          9
+        ],
+        "cycles": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "n_locks": 816,
+      "n_algebraic": 528,
+      "expected_algebraic": 38,
+      "verdict": "HODGE_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 816 locks detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 528 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (variety-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 528 eligible, 528 algebraic"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.000 (FAIL), (p,p) locks=528"
+        }
+      },
+      "resources": {
+        "time": 0.001445770263671875,
+        "calls": 816
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 10,
+    "confirmed_count": 0,
+    "confirmed_rate": 0.0,
+    "avg_algebraic_cycles": 534.0
+  }
+}

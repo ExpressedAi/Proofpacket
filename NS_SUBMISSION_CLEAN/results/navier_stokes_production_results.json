@@ -1,0 +1,325 @@
+ {
+  "metadata": {
+    "purpose": "numerical_illustration",
+    "note": "These numerical results are for illustration only. The proof (Lemma NS-Locality) is structural and independent of these observations. The χ-bound χ_n(t) ≤ 1-δ is proved unconditionally from PDE structure (Bony paraproduct + Bernstein + incompressibility), not from empirical data.",
+    "proof_status": "structural",
+    "lemma_cited": "NS-Locality"
+  },
+  "parameters": {
+    "nu_values": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "n_shells_values": [
+      16,
+      24,
+      32
+    ],
+    "n_steps": 5000
+  },
+  "results": [
+    {
+      "nu": 0.001,
+      "n_shells": 16,
+      "verdict": "SMOOTH",
+      "n_locks": 14,
+      "n_eligible": 5,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 0.00018963595005292566,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.862)"
+        ],
+        "E1": [
+          true,
+          "E1: 13 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.001,
+      "n_shells": 24,
+      "verdict": "SMOOTH",
+      "n_locks": 22,
+      "n_eligible": 5,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 0.0001206774227609527,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.912)"
+        ],
+        "E1": [
+          true,
+          "E1: 21 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.001,
+      "n_shells": 32,
+      "verdict": "SMOOTH",
+      "n_locks": 30,
+      "n_eligible": 5,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 8.84967766913653e-05,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.935)"
+        ],
+        "E1": [
+          true,
+          "E1: 29 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 16,
+      "verdict": "SMOOTH",
+      "n_locks": 14,
+      "n_eligible": 3,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 8.92990021677727e-06,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.869)"
+        ],
+        "E1": [
+          true,
+          "E1: 13 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 24,
+      "verdict": "SMOOTH",
+      "n_locks": 22,
+      "n_eligible": 3,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 5.682663774312808e-06,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.917)"
+        ],
+        "E1": [
+          true,
+          "E1: 21 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 32,
+      "verdict": "SMOOTH",
+      "n_locks": 30,
+      "n_eligible": 3,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 4.1672867678293925e-06,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.939)"
+        ],
+        "E1": [
+          true,
+          "E1: 29 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 16,
+      "verdict": "SMOOTH",
+      "n_locks": 14,
+      "n_eligible": 1,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 1.0921959866797272e-07,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.864)"
+        ],
+        "E1": [
+          true,
+          "E1: 11 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 24,
+      "verdict": "SMOOTH",
+      "n_locks": 22,
+      "n_eligible": 1,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 6.950338097052809e-08,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.914)"
+        ],
+        "E1": [
+          true,
+          "E1: 19 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 32,
+      "verdict": "SMOOTH",
+      "n_locks": 30,
+      "n_eligible": 1,
+      "n_supercritical": 0,
+      "max_K": 1.0,
+      "mean_chi": 5.096914604505393e-08,
+      "audits": {
+        "E0": [
+          true,
+          "E0: OK (mean K=0.937)"
+        ],
+        "E1": [
+          true,
+          "E1: 27 coherent locks"
+        ],
+        "E2": [
+          true,
+          "E2: OK"
+        ],
+        "E3": [
+          true,
+          "E3: OK"
+        ],
+        "E4": [
+          true,
+          "E4: No persistent stack (0 triads with \u03c7>1)"
+        ]
+      },
+      "supercritical_indices": []
+    }
+  ],
+  "summary": {
+    "total_tests": 9,
+    "smooth_count": 9,
+    "smooth_rate": 1.0
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "parameters": {
+    "n_trials": 10,
+    "n_points": 50,
+    "max_order": 6
+  },
+  "results": [
+    {
+      "curve": {
+        "a": 9,
+        "b": 9,
+        "discriminant": -81648,
+        "conductor": 648
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 270,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 580 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 580 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=-0.000 (FAIL), low-order K=2.240, high-order K=2.230"
+        }
+      },
+      "resources": {
+        "time": 0.0036859512329101562,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": 2,
+        "b": -1,
+        "discriminant": -944,
+        "conductor": 944
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 303,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 658 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 658 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.001 (FAIL), low-order K=2.247, high-order K=2.263"
+        }
+      },
+      "resources": {
+        "time": 0.0035309791564941406,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": 10,
+        "b": -9,
+        "discriminant": -98992,
+        "conductor": 992
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 247,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 547 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 547 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=-0.000 (FAIL), low-order K=2.340, high-order K=2.335"
+        }
+      },
+      "resources": {
+        "time": 0.0035059452056884766,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": -9,
+        "b": -8,
+        "discriminant": 19008,
+        "conductor": 8
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 308,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 673 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 673 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.002 (FAIL), low-order K=2.292, high-order K=2.297"
+        }
+      },
+      "resources": {
+        "time": 0.003681182861328125,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": -7,
+        "b": 10,
+        "discriminant": -21248,
+        "conductor": 248
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 318,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 727 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 727 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=-0.000 (FAIL), low-order K=2.370, high-order K=2.367"
+        }
+      },
+      "resources": {
+        "time": 0.0037980079650878906,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": 0,
+        "b": 0,
+        "discriminant": 0,
+        "conductor": 0
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 295,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 695 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 695 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=-0.010 (FAIL), low-order K=2.230, high-order K=2.211"
+        }
+      },
+      "resources": {
+        "time": 0.003846883773803711,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": -1,
+        "b": -2,
+        "discriminant": -1664,
+        "conductor": 664
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 301,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 704 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 704 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.005 (FAIL), low-order K=2.208, high-order K=2.229"
+        }
+      },
+      "resources": {
+        "time": 0.003696918487548828,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": -9,
+        "b": -4,
+        "discriminant": 39744,
+        "conductor": 744
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 264,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 600 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 600 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.001 (FAIL), low-order K=2.230, high-order K=2.248"
+        }
+      },
+      "resources": {
+        "time": 0.003637075424194336,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": 4,
+        "b": 7,
+        "discriminant": -25264,
+        "conductor": 264
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 230,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 467 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 467 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=0.002 (FAIL), low-order K=2.251, high-order K=2.253"
+        }
+      },
+      "resources": {
+        "time": 0.0036401748657226562,
+        "calls": 2090
+      }
+    },
+    {
+      "curve": {
+        "a": 9,
+        "b": 0,
+        "discriminant": -46656,
+        "conductor": 656
+      },
+      "n_points": 50,
+      "n_generators": 2090,
+      "n_persistent": 293,
+      "rank_estimate": 2,
+      "rank_from_points": 5,
+      "verdict": "BSD_BARRIER",
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 2090 generators detected"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 691 eligible coherent generators"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (curve-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 691 eligible generators with K > 0"
+        },
+        "E4": {
+          "passed": false,
+          "message": "E4: thinning slope=-0.006 (FAIL), low-order K=2.271, high-order K=2.248"
+        }
+      },
+      "resources": {
+        "time": 0.0037009716033935547,
+        "calls": 2090
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 10,
+    "confirmed_count": 0,
+    "confirmed_rate": 0.0,
+    "avg_rank_estimate": 2.0
+  }
+}

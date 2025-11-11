@@ -1,0 +1,553 @@
+{
+  "parameters": {
+    "n_trials": 7,
+    "n_vertices": 20,
+    "max_order": 6
+  },
+  "results": [
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.400, K=2.500, coherence=0.373 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.462 vs high_K=2.462 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0031049251556396484,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.436, K=2.293, coherence=0.357 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.460 vs high_K=2.460 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0028963088989257812,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.400, K=2.500, coherence=0.327 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.462 vs high_K=2.462 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.002786874771118164,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.400, K=2.500, coherence=0.392 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.438 vs high_K=2.438 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.003164052963256836,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.400, K=2.499, coherence=0.387 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=0.0000 (PASS), prefix low_K=2.453 vs high_K=2.453 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.002900838851928711,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": false,
+      "is_s3": false,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.401, K=2.497, coherence=0.379 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.444 vs high_K=2.444 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": true,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0030121803283691406,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": true,
+      "is_s3": true,
+      "pred_is_s3": false,
+      "verdict": "NOT_S3",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": false,
+          "message": "E3: 2090 eligible, lift=0.403, K=2.479, coherence=0.400 (FAIL)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.447 vs high_K=2.447 (PASS)"
+        }
+      },
+      "true_positive": false,
+      "false_positive": false,
+      "true_negative": false,
+      "false_negative": true,
+      "resources": {
+        "time": 0.0032389163970947266,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": true,
+      "is_s3": true,
+      "pred_is_s3": true,
+      "verdict": "S3_CONFIRMED",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 2090 eligible, lift=0.400, K=2.499, coherence=1.000 (PASS)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.447 vs high_K=2.447 (PASS)"
+        }
+      },
+      "true_positive": true,
+      "false_positive": false,
+      "true_negative": false,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0028150081634521484,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": true,
+      "is_s3": true,
+      "pred_is_s3": true,
+      "verdict": "S3_CONFIRMED",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 2090 eligible, lift=0.409, K=2.442, coherence=1.000 (PASS)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.441 vs high_K=2.441 (PASS)"
+        }
+      },
+      "true_positive": true,
+      "false_positive": false,
+      "true_negative": false,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0029480457305908203,
+        "calls": 2090
+      }
+    },
+    {
+      "n_vertices": 20,
+      "n_edges": 60,
+      "n_cycles": 10,
+      "holonomies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_m_zero": true,
+      "is_s3": true,
+      "pred_is_s3": true,
+      "verdict": "S3_CONFIRMED",
+      "n_locks": 2090,
+      "n_eligible": 2090,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "E0: 60 edges, 10 cycles"
+        },
+        "E1": {
+          "passed": true,
+          "message": "E1: 2090 eligible coherent locks"
+        },
+        "E2": {
+          "passed": true,
+          "message": "E2: OK (relabeling-invariant)"
+        },
+        "E3": {
+          "passed": true,
+          "message": "E3: 2090 eligible, lift=0.411, K=2.435, coherence=1.000 (PASS)"
+        },
+        "E4": {
+          "passed": true,
+          "message": "E4: slope=-0.0000 (PASS), prefix low_K=2.439 vs high_K=2.439 (PASS)"
+        }
+      },
+      "true_positive": true,
+      "false_positive": false,
+      "true_negative": false,
+      "false_negative": false,
+      "resources": {
+        "time": 0.0028769969940185547,
+        "calls": 2090
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 10,
+    "confusion_matrix": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 6,
+      "fn": 1
+    },
+    "precision": 1.0,
+    "recall": 0.75,
+    "accuracy": 0.9,
+    "all_m0_count": 4,
+    "all_m0_rate": 0.4
+  }
+}

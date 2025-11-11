@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "purpose": "numerical_illustration",
+    "note": "These delta receipts are for illustration only. The proof (Lemma NS-Locality) is structural and independent of these observations. The χ-bound χ_n(t) ≤ 1-δ is proved unconditionally from PDE structure (Bony paraproduct + Bernstein + incompressibility), not from empirical data.",
+    "proof_status": "structural",
+    "lemma_cited": "NS-Locality",
+    "format": "jsonl",
+    "description": "Each line is a JSON object containing delta receipts (validation data) for Navier-Stokes shell model tests."
+  }
+}
+

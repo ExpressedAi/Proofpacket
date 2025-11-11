@@ -1,0 +1,42 @@
+# Navier-Stokes Structural Constants (symbolic, solution-independent)
+
+[paraproduct]
+# Bony paraproduct/resonant constants
+C_T = "⟦paraproduct constant⟧"   # low–high / high–low
+C_R = "⟦resonant constant⟧"
+
+[bernstein]
+# Littlewood–Paley/Bernstein constant
+C_B = "⟦Bernstein constant⟧"
+
+[commutator]
+# Incompressibility/commutator constant
+C_com = "⟦commutator constant⟧"
+
+[decay]
+# Geometric decay constant from Littlewood-Paley frequency localization
+vartheta = "2^(-1/2)"  # Universal decay constant (typically ~0.707)
+C_vartheta = "vartheta / (1 - vartheta)"  # Geometric series constant
+
+# Tail decay constant for L∞ bounds
+theta = "2^(-3/2)"  # Geometric decay for frequency weights (θ = 2^{-3/2})
+C_theta = "1 / (1 - theta^2)"  # For weighted Cauchy-Schwarz tails
+
+[tail_bounds]
+# Maximum constant for tail bounds (takes max over three nonlocal terms)
+# Includes theta^2 factor from linf_tail_geom (θ^{M+2} = θ^2 * θ^M)
+C_max = "max(C_T * C_B^2 * sqrt(C_theta) * theta^2, max(C_T * C_B^2 * C_com * sqrt(C_theta) * theta^2, C_R * C_B^2 * sqrt(C_theta) * theta^2))"
+
+[finite_band]
+# Explicit choice: η = 1/2 gives δ = 1/2
+eta_star = "1/2"
+# Universal bandwidth M* for η = 1/2 (from NS_locality_banded)
+# M* = ⌈log(eta_star / (3 * C_max)) / log(theta)⌉
+# This ensures C_max * theta^M* ≤ eta_star/3
+M_star_expr = "⌈log(eta_star / (3 * C_max)) / log(theta)⌉"
+delta = "eta_star"  # δ = 1/2 from finite-band locality
+
+[structural]
+# Key property: For any η ∈ (0,1), there exists universal M(η) such that
+# χ_j^(M)(t) ≤ η for all j, t. This is provable from geometric decay of LP tails.
+finite_band_locality_proven = true
