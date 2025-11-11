@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Δ-Primitives Framework · Clay Millennium Proofs Explorer{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="layers"></span>
+            Δ-Primitives LOW protocol
+        </span>
+        <span class="pill">
+            <span data-lucide="beaker"></span>
+            Replication-first design
+        </span>
+    </div>
+    <h2>Δ-Primitives — A clinical workflow for peer-critical mathematics.</h2>
+    <p>From instrument calibration to RG persistence, the Δ-Primitives framework packages the Clay proof programs into reproducible, falsifiable pathways.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('index') }}" class="cta">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+        <a href="{{ url_for('get_proofs') }}" class="hero-secondary">
+            <span data-lucide="server"></span>
+            Fetch API manifest
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>LOW Principle Overview</h2>
+            <p>Low-Order Wins (LOW) states that lower-order relations persist under renormalisation. Every Clay program integrates LOW as the primary guardrail.</p>
+        </div>
+    </div>
+
+    <div class="split">
+        <div class="glass" data-tilt>
+            <h3>LOW Core Tenets</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Δ-Decomposition</h4>
+                    <p>Express systems in primitive Δ relationships before any analytic manipulation.</p>
+                </li>
+                <li class="list-item">
+                    <h4>Symmetry Preservation</h4>
+                    <p>Maintain conjugate symmetry across transformations; flag deviations in telemetry.</p>
+                </li>
+                <li class="list-item">
+                    <h4>RG Persistence</h4>
+                    <p>Validate that Δ relationships survive coarse-grain ladders with bounded decay.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="glass" data-tilt>
+            <h3>Workflow</h3>
+            <div class="timeline" data-timeline>
+                <article class="timeline-item">
+                    <h4>1. Instrument Preparation</h4>
+                    <p>Rebuild Δ instrumentation and run calibration set (E0) to lock in sensitivity.</p>
+                </article>
+                <article class="timeline-item">
+                    <h4>2. Symmetry & Dynamics</h4>
+                    <p>Conduct E1–E2 audits: vibration, symmetry, and flux checks using provided manifolds.</p>
+                </article>
+                <article class="timeline-item">
+                    <h4>3. Micro-nudge Reliability</h4>
+                    <p>Execute controlled perturbations (E3) to confirm systems return to baseline locks.</p>
+                </article>
+                <article class="timeline-item">
+                    <h4>4. RG Ladder</h4>
+                    <p>Run eight-stage coarse-grain ladder (E4); reject if LOW constraints break.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Artifacts & Tooling</h2>
+            <p>All materials required to independently verify the Clay submissions.</p>
+        </div>
+    </div>
+    <div class="grid columns-3">
+        <div class="card">
+            <h3>Dossiers</h3>
+            <p>Full narrative explanations, lemmas, and appendices for each problem.</p>
+            <a href="{{ url_for('report_page', slug='riemann-dossier') }}">
+                Riemann dossier
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+            <a href="{{ url_for('report_page', slug='navier-dossier') }}">
+                Navier–Stokes dossier
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+            <a href="{{ url_for('report_page', slug='yang-dossier') }}">
+                Yang–Mills dossier
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+        </div>
+        <div class="card">
+            <h3>Replication</h3>
+            <p>Executable notebooks, container definitions, and data manifests for reviewers.</p>
+            <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                Replication bundle
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+            <a href="{{ url_for('report_page', slug='extensive-validation') }}">
+                Extensive validation report
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+        </div>
+        <div class="card">
+            <h3>Audit References</h3>
+            <p>Telemetry snapshots and falsifiable step-by-step guides.</p>
+            <a href="{{ url_for('report_page', slug='audit-log') }}">
+                Audit log excerpt
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+            <a href="{{ url_for('report_page', slug='falsifiables-e0') }}">
+                Falsifiable protocols
+                <span data-lucide="arrow-up-right"></span>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

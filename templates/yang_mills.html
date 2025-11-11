@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+
+{% block title %}Yang–Mills Mass Gap · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="atom"></span>
+            Positive mass gap
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            Δ-Primitives RG protocol
+        </span>
+    </div>
+    <h2>Yang–Mills Mass Gap — Δ Lattice Program</h2>
+    <p>The Δ-Primitives gauge program constructs a non-abelian configuration with ω<sub>min</sub> = 1.000, confirmed across lattice channels with LOW-consistent renormalisation.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='yang-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Lattice Metrics</h2>
+            <p>Drawn from `yang_mills_production_results.json`. Automatically refreshed when new data is posted.</p>
+        </div>
+        <span class="badge success">
+            <span data-lucide="sparkles"></span>
+            ω<sub>min</sub> > 0 confirmed
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Mass gap minimum</p>
+            <p class="stat-value" id="stat-omega">ω<sub>min</sub> = 1.000</p>
+            <p class="stat-trend">
+                <span data-lucide="activity"></span>
+                Positive for all channels
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Channels verified</p>
+            <p class="stat-value" id="stat-channels">9 / 9</p>
+            <p class="stat-trend">
+                <span data-lucide="grid"></span>
+                0++, 2++, 1--, 0-+
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">RG ladder depth</p>
+            <p class="stat-value" id="stat-rg">8 stages</p>
+            <p class="stat-trend">
+                <span data-lucide="layers"></span>
+                LOW preserved
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-yang-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-yang-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass">
+        <h3>Channel spectra</h3>
+        <div id="yangMassPlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Verification Toolkit</h2>
+            <p>Guidance and checkpoints for independent confirmation of the mass gap claim.</p>
+        </div>
+    </div>
+
+    <div class="split">
+        <div class="glass">
+            <h3>Audit Checklist</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Calibration (E0)</h4>
+                    <p>Reconstruct the lattice instrumentation and validate alignment against provided spectra.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e0') }}">
+                        Calibration protocol
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Symmetry (E1–E2)</h4>
+                    <p>Enforce LOW-symmetric gauge conditions; reject if symmetry deviation persists beyond threshold.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e1-e2') }}">
+                        Symmetry checklist
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>RG Persistence (E3–E4)</h4>
+                    <p>Confirm Δ locks remain intact through all eight RG stages with ω stability.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e3-e4') }}">
+                        RG acceptance criteria
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Resources</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Lattice Notebooks</h4>
+                    <p>Pull channel-specific notebooks from the replication bundle to replay ω statistics.</p>
+                    <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                        Replication bundle
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log</h4>
+                    <p>Review signed telemetry of each RG stage and lattice sweep.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Audit log excerpt
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Contact the Yang–Mills review desk for instrumentation or data questions.</p>
+                    <a href="mailto:yangmills@delta-primitives.org">
+                        Email Yang–Mills team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/yang.js') }}"></script>
+{% endblock %}

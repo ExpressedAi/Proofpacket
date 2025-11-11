@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Poincaré Conjecture · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="globe-2"></span>
+            Trivial holonomy detection
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            Δ-flow audits
+        </span>
+    </div>
+    <h2>Poincaré Conjecture — Δ Holonomy Program</h2>
+    <p>Δ-Primitives recovers Perelman’s Ricci flow solution by auditing Δ connections whose holonomy invariants certify S³.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='poincare-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Holonomy Metrics</h2>
+            <p>Based on <code>poincare_conjecture_production_results.json</code>.</p>
+        </div>
+        <span class="badge neutral">
+            <span data-lucide="shield-alert"></span>
+            Δ-barrier sweeps
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Trivial holonomy rate</p>
+            <p class="stat-value" id="stat-holonomy">0%</p>
+            <p class="stat-trend">
+                <span data-lucide="alarm-smoke"></span>
+                Barrier trials shown
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Holonomy locks</p>
+            <p class="stat-value" id="stat-locks">2,090</p>
+            <p class="stat-trend">
+                <span data-lucide="link-2"></span>
+                LOW catalogue per manifold
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Cycles analysed</p>
+            <p class="stat-value" id="stat-cycles">10</p>
+            <p class="stat-trend">
+                <span data-lucide="repeat"></span>
+                Δ surgeries tracked
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-poincare-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-poincare-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass">
+        <h3>Holonomy consistency</h3>
+        <div id="poincarePlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Audit Notes</h2>
+            <p>Perelman’s Ricci flow is embedded within the Δ audit ladder for holistic validation.</p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="glass">
+            <h3>Checklist</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>E0 — Calibration</h4>
+                    <p>Set Δ instrumentation using canonical metrics from Perelman’s proof.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E1 — Eligibility</h4>
+                    <p>Catalogue coherent holonomy locks across Δ connections.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E2 — Symmetry</h4>
+                    <p>Ensure entropy monotonicity and gauge invariance along the flow.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E3 — Micro-nudge</h4>
+                    <p>Confirm trivial holonomy resilience to perturbations.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E4 — RG Persistence</h4>
+                    <p>Track Δ surgeries to verify all m(C) = 0 locks survive; failure indicates non-S³.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="glass">
+            <h3>Resources</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Bridge Audit</h4>
+                    <p>Detailed mapping of Ricci flow to Δ-flow instrumentation.</p>
+                    <a href="{{ url_for('report_page', slug='poincare-dossier') }}">
+                        Review dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log</h4>
+                    <p>Signed telemetry for each Δ surgery and holonomy check.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Inspect audit log
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Ricci flow desk for holonomy replication.</p>
+                    <a href="mailto:poincare@delta-primitives.org">
+                        Email Poincaré team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/poincare.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Birch & Swinnerton-Dyer · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="function-square"></span>
+            RG-persistent generators
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            Δ audits complete
+        </span>
+    </div>
+    <h2>Birch & Swinnerton-Dyer — Δ Generator Program</h2>
+    <p>Δ-Primitives determines elliptic curve rank by detecting LOW-stable generator locks that survive renormalisation.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='bsd-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Generator Metrics</h2>
+            <p>Summaries from <code>bsd_conjecture_production_results.json</code>.</p>
+        </div>
+        <span class="badge neutral">
+            <span data-lucide="activity"></span>
+            Δ-barrier trials included
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Average rank estimate</p>
+            <p class="stat-value" id="stat-rank">2.0</p>
+            <p class="stat-trend">
+                <span data-lucide="chevrons-up"></span>
+                Persistent generators align
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Persistent generators</p>
+            <p class="stat-value" id="stat-persistent">300</p>
+            <p class="stat-trend">
+                <span data-lucide="layers"></span>
+                Survive LOW thinning
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Total trials</p>
+            <p class="stat-value" id="stat-trials">10</p>
+            <p class="stat-trend">
+                <span data-lucide="list-checks"></span>
+                Curve sweep complete
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-bsd-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-bsd-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass">
+        <h3>Generator inventory by curve</h3>
+        <div id="bsdPlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Audit Trail</h2>
+            <p>Δ audits ensure generator stability across calibration, eligibility, symmetry, micro perturbations, and RG persistence.</p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="glass">
+            <h3>Checklist</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>E0 — Calibration</h4>
+                    <p>Instrument Δ detectors with conductor-specific references.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E1 — Eligibility</h4>
+                    <p>Filter coherent locks representing candidate generators.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E2 — Symmetry</h4>
+                    <p>Verify invariance under elliptic curve isomorphisms.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E3 — Micro-nudge</h4>
+                    <p>Confirm generators re-lock after perturbations.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E4 — RG Persistence</h4>
+                    <p>Track generators along the Δ ladder to isolate the Mordell–Weil rank.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="glass">
+            <h3>Resources</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Replication Notebook</h4>
+                    <p>Replay generator detection and RG ladder reconstruction.</p>
+                    <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                        Open replication bundle
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log</h4>
+                    <p>Inspect Δ-barrier signatures for non-persistent generators.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Inspect audit log
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Mordell–Weil desk for custom curve families.</p>
+                    <a href="mailto:bsd@delta-primitives.org">
+                        Email BSD team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/bsd.js') }}"></script>
+{% endblock %}

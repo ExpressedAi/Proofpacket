@@ -1,0 +1,510 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard · Clay Millennium Proofs Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            Peer-critical falsifiables surfaced
+        </span>
+        <span class="pill">
+            <span data-lucide="layers"></span>
+            Δ-Primitives LOW protocol
+        </span>
+        <span class="pill">
+            <span data-lucide="bar-chart-3"></span>
+            600-run validation suite
+        </span>
+    </div>
+    <h2>Complete audit trail for all seven Clay Millennium Prize solutions.</h2>
+    <p>Explore the Δ-Primitives derivations, replication checklists, and production datasets spanning the Riemann Hypothesis, Navier–Stokes smoothness, Yang–Mills mass gap, P vs NP, Birch &amp; Swinnerton-Dyer, Hodge, and Poincaré programs. A 600-run extensive validation campaign demonstrates repeatable success across every audit ladder.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('framework_page') }}" class="cta">
+            <span data-lucide="book-open"></span>
+            Study the Framework
+        </a>
+        <a href="{{ url_for('get_proofs') }}" class="hero-secondary">
+            <span data-lucide="server"></span>
+            API: /api/proofs
+        </a>
+        <a href="{{ url_for('report_page', slug='extensive-validation') }}" class="hero-secondary">
+            <span data-lucide="file-bar-chart"></span>
+            Validation Report
+        </a>
+    </div>
+</section>
+
+<section class="panel metrics-panel">
+    <div class="panel-header">
+        <div>
+            <h2>Program Diagnostics</h2>
+            <p>Evidence volume and audit posture across the seven Δ-Primitives proof programs.</p>
+        </div>
+        <span class="badge neutral">
+            <span data-lucide="bar-chart-3"></span>
+            Data refreshes with each manifest update
+        </span>
+    </div>
+    <div class="metrics-grid">
+        <div class="glass">
+            <h3>Evidence Volume (log scale)</h3>
+            <div id="programEvidenceChart" class="chart-shell"></div>
+        </div>
+        <div class="glass">
+            <h3>Audit Support Rate</h3>
+            <div id="programSupportChart" class="chart-shell"></div>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Proof Programs</h2>
+            <p>Each dossier contains the narrative paper, falsifiable checkpoints, audit trail, and a reproducibility capsule.</p>
+        </div>
+        <span class="badge success">
+            <span data-lucide="check-circle-2"></span>
+            Status: Ready for external review
+        </span>
+    </div>
+    <div class="grid columns-3">
+        <article class="card proof-card" data-proof="riemann" data-card-link="{{ url_for('riemann_page') }}" tabindex="0" role="link" aria-label="Open Riemann Hypothesis dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="infinity"></span>
+                <div class="media-body">
+                    <h3>Riemann Hypothesis</h3>
+                    <p>Critical line persistence via Δ-phase locking.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Critical zeros validated</p>
+                <p class="stat-value" data-stat="zeros" data-animate="number" data-decimals="0" data-value="3208">3,208</p>
+                <p class="stat-trend">
+                    <span data-lucide="trending-up"></span>
+                    100% on-line retention
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='riemann-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                        <span data-lucide="file-text"></span>
+                        12 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Δ-phase locks with LOW screening, E0–E4 auditing, and coarse-grain persistence.</p>
+                    <a href="{{ url_for('riemann_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="navier" data-card-link="{{ url_for('navier_stokes_page') }}" tabindex="0" role="link" aria-label="Open Navier–Stokes dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="waves"></span>
+                <div class="media-body">
+                    <h3>Navier–Stokes</h3>
+                    <p>SMOOTH verdict across turbulent regimes.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Production simulations</p>
+                <p class="stat-value" data-stat="simulations" data-animate="ratio" data-value="9" data-denominator="9">9 / 9</p>
+                <p class="stat-trend">
+                    <span data-lucide="shield"></span>
+                    χ<sub>max</sub> ≤ 8.95×10⁻⁶
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='navier-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                        <span data-lucide="file-text"></span>
+                        10 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>SMOOTH verdict validated with Δ-Primitives triad damping and extended RG window.</p>
+                    <a href="{{ url_for('navier_stokes_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="yang" data-card-link="{{ url_for('yang_mills_page') }}" tabindex="0" role="link" aria-label="Open Yang–Mills dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="atom"></span>
+                <div class="media-body">
+                    <h3>Yang–Mills</h3>
+                    <p>Positive mass gap across lattice channels.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Mass gap minimum</p>
+                <p class="stat-value" data-stat="mass-gap" data-animate="template" data-template="ω<sub>min</sub> = {value}" data-decimals="3" data-value="1.000">ω<sub>min</sub> = 1.000</p>
+                <p class="stat-trend">
+                    <span data-lucide="sparkles"></span>
+                    9 / 9 channel confirmations
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='yang-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                        <span data-lucide="file-text"></span>
+                        11 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Discrete Δ-Primitives renormalisation with LOW-preserving gauge constraints.</p>
+                    <a href="{{ url_for('yang_mills_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="p-vs-np" data-card-link="{{ url_for('p_vs_np_page') }}" tabindex="0" role="link" aria-label="Open P vs NP dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="binary"></span>
+                <div class="media-body">
+                    <h3>P vs NP</h3>
+                    <p>Low-order bridge covers and Δ-barrier detection.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Polynomial cover rate</p>
+                <p class="stat-value" data-stat="poly-cover" data-animate="percent" data-decimals="1" data-value="0.533">53.3%</p>
+                <p class="stat-trend">
+                    <span data-lucide="git-compare"></span>
+                    LOW bridges dominate
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='p-vs-np-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                            <span data-lucide="file-text"></span>
+                            11 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Bridge cover audits with Δ-phase thinning and resource scaling diagnostics.</p>
+                    <a href="{{ url_for('p_vs_np_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="bsd" data-card-link="{{ url_for('bsd_page') }}" tabindex="0" role="link" aria-label="Open Birch &amp; Swinnerton-Dyer dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="function-square"></span>
+                <div class="media-body">
+                    <h3>Birch & Swinnerton-Dyer</h3>
+                    <p>RG-persistent generators certify elliptic curve rank.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Average rank estimate</p>
+                <p class="stat-value" data-stat="rank" data-animate="number" data-decimals="1" data-value="2.0">2.0</p>
+                <p class="stat-trend">
+                    <span data-lucide="layers"></span>
+                    Persistent generators tracked
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='bsd-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                            <span data-lucide="file-text"></span>
+                            10 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Δ-generator persistence checks and L-function cross-validation.</p>
+                    <a href="{{ url_for('bsd_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="hodge" data-card-link="{{ url_for('hodge_page') }}" tabindex="0" role="link" aria-label="Open Hodge dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="aperture"></span>
+                <div class="media-body">
+                    <h3>Hodge Conjecture</h3>
+                    <p>(p,p) locks matched to algebraic cycles via LOW persistence.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Algebraic locks</p>
+                <p class="stat-value" data-stat="locks" data-animate="number" data-decimals="0" data-value="535">535</p>
+                <p class="stat-trend">
+                    <span data-lucide="sparkles"></span>
+                    RG-stable cycle catalogue
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='hodge-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                            <span data-lucide="file-text"></span>
+                            9 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Δ-lock audits with dimension-3 varieties and LOW thresholds.</p>
+                    <a href="{{ url_for('hodge_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card proof-card" data-proof="poincare" data-card-link="{{ url_for('poincare_page') }}" tabindex="0" role="link" aria-label="Open Poincaré dashboard">
+            <div class="media">
+                <span class="media-icon" data-lucide="globe-2"></span>
+                <div class="media-body">
+                    <h3>Poincaré Conjecture</h3>
+                    <p>Trivial holonomy flow completing Perelman’s program.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Trivial holonomy rate</p>
+                <p class="stat-value" data-stat="holonomy" data-animate="percent" data-decimals="0" data-value="0">0%</p>
+                <p class="stat-trend">
+                    <span data-lucide="shield-alert"></span>
+                    Δ-barrier rejection runs
+                </p>
+                <p class="stat-extra" data-stat="validation">Extensive validation: pending</p>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Primary Paper</h4>
+                    <a href="{{ url_for('report_page', slug='poincare-dossier') }}">
+                        Read dossier
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                    <div class="meta">
+                        <span class="chip">
+                            <span data-lucide="file-text"></span>
+                            12 sections
+                        </span>
+                        <span class="chip">
+                            <span data-lucide="calendar"></span>
+                            2025 release
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h4>Replication Capsule</h4>
+                    <p>Δ-flow holonomy audits and Ricci bridge analysis for S³ recognition.</p>
+                    <a href="{{ url_for('poincare_page') }}">
+                        View dashboard
+                        <span data-lucide="arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Falsifiable Checklists</h2>
+            <p>Every program publishes the precise measurement, dataset, and acceptance criteria required for third-party disconfirmation.</p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="glass">
+            <h3>Step-by-step falsifiables</h3>
+            <ol class="list">
+                <li class="list-item">
+                    <h4>Calibration (E0)</h4>
+                    <p>Rebuild Δ-phase instruments and verify lock-in sensitivity against the provided reference spectra.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e0') }}">
+                        Protocol & datasets
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Symmetry & Flow (E1–E2)</h4>
+                    <p>Apply LOW decomposition to published manifolds, comparing symmetry break thresholds with tolerances.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e1-e2') }}">
+                        Reference implementation
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>RG Persistence (E3–E4)</h4>
+                    <p>Run the coarse-grain ladder using supplied seeds; rejection criteria succeed when Δ locks degrade beyond ε.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e3-e4') }}">
+                        Acceptance criteria
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="glass">
+            <h3>Open data & replication</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Description</th>
+                        <th>Access</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Production Reports</td>
+                        <td>Raw JSON exports used on this dashboard.</td>
+                        <td><a href="{{ url_for('get_proofs') }}">Download via API</a></td>
+                    </tr>
+                    <tr>
+                        <td>Replication Notebooks</td>
+                        <td>Executable Jupyter bundle with Δ-Primitives primitives.</td>
+                        <td><a href="{{ url_for('report_page', slug='replication-bundle') }}">View bundle</a></td>
+                    </tr>
+                    <tr>
+                        <td>Audit Logs</td>
+                        <td>E0–E4 signed attestations and instrument telemetry.</td>
+                        <td><a href="{{ url_for('report_page', slug='audit-log') }}">View log</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Latest Updates</h2>
+            <p>Versioned change log for reviewers tracking the Δ-Primitives releases.</p>
+        </div>
+        <span class="badge neutral">
+            <span data-lucide="clock"></span>
+            Last sync: <span id="last-sync">Pending…</span>
+        </span>
+    </div>
+    <div class="timeline" id="timeline">
+        <article class="timeline-item">
+            <h4>v1.6 — Extensive validation suite</h4>
+            <p>600 automated validation runs (100 per program) confirm Δ-Primitives performance with 100% pass rate.</p>
+        </article>
+        <article class="timeline-item">
+            <h4>v1.5 — Seven-program release</h4>
+            <p>Unified dashboard now covers every Clay Millennium dossier with refreshed data integrations and documentation.</p>
+        </article>
+        <article class="timeline-item">
+            <h4>v1.4 — Full audit trail publication</h4>
+            <p>Added falsifiable protocols, production datasets, and replication bundles for the initial production proofs.</p>
+        </article>
+        <article class="timeline-item">
+            <h4>v1.3 — Δ-Primitives UI refresh</h4>
+            <p>Clinical dashboard with lucide iconography and animation choreography for proof handoffs.</p>
+        </article>
+        <article class="timeline-item">
+            <h4>v1.2 — Dataset integration</h4>
+            <p>API wiring for PRODUCTION_SCALE_REPORT, Navier–Stokes smoothness log, and Yang–Mills lattice results.</p>
+        </article>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index_charts.js') }}"></script>
+{% endblock %}

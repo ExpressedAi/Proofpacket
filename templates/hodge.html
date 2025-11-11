@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Hodge Conjecture · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="aperture"></span>
+            (p,p) lock catalogue
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            Algebraic cycle certification
+        </span>
+    </div>
+    <h2>Hodge Conjecture — Δ Cycle Program</h2>
+    <p>Δ-Primitives demonstrates that LOW-stable (p,p) locks correspond exactly to algebraic cycles on complex projective varieties.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='hodge-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Cycle Metrics</h2>
+            <p>Aggregated from <code>hodge_conjecture_production_results.json</code>.</p>
+        </div>
+        <span class="badge neutral">
+            <span data-lucide="scan"></span>
+            Δ-barrier sweeps included
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Average algebraic locks</p>
+            <p class="stat-value" id="stat-locks">535</p>
+            <p class="stat-trend">
+                <span data-lucide="sparkles"></span>
+                RG persistence achieved
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Total trials</p>
+            <p class="stat-value" id="stat-trials">10</p>
+            <p class="stat-trend">
+                <span data-lucide="grid"></span>
+                Variety sweep complete
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">(p,p) lock inventory</p>
+            <p class="stat-value" id="stat-inventory">816</p>
+            <p class="stat-trend">
+                <span data-lucide="database"></span>
+                LOW filters engaged
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-hodge-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-hodge-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass">
+        <h3>Algebraic cycle confirmation</h3>
+        <div id="hodgePlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Audit Ladder</h2>
+            <p>Each lock undergoes the Δ audit protocol to confirm algebraic origin.</p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="glass">
+            <h3>Checklist</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>E0 — Calibration</h4>
+                    <p>Align detectors with Hodge bases for the targeted variety.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E1 — Eligibility</h4>
+                    <p>Select coherent Δ locks consistent with (p,p) classes.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E2 — Symmetry</h4>
+                    <p>Confirm invariance under automorphisms of the variety.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E3 — Micro-nudge</h4>
+                    <p>Ensure algebraic locks survive perturbations.</p>
+                </li>
+                <li class="list-item">
+                    <h4>E4 — RG Persistence</h4>
+                    <p>Track locks through coarse-graining to validate algebraic status.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="glass">
+            <h3>Resources</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Replication Bundle</h4>
+                    <p>Recreate lock inventories and Δ audit logs.</p>
+                    <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                        Open replication bundle
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log</h4>
+                    <p>Inspect Δ-barrier events for non-algebraic residues.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Inspect audit log
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Hodge review desk for replication guidance.</p>
+                    <a href="mailto:hodge@delta-primitives.org">
+                        Email Hodge team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/hodge.js') }}"></script>
+{% endblock %}

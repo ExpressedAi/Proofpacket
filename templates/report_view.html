@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}{{ report.title }} · Δ-Primitives Report{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/report.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="report-hero fade-in">
+    <div class="report-hero__content">
+        <div class="pill-group">
+            <span class="pill">
+                <span data-lucide="file-text"></span>
+                {{ report.category }}
+            </span>
+            <span class="pill">
+                <span data-lucide="download"></span>
+                Downloadable Artifact
+            </span>
+        </div>
+        <h1>{{ report.title }}</h1>
+        <p>{{ report.summary }}</p>
+        <div class="report-hero__actions">
+            <a class="cta" href="{{ url_for('report_download', slug=slug) }}">
+                <span data-lucide="arrow-down-circle"></span>
+                Download Original
+            </a>
+            <a class="hero-secondary" href="{{ url_for('get_proofs') }}">
+                <span data-lucide="server"></span>
+                API Snapshot
+            </a>
+        </div>
+    </div>
+    <div class="report-hero__glass">
+        <h3>Report Metadata</h3>
+        <ul class="report-meta">
+            <li>
+                <span>Category</span>
+                <strong>{{ report.category }}</strong>
+            </li>
+            <li>
+                <span>File</span>
+                <strong>{{ report.download_name }}</strong>
+            </li>
+            <li>
+                <span>Last Updated</span>
+                <strong>{{ current_year }}</strong>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="panel report-body">
+    <article class="report-markdown">
+        {{ content_html|safe }}
+    </article>
+</section>
+{% endblock %}

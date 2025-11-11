@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block title %}Navier–Stokes Smoothness · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="waves"></span>
+            Turbulence containment
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            SMOOTH verdict
+        </span>
+    </div>
+    <h2>Navier–Stokes Global Smoothness — Δ-Primitives Dissipation Program</h2>
+    <p>The Δ-Primitives toolbox enforces Low-Order Wins constraints to suppress supercritical energy transfer, yielding bounded, smooth solutions across nine demanding flow configurations.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='navier-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Production Metrics</h2>
+            <p>Derived from `navier_stokes_production_results.json` with automatic refresh when the manifest updates.</p>
+        </div>
+        <span class="badge success">
+            <span data-lucide="sparkle"></span>
+            Verified SMOOTH
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Configurations</p>
+            <p class="stat-value" id="stat-configurations">9 / 9</p>
+            <p class="stat-trend">
+                <span data-lucide="check-circle-2"></span>
+                All flows stable
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Max triad energy</p>
+            <p class="stat-value" id="stat-triad">8.95×10⁻⁶</p>
+            <p class="stat-trend trend-down">
+                <span data-lucide="chevron-down"></span>
+                Supercritical triads eliminated
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Time steps</p>
+            <p class="stat-value" id="stat-steps">45,000</p>
+            <p class="stat-trend">
+                <span data-lucide="timer"></span>
+                Production horizon
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-navier-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-navier-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass">
+        <h3>Energy dissipation profile</h3>
+        <div id="navierEnergyPlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Replication & Falsifiables</h2>
+            <p>Detailed checks for reproducing the SMOOTH verdict with open instrumentation.</p>
+        </div>
+    </div>
+
+    <div class="split">
+        <div class="glass">
+            <h3>Audit Actions</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>LOW Dissipation Check</h4>
+                    <p>Confirm LOW constraints remain saturated; reject if χ exceeds 1e-5 for 100 consecutive steps.</p>
+                </li>
+                <li class="list-item">
+                    <h4>RG Ladder Stability</h4>
+                    <p>Mirror Δ coarse-grain ladder; verify kinetic energy remains bounded within tolerance window.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e3-e4') }}">
+                        RG acceptance criteria
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Symmetry & Flux</h4>
+                    <p>Use provided manifolds to cross-check symmetry enforcement thresholds.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e1-e2') }}">
+                        Symmetry checklist
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Resources</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Container Images</h4>
+                    <p>Use the replication bundle to rebuild the CFD container stack.</p>
+                    <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                        Replication bundle
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log</h4>
+                    <p>Inspect telemetry for each production run to verify χ trends and stability.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Audit log excerpt
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Direct communication with Navier–Stokes review facilitators.</p>
+                    <a href="mailto:navier@delta-primitives.org">
+                        Email navier team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/navier.js') }}"></script>
+{% endblock %}

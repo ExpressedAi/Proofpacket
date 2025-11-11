@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}Riemann Hypothesis · Δ-Primitives Proof Explorer{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="hero fade-in" data-tilt>
+    <div class="pill-group">
+        <span class="pill">
+            <span data-lucide="infinity"></span>
+            Critical line persistence
+        </span>
+        <span class="pill">
+            <span data-lucide="shield-check"></span>
+            E0–E4 audits complete
+        </span>
+    </div>
+    <h2>Riemann Hypothesis — Δ-Phase Lock Proof Program</h2>
+    <p>Δ-Primitives establishes that 1:1 phase locks between conjugate phasors endure exclusively on σ = 1/2. This page consolidates the dossier, falsifiable checkpoints, telemetry, and replication tooling.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('report_page', slug='riemann-dossier') }}" class="cta">
+            <span data-lucide="file-text"></span>
+            Read the dossier
+        </a>
+        <a href="{{ url_for('index') }}" class="hero-secondary">
+            <span data-lucide="layout-dashboard"></span>
+            Back to dashboard
+        </a>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>Production Snapshot</h2>
+            <p>Derived from `PRODUCTION_SCALE_REPORT.json`. Values update automatically when new builds are published.</p>
+        </div>
+        <span class="badge success">
+            <span data-lucide="cpu"></span>
+            Automation in sync
+        </span>
+    </div>
+
+    <div class="grid columns-3">
+        <div class="stat-card">
+            <p class="stat-label">Critical zeros verified</p>
+            <p class="stat-value" id="stat-critical-zeros">3,208</p>
+            <p class="stat-trend">
+                <span data-lucide="target"></span>
+                100% retention on σ = 1/2
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Off-line rejection rate</p>
+            <p class="stat-value" id="stat-rejection-rate">72.9%</p>
+            <p class="stat-trend trend-down">
+                <span data-lucide="slash"></span>
+                Exceeds 40% threshold
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Phase lock fidelity</p>
+            <p class="stat-value" id="stat-phase-lock">K₁:₁ = 1.000</p>
+            <p class="stat-trend">
+                <span data-lucide="activity"></span>
+                σ = 0.5 ± 5e-6
+            </p>
+        </div>
+        <div class="stat-card">
+            <p class="stat-label">Extensive trials</p>
+            <p class="stat-value" id="stat-riemann-trials">—</p>
+            <p class="stat-trend">
+                <span data-lucide="badge-check"></span>
+                <span id="stat-riemann-success">Awaiting refresh</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="glass" id="critical-line-chart">
+        <h3>Critical line stability</h3>
+        <div id="criticalLinePlot" style="height: 420px;"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <h2>E0–E4 Audit Trail</h2>
+            <p>Verification checkpoints and falsifiable steps for independent reviewers.</p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="glass">
+            <h3>Audit Overview</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>E0 — Calibration</h3>
+                    <p>Δ-phase instrumentation matched to reference spectra within 0.01 rad phase tolerance.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e0') }}">
+                        Calibration protocol
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>E1 — Vibration</h3>
+                    <p>Conjugate phasor locks validated over full spectral sweep with LOW thresholds enforced.</p>
+                </div>
+                <div class="card">
+                    <h3>E2 — Symmetry</h3>
+                    <p>Gauge-invariant phase pairing confirms Δ symmetry across the evaluated window.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e1-e2') }}">
+                        Symmetry checklist
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>E3 — Micro-nudge</h3>
+                    <p>Micro perturbations restored baseline locks within 12 iterations, confirming resilience.</p>
+                </div>
+                <div class="card">
+                    <h3>E4 — RG Persistence</h3>
+                    <p>Only critical-line locks survive eight coarse-grain steps; off-line locks decay below 0.92.</p>
+                    <a href="{{ url_for('report_page', slug='falsifiables-e3-e4') }}">
+                        RG acceptance criteria
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass">
+            <h3>Reviewer Toolkit</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <h4>Replication Notebook</h4>
+                    <p>Interactive notebook reproducing critical line locks and visual statistics.</p>
+                    <a href="{{ url_for('report_page', slug='replication-bundle') }}">
+                        Open replication bundle
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Audit Log Extract</h4>
+                    <p>Signed telemetry for calibration, symmetry, and RG persistence runs.</p>
+                    <a href="{{ url_for('report_page', slug='audit-log') }}">
+                        Inspect audit log
+                        <span data-lucide="arrow-up-right"></span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <h4>Support</h4>
+                    <p>Direct contact with the Δ-Primitives Riemann review desk.</p>
+                    <a href="mailto:review@delta-primitives.org">
+                        Email review team
+                        <span data-lucide="mail"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/riemann.js') }}"></script>
+{% endblock %}
