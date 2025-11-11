@@ -1,0 +1,27 @@
+{
+  "total_circuits": 10,
+  "axioms_tested": [
+    1,
+    22,
+    14,
+    16,
+    17,
+    18,
+    26,
+    24,
+    25,
+    10
+  ],
+  "problems_covered": [
+    "NS",
+    "RH",
+    "PC",
+    "YM",
+    "PNP",
+    "HODGE",
+    "BSD",
+    "ALL"
+  ],
+  "hardware_target": "IBM Torino (127q), IBM Kyoto (133q)",
+  "status": "READY_TO_RUN"
+}

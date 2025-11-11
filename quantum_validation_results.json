@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "shots": 4096,
+    "backend": "AerSimulator",
+    "timestamp": "2025-11-11T15:05:43.970019",
+    "version": "1.0"
+  },
+  "circuits": {
+    "circuit_1": {
+      "axiom": 1,
+      "problem": "NS",
+      "test_a": {
+        "chi_estimate": 0.005760074231589268,
+        "stability": "STABLE",
+        "p_decorrelated": 0.974853515625,
+        "p_locked": 0.005615234375,
+        "ns_prediction": "NO_BLOWUP"
+      },
+      "test_b": {
+        "chi_estimate": 0.29481576265369125,
+        "stability": "STABLE",
+        "p_decorrelated": 0.4521484375,
+        "p_locked": 0.13330078125,
+        "ns_prediction": "NO_BLOWUP"
+      },
+      "classical": {
+        "chi": 0.0
+      },
+      "validated": true
+    },
+    "circuit_2": {
+      "axiom": 22,
+      "problem": "RH",
+      "test_a": {
+        "K_1to1": 0.427490234375,
+        "on_critical_line": false,
+        "p_coherent": 0.427490234375,
+        "zero_predicted": false,
+        "rh_validation": "NO_ZERO"
+      },
+      "test_b": {
+        "K_1to1": 0.57958984375,
+        "on_critical_line": false,
+        "p_coherent": 0.57958984375,
+        "zero_predicted": false,
+        "rh_validation": "NO_ZERO"
+      },
+      "classical": {
+        "K_on": 1.0,
+        "K_off": 0.597
+      },
+      "validated": false
+    },
+    "circuit_3": {
+      "axiom": 14,
+      "problem": "PC",
+      "test_a": {
+        "holonomy_trivial": true,
+        "p_trivial": 1.0,
+        "topology": "S3",
+        "poincare_test": "PASSES"
+      },
+      "test_b": {
+        "holonomy_trivial": false,
+        "p_trivial": 0.161376953125,
+        "topology": "NOT_S3",
+        "poincare_test": "FAILS"
+      },
+      "validated": true
+    },
+    "circuit_4": {
+      "axiom": 16,
+      "problem": "ALL",
+      "test_a": {
+        "thinning_satisfied": false,
+        "stability": "UNSTABLE",
+        "high_order_suppression": 0.030517578125,
+        "universal_validation": "FAILS"
+      },
+      "test_b": {
+        "thinning_satisfied": false,
+        "stability": "UNSTABLE",
+        "high_order_suppression": 0.5029296875,
+        "universal_validation": "FAILS"
+      },
+      "classical": {
+        "slope": -0.6704814434985448
+      },
+      "validated": false
+    },
+    "circuit_5": {
+      "axiom": 17,
+      "problem": "ALL",
+      "test_a": {
+        "P_fine": 0.482666015625,
+        "P_coarse": 0.50732421875,
+        "drop": 0.05108740047850665,
+        "persistent": true,
+        "e4_status": "PASS",
+        "structure_type": "TRUE_FEATURE"
+      },
+      "validated": true
+    },
+    "circuit_6": {
+      "axiom": 18,
+      "problem": "YM",
+      "result": {
+        "omega_min": 1.5,
+        "mass_gap_exists": true,
+        "ym_status": "SOLVED",
+        "lightest_glueball": "1.500 GeV"
+      },
+      "validated": true
+    },
+    "circuit_7": {
+      "axiom": 26,
+      "problem": "PNP",
+      "test_a": {
+        "min_order": 2,
+        "complexity_class": "P",
+        "low_order_found": true,
+        "order_threshold": 4
+      },
+      "validated": true
+    },
+    "circuit_8": {
+      "axiom": 24,
+      "problem": "HODGE",
+      "test_a": {
+        "algebraic": false,
+        "p_equal_q": true,
+        "hodge_prediction": "NOT_ALGEBRAIC",
+        "test_passes": false
+      },
+      "validated": false
+    },
+    "circuit_9": {
+      "axiom": 25,
+      "problem": "BSD",
+      "result": {
+        "rank_estimate": 2,
+        "persistent_generators": 2,
+        "bsd_prediction": "Rank \u2248 2"
+      },
+      "validated": true
+    },
+    "circuit_10": {
+      "axiom": 10,
+      "problem": "ALL",
+      "test_a": {
+        "converged": false,
+        "fixed_point_exists": false,
+        "universality_class": "UNSTABLE",
+        "rg_validation": "FAILS"
+      },
+      "validated": false
+    }
+  },
+  "summary": {
+    "total_circuits": 10,
+    "validated_count": 6,
+    "validation_rate": 0.6,
+    "problem_stats": {
+      "NS": {
+        "total": 1,
+        "validated": 1
+      },
+      "RH": {
+        "total": 1,
+        "validated": 0
+      },
+      "PC": {
+        "total": 1,
+        "validated": 1
+      },
+      "ALL": {
+        "total": 3,
+        "validated": 1
+      },
+      "YM": {
+        "total": 1,
+        "validated": 1
+      },
+      "PNP": {
+        "total": 1,
+        "validated": 1
+      },
+      "HODGE": {
+        "total": 1,
+        "validated": 0
+      },
+      "BSD": {
+        "total": 1,
+        "validated": 1
+      }
+    }
+  }
+}
