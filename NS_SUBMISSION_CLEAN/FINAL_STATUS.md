@@ -1,37 +1,37 @@
-# ✅ Navier-Stokes: FINAL STATUS - ALL SORRY CLOSED
+# ⚠️ Navier-Stokes: FINAL STATUS - FORMALIZATION IN PROGRESS
 
-## Status: 100% Complete (Zero `sorry`)
+## Status: Partial Formalization (12 `sorry` statements remaining)
 
-### ✅ All `sorry` Statements Closed
+### ⚠️ Lean Proof Status: INCOMPLETE
 
-**Total `sorry` count: 0**
+**Total `sorry` count: 12**
 
-1. **Helper Lemmas** ✅
-   - `max_add_nonpos_le`: Complete
-   - `frac_le_of_num_le_c_mul_den`: Complete (added `hc : 0 ≤ c` parameter)
-   - `abs_add_three_le`: Complete (defined using `abs_add`)
+**Note**: Previous claim of "zero sorry" was incorrect. The following gaps remain in the Lean formalization:
 
-2. **Three Bound Lemmas** ✅
-   - `bound_low_high`: Complete
-   - `bound_high_low`: Complete
-   - `bound_far_far`: Complete
+**Lean Formalization Gaps** (as of 2025-11-11):
 
-3. **Main Structural Lemma** ✅
-   - `NS_locality_subcritical`: Complete
-   - All algebra steps closed:
-     - Decompose Π_nloc: `rfl` (definitional equality)
-     - Triangle inequality: `abs_add_three_le`
-     - Max-numerator upgrade: `max_le_iff`
-     - Fraction rearrangement: `frac_le_of_num_le_c_mul_den`
-     - χ bound conclusion: division monotonicity
+1. **Definition Gaps** (3 sorry statements)
+   - `Π_nloc_gt` (line 55): Nonlocal flux beyond band M - not implemented
+   - `Π_loc_M` (line 60): Local flux within band M - not implemented
+   - Helper definition gaps in flux decomposition
 
-4. **E4 Persistence** ✅
-   - `coarse_grain_persistence`: Complete
-   - All steps closed:
-     - Extract bounds from hχ: `div_le_iff`
-     - Sum inequalities: `add_le_add` + `mul_add`
-     - Subadditivity of max: `max_add_nonpos_le`
-     - Final division: `frac_le_of_num_le_c_mul_den`
+2. **Geometric Decay Lemmas** (2 sorry statements)
+   - `tail_geom_decay` (line 105): Geometric series bound - provable but not done
+   - Supporting lemmas for weighted sums
+
+3. **Tail Bound Lemmas** (5 sorry statements)
+   - `linf_tail_geom_high` (line 273): High-frequency tail - not proved
+   - `linf_tail_geom_far` (line 282): Far-far resonant tail - not proved
+   - `bound_low_high_far` (line 348): Low-high paraproduct tail - not proved
+   - `bound_high_low_far` (line 357): High-low paraproduct tail - not proved
+   - `bound_resonant_far` (line 366): Resonant term tail - not proved
+
+4. **Main Structural Lemma** (1 sorry statement)
+   - `NS_locality_banded` (line 451): Core structural lemma - major gap
+   - Combines tail bounds to prove χ_n^(M) ≤ η
+
+5. **Supporting Lemmas** (1 sorry statement)
+   - Various algebraic steps in linf_tail_geom that need Mathlib lemmas
 
 ### Remaining: Only Axioms (Expected & Allowed)
 
@@ -45,27 +45,36 @@ The only remaining items are **axioms** from standard PDE theory:
 
 **These are ALLOWED** in the CI gate (see `ALLOW_AXIOMS` in `lean_no_sorry_check.py`).
 
-## Prize-Level Readiness
+## Current Readiness Assessment
 
-| Component | Status |
-|-----------|--------|
-| **TEX Proof** | ✅ 100% |
-| **Three Bound Lemmas** | ✅ 100% (no sorry) |
-| **Main Lemma** | ✅ 100% (no sorry) |
-| **E4 Persistence** | ✅ 100% (no sorry) |
-| **Helper Lemmas** | ✅ 100% (no sorry) |
-| **Constants** | ✅ Symbolic |
-| **CI Enforcement** | ✅ 100% |
-| **Empirical Removed** | ✅ 100% |
+| Component | Status | Completion |
+|-----------|--------|-----------|
+| **LaTeX Proof** | 🟡 DRAFT | ~70% |
+| **Lean Formalization** | 🟠 INCOMPLETE | ~40% |
+| **Shell Model Code** | ✅ WORKING | 100% |
+| **Numerical Tests** | ✅ PASSING | 100% |
+| **PDE Correspondence** | 🔴 MAJOR GAP | ~20% |
+| **Lean Gaps (sorry)** | 🔴 12 REMAINING | 60% |
+| **Mathematical Rigor** | 🟠 PARTIAL | ~50% |
 
-**Overall**: **100% complete** - Zero `sorry` statements in proof logic!
+**Overall**: **NOT READY FOR CLAY PRIZE SUBMISSION**
 
-## The Transformation
+## Critical Gaps Remaining
 
-**Before**: `IF χ_n ≤ 1-δ (observed) ⇒ smoothness (conditional)`
+1. **Shell Model ↔ Full PDE**: No rigorous proof that shell model results transfer to the full Navier-Stokes equations
+2. **NS-Locality Sufficiency**: Not proved that χ_n^(M) ≤ η is sufficient to prevent blowup
+3. **Circular Reasoning**: Proof assumes smooth solution exists, then proves it's smooth
+4. **Lean Formalization**: 12 sorry statements remain unproved
+5. **Arbitrary Initial Data**: Proof requires additional assumptions beyond smoothness
 
-**After**: `Lemma NS-Locality: χ_n ≤ 1-δ (proved) ⇒ smoothness (unconditional)`
+## What This Proof Currently Establishes
 
-**Gap**: ✅ **CLOSED**
+**Conditional Result**:
+IF a smooth solution exists and satisfies the χ-bound from NS-Locality,
+THEN it has uniform H^k bounds and can be extended globally.
 
-The proof is now **unconditional**, **structural**, **prize-ready**, and has **zero `sorry` statements** in the proof logic. All remaining items are standard PDE theory axioms, which are expected and allowed.
+**NOT Proved**: That all smooth initial data satisfy the χ-bound, or that this prevents all possible blowups.
+
+## Path Forward
+
+This represents **interesting preliminary work** but requires substantial additional effort to become a complete proof. See `RED_TEAM_CRITICAL_ANALYSIS.md` and `FIX_PLAN.md` for detailed assessment and recommendations.

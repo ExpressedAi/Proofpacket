@@ -206,30 +206,66 @@ establishing persistence under $\times 2$ coarse-graining.
 \end{proof}
 
 % ==========================================
-% OBLIGATION NS-O1: FLUX BOUND => H^1 BOUND
+% LOCAL EXISTENCE (CITE EXISTING THEORY)
 % ==========================================
 
-\section{Theorem NS-1: Triad Flux Control Implies $H^1$ Bounds}
+\section{Local Existence (Known Result)}
 
-\begin{theorem}[Uniform $H^1$ Bound from Flux Control]
-Let $\mathbf{u}$ be a smooth solution to (\ref{eq:NS})--(\ref{eq:div}) on $[0,T]$.
+\begin{theorem}[Local Existence - Leray 1934, Hopf 1951]\label{thm:local_existence}
+Let $\mathbf{u}_0 \in H^3(\mathbb{R}^3)$ be divergence-free with $\|\mathbf{u}_0\|_{H^3} = B_0 < \infty$.
 
-\textbf{By Lemma NS-Locality:} There exists a universal $\delta > 0$ such that $\sup_n \sup_{t \in [0,T]} \chi_n(t) \leq 1 - \delta$.
+Then there exists $T_0 = T_0(\nu, B_0) > 0$ and a unique strong solution $\mathbf{u} \in C([0,T_0]; H^3)$ to the Navier-Stokes equations (\ref{eq:NS})--(\ref{eq:div}) with initial data $\mathbf{u}(0) = \mathbf{u}_0$.
+\end{theorem}
 
+\begin{proof}
+This is a classical result. See Leray (1934), Hopf (1951), or Temam ``Navier-Stokes Equations" Theorem 3.3.
+\end{proof}
+
+% ==========================================
+% EXTENSION CRITERION
+% ==========================================
+
+\section{Extension Criterion}
+
+\begin{theorem}[Beale-Kato-Majda Type Criterion]\label{thm:extension}
+Let $\mathbf{u}$ be a strong solution on $[0,T]$ with $\|\nabla \mathbf{u}(t)\|_{L^2} \leq M$ for all $t \in [0,T]$.
+
+Then the solution can be extended to $[0, T + \varepsilon]$ for some $\varepsilon = \varepsilon(\nu, M) > 0$.
+
+In particular, if $\sup_{t \in [0,\infty)} \|\nabla \mathbf{u}(t)\|_{L^2} < \infty$, then the solution exists globally.
+\end{theorem}
+
+\begin{proof}[Proof Sketch]
+By standard continuation theorems for parabolic equations, a smooth solution can be extended as long as Sobolev norms remain bounded. The $H^1$ bound controls the nonlinear term in the energy estimate, allowing local extension.
+
+For details, see Constantin-Foias ``Navier-Stokes Equations" or Temam, Chapter 3.
+\end{proof}
+
+% ==========================================
+% OBLIGATION NS-O1: A PRIORI H^1 BOUNDS
+% ==========================================
+
+\section{Theorem NS-1: A Priori $H^1$ Bounds from Flux Control}
+
+\begin{theorem}[A Priori $H^1$ Estimates]\label{thm:apriori_H1}
 \textbf{Assume:}
 \begin{enumerate}
-\item [(A2)] Shell energy is uniformly bounded from above: $\sup_n \sup_{t \in [0,T]} E_n(t) \leq M$ for some $M > 0$.
+\item[(H1)] $\mathbf{u}$ is a strong solution to (\ref{eq:NS})--(\ref{eq:div}) on some interval $[0,T]$
+\item[(H2)] \textbf{By Lemma NS-Locality:} $\sup_n \sup_{t \in [0,T]} \chi_n(t) \leq 1 - \delta$ for some universal $\delta > 0$
+\item[(H3)] Initial energy: $E(0) = \|\mathbf{u}_0\|_{L^2}^2 < \infty$
 \end{enumerate}
 
-\textbf{Then:} There exists an explicit constant $C = C(\delta, \nu, M, E(0))$ such that
+\textbf{Then:} There exists an explicit constant $C = C(\delta, \nu, E(0))$ such that
 \begin{equation}
 \sup_{t \in [0,T]} \|\nabla \mathbf{u}(t)\|_{L^2}^2 \leq C. \label{eq:H1bound}
 \end{equation}
 
-Specifically, with $\eta = 1/2$ from Lemma NS-Locality (giving $\delta = 1/2$):
+Specifically, with $\delta = 1/2$ from Lemma NS-Locality:
 \begin{equation}
-C = \frac{2 E(0)}{\nu (1 - 1/2)} = \frac{4 E(0)}{\nu}. \label{eq:Cexplicit}
+C = \frac{4 E(0)}{\nu}. \label{eq:Cexplicit}
 \end{equation}
+
+\textbf{Crucially:} This bound is independent of $T$. Therefore, if a solution exists on $[0,T]$ and satisfies the χ-bound from NS-Locality, it automatically has uniform $H^1$ control.
 \end{theorem}
 
 \begin{proof}[Proof of NS-1]
@@ -364,26 +400,58 @@ yields the exponential bound via Grönwall.
 \end{proof}
 
 % ==========================================
-% OBLIGATION NS-O4: GLOBAL EXTENSION
+% OBLIGATION NS-O4: GLOBAL EXISTENCE
 % ==========================================
 
-\section{Theorem NS-4: Global Smoothness}
+\section{Theorem NS-4: Global Existence and Regularity}
 
-\begin{theorem}[Global Smoothness Implication]
-\textbf{By Lemma NS-Locality:} The low-order triad dominance condition holds for all time $t \geq 0$ with universal $\delta > 0$.
+\begin{theorem}[Global Existence]\label{thm:global_existence}
+Let $\mathbf{u}_0 \in H^3(\mathbb{R}^3)$ be divergence-free with finite energy $E(0) = \|\mathbf{u}_0\|_{L^2}^2 < \infty$.
 
-\textbf{Then:} There exists a global smooth solution $\mathbf{u}$ defined for all $t \in [0, \infty)$, or the bound grows at most polynomially: for any $T > 0$, there exists $N(T)$ such that
+\textbf{Assume:} Lemma NS-Locality holds (i.e., $\chi_n(t) \leq 1-\delta$ is a structural property of all smooth solutions).
+
+\textbf{Then:} There exists a unique global strong solution $\mathbf{u} \in C([0,\infty); H^3)$ to the Navier-Stokes equations.
+
+Moreover, the solution satisfies uniform bounds:
 \begin{equation}
-\sup_{t \in [0,T]} \|D^3 \mathbf{u}(t)\|_{L^2} \leq N(T) E(0),
+\sup_{t \geq 0} \|\nabla \mathbf{u}(t)\|_{L^2}^2 \leq \frac{4 E(0)}{\nu}.
 \end{equation}
-where $N(T) = C_3 \exp(\alpha T)$ with $\alpha = C_{\text{commutator}} C_1 / \nu$.
 \end{theorem}
 
 \begin{proof}[Proof of NS-4]
-The uniform bounds from Theorems NS-1, NS-2, and NS-3 prevent finite-time blowup. Standard continuation theorems guarantee that if the solution remains in a ball of fixed Sobolev norm, it can be extended to all times.
+\textbf{Step 1: Local existence.} By Theorem~\ref{thm:local_existence}, there exists $T_0 > 0$ and a strong solution on $[0, T_0]$.
 
-The explicit growth rate follows from Theorem NS-3.
+\textbf{Step 2: A priori bounds.} By Lemma NS-Locality, the χ-bound holds on any interval where a smooth solution exists. Therefore, by Theorem~\ref{thm:apriori_H1}, we have:
+\begin{equation}
+\sup_{t \in [0,T_0]} \|\nabla \mathbf{u}(t)\|_{L^2}^2 \leq C = \frac{4E(0)}{\nu}.
+\end{equation}
+
+\textbf{Step 3: Extension.} By Theorem~\ref{thm:extension}, since $\|\nabla \mathbf{u}\|_{L^2}$ is uniformly bounded on $[0,T_0]$, the solution can be extended to $[0, T_0 + \varepsilon]$ for some $\varepsilon > 0$.
+
+\textbf{Step 4: Iteration.} On the extended interval $[0, T_0 + \varepsilon]$, the same a priori bound applies (since NS-Locality is structural). Therefore, we can extend again.
+
+\textbf{Step 5: Global existence.} By iterating this process, the solution extends to all of $[0, \infty)$ with uniform $H^1$ bounds.
+
+The bound on higher derivatives ($H^2$, $H^3$) follows from Theorems NS-2 and NS-3.
 \end{proof}
+
+\begin{remark}[Critical Gap]
+\textbf{Warning:} This proof is \textbf{conditional} on Lemma NS-Locality. Specifically, we assume:
+\begin{enumerate}
+\item NS-Locality applies to the \textbf{full PDE}, not just shell models
+\item The χ-bound is \textbf{structural} (holds for all smooth solutions)
+\item The χ-bound is \textbf{sufficient} to prevent blowup
+\end{enumerate}
+
+\textbf{Status of these assumptions:}
+\begin{itemize}
+\item [\textcolor{orange}{$\triangle$}] (1) is plausible but not rigorously proved
+\item [\textcolor{red}{$\times$}] (2) requires showing local flux is also controlled
+\item [\textcolor{red}{$\times$}] (3) is conjectured but not proved
+\end{itemize}
+
+See the companion document ``RED\_TEAM\_CRITICAL\_ANALYSIS.md" for detailed discussion of these gaps.
+\end{remark}
 
 % ==========================================
 % COMPLETENESS THEOREMS: DETECTOR EXHAUSTIVENESS
@@ -435,23 +503,58 @@ If a finite-time singularity exists at $t^*$, then $\exists n^*$ and $\tau > 0$ 
 % SUMMARY: ALL OBLIGATIONS SATISFIED
 % ==========================================
 
-\section{Summary: Formal Navier-Stokes Proof}
+\section{Summary: Conditional Navier-Stokes Result}
 
-We have established:
+\subsection{What We Have Proved (Conditional on NS-Locality)}
+
+\textbf{Conditional Main Result:} \emph{If} Lemma NS-Locality holds as stated, \emph{then}:
 \begin{enumerate}
-\item[NS-0] Shell model correspondence: Empirical shell model faithfully approximates full PDE (Lemma NS-0). ✅
-\item[NS-O1] Flux control $\chi_n \leq 1-\delta$ implies uniform $H^1$ bound: $\|\nabla \mathbf{u}\|_{L^2} \leq 14.1421$ (with $E(0)=1$).
-\item[NS-O2] Induction to $H^m$: $H^k$ bounds scale as $C_k = 14.1421 \times (\sqrt{2})^{k-1}$.
-\item[NS-O3] Grönwall bound: $\|D^3 \mathbf{u}(100)\|_{L^2} \leq 1.21 \times 10^6$.
-\item[NS-O4] Global extension: By Lemma NS-Locality, solution is global with explicit growth.
-\item[NS-A] Completeness (Route A): singularity forces flux anomaly $\mathcal{F} > 0$. ✅
-\item[NS-B] Completeness (Route B): triad cascade $\Leftrightarrow$ RG fixed points; detector necessity. ✅
+\item[NS-0] Shell model provides computational framework (Lemma NS-0)
+\item[NS-O1] A priori $H^1$ bound: $\|\nabla \mathbf{u}\|_{L^2}^2 \leq 4E(0)/\nu$ (Theorem~\ref{thm:apriori_H1})
+\item[NS-O2] Induction to $H^m$: $H^k$ bounds scale as $C_k = C_1 \times (\sqrt{2})^{k-1}$ (Theorem NS-2)
+\item[NS-O3] Grönwall bound for time evolution (Theorem NS-3)
+\item[NS-O4] Global existence: All smooth initial data yield global smooth solutions (Theorem~\ref{thm:global_existence})
+\item[NS-A] Completeness (Route A): Singularity $\Rightarrow$ flux anomaly (Theorem NS-A)
+\item[NS-B] Completeness (Route B): Triad cascade $\Leftrightarrow$ RG stability (Theorem NS-B)
 \end{enumerate}
 
-\textbf{Main result:} By Lemma NS-Locality, the condition $\chi_n(t) \leq 1-\delta$ holds unconditionally for all smooth solutions. Combined with Theorems NS-1 through NS-4, this establishes that any smooth solution to the Navier--Stokes equations remains globally smooth.
+\subsection{Critical Gaps}
 
-\begin{remark}[Numerical Illustration]
-Our production tests across 9 configurations (45,000 time steps, $\nu \in \{0.001, 0.01, 0.1\}$, resolutions $16, 24, 32$ shells) show $\chi_{\max} = 8.95 \times 10^{-6} \ll 1$ and 0 supercritical triads, providing numerical illustration of the theoretical bound. All E0--E4 audits passed. However, the proof above is independent of these numerical observations.
+\textbf{What is NOT proved:}
+\begin{enumerate}
+\item \textcolor{red}{$\times$} \textbf{Shell model $\to$ PDE transfer}: Lemma NS-0 states correspondence but doesn't prove it rigorously
+\item \textcolor{red}{$\times$} \textbf{NS-Locality for full PDE}: Lemma NS-Locality is proved for shell models, not the full Navier-Stokes equations
+\item \textcolor{red}{$\times$} \textbf{Sufficiency of χ-bound}: Not proved that controlling nonlocal flux beyond band $M$ is sufficient to control \emph{total} flux
+\item \textcolor{orange}{$\triangle$} \textbf{Completeness arguments}: Theorems NS-A and NS-B have sketch proofs only
+\end{enumerate}
+
+\subsection{Status Assessment}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\textbf{HONEST SUMMARY}
+
+This document presents a \textbf{conditional result}: \emph{If} the χ-bound from spectral locality is both structural and sufficient, \emph{then} global smoothness follows.
+
+\textbf{This is NOT a complete solution} to the Clay Millennium Prize problem because:
+\begin{itemize}
+\item The key lemma (NS-Locality) is proved for shell models, not the full PDE
+\item The sufficiency of the χ-bound is assumed, not proved
+\item Critical steps rely on numerical evidence rather than rigorous proof
+\end{itemize}
+
+\textbf{What we have}: Interesting theoretical framework + strong numerical evidence
+
+\textbf{What we need}: Months-to-years of additional work to close fundamental gaps
+
+See \texttt{RED\_TEAM\_CRITICAL\_ANALYSIS.md} for detailed gap analysis.
+\end{minipage}}
+\end{center}
+
+\begin{remark}[Numerical Evidence]
+Our shell model tests across 9 configurations (45,000 time steps, $\nu \in \{0.001, 0.01, 0.1\}$, resolutions $16, 24, 32$ shells) show $\chi_{\max} = 8.95 \times 10^{-6} \ll 1$ and 0 supercritical triads. All E0--E4 audits passed.
+
+This provides \emph{numerical illustration} that the χ-control hypothesis may be correct, but it does not constitute mathematical proof for the full Navier-Stokes equations.
 \end{remark}
 
 \end{document}
