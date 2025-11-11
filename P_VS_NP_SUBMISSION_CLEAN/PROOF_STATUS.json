@@ -1,0 +1,228 @@
+{
+  "A3_normalized": {
+    "status": "normalized",
+    "subclaims": {
+      "A3.1_existence": {
+        "statement": "Bridge cover exists with E4-persistent low-order cover",
+        "status": "pending",
+        "lemma": "L-A3.1",
+        "hypotheses": ["GraphExpansion", "DegreeBounds"],
+        "strategy": "Combinatorial + spectral proof"
+      },
+      "A3.2_constructibility": {
+        "statement": "Poly-time algorithm builds bridge cover",
+        "status": "pending",
+        "lemma": "L-A3.2",
+        "hypotheses": ["GraphExpansion"],
+        "strategy": "Explicit algorithm with complexity proof"
+      },
+      "A3.3_witnessability": {
+        "statement": "Harmony Optimizer finds witness in poly time with P(success) ≥ 2/3",
+        "status": "pending",
+        "lemma": "L-A3.3",
+        "hypotheses": ["E4Persistence", "BoundedNoise"],
+        "strategy": "Potential-function proof (MWU form)"
+      },
+      "A3.4_robustness": {
+        "statement": "Holds under detune/noise/renaming",
+        "status": "partial",
+        "lemma": "L-A3.4",
+        "hypotheses": ["RenamingInvariant", "LipschitzCoupling", "E4Margin"],
+        "strategy": "Symmetry arguments + continuity",
+        "progress": "Structure complete, Lipschitz bounds and gap stability need formalization",
+        "file": "proofs/lean/p_vs_np_proof.lean",
+        "line": 117
+      },
+      "A3.1_existence_restricted": {
+        "statement": "Bridge cover exists with E4-persistent low-order cover (bounded-degree expanders)",
+        "status": "partial",
+        "lemma": "existence_on_expanders",
+        "hypotheses": ["BoundedDegreeExpander", "EdgeExpansion"],
+        "strategy": "Expander mixing lemma + motif frequency analysis",
+        "progress": "Structure complete, expander mixing argument needs formalization",
+        "file": "proofs/lean/restricted_class.lean",
+        "line": 68,
+        "restriction": "Bounded-degree expanders only (beachhead)"
+      },
+      "A3.2_constructibility_restricted": {
+        "statement": "Poly-time algorithm builds bridge cover (bounded-degree expanders)",
+        "status": "partial",
+        "lemma": "build_cover_poly_time",
+        "hypotheses": ["BoundedDegreeExpander"],
+        "strategy": "Enumerate length-≤L motifs, instantiate bridges",
+        "progress": "Algorithm structure complete, complexity bound needs formalization",
+        "file": "proofs/lean/restricted_class.lean",
+        "line": 45,
+        "restriction": "Bounded-degree expanders only (beachhead)"
+      },
+      "A3.3_witnessability_restricted": {
+        "statement": "Harmony Optimizer finds witness in poly time (restricted class)",
+        "status": "partial",
+        "lemma": "mwu_poly_convergence_explicit",
+        "hypotheses": ["E4Persistence", "MWUConditions"],
+        "strategy": "MWU step lemma + Azuma-Hoeffding",
+        "progress": "MWU structure complete, Azuma bound needs formalization",
+        "file": "proofs/lean/mwu_potential.lean",
+        "line": 107,
+        "restriction": "Requires A3.1 and A3.2 on restricted class"
+      }
+    },
+    "A3_total": {
+      "status": "pending",
+      "theorem": "A3_total_from_lemmas",
+      "depends_on": ["L-A3.1", "L-A3.2", "L-A3.3", "L-A3.4"]
+    }
+  },
+  "lemmas": {
+    "L-A3.1": {
+      "name": "Existence from Structure",
+      "status": "stub",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 65,
+      "hypotheses": ["GraphExpansion", "DegreeBounds"],
+      "proof_strategy": "Combinatorial + spectral: show low-order bridges correspond to short cycles/small cuts in G_F; use expansion lemmas"
+    },
+    "L-A3.2": {
+      "name": "Constructibility",
+      "status": "stub",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 75,
+      "hypotheses": ["GraphExpansion"],
+      "proof_strategy": "Explicit algorithm using local motifs (2-clause conflicts, bounded-length implications, small chordless cycles)"
+    },
+    "L-A3.3": {
+      "name": "Harmony Convergence in Poly",
+      "status": "stub",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 86,
+      "hypotheses": ["E4Persistence", "BoundedNoise"],
+      "proof_strategy": "Potential-function proof: Harmony Optimizer's weights act like multiplicative weights on simplex; require improvement gap lemma from E3 causal lift"
+    },
+    "L-A3.4": {
+      "name": "Renaming Invariance & Robustness",
+      "status": "partial",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 126,
+      "hypotheses": ["RenamingInvariant", "LipschitzCoupling", "E4Margin"],
+      "proof_strategy": "Symmetry arguments + continuity of bridge coupling under perturbations",
+      "progress": "Structure 100% complete. Helper lemmas `lipschitz_slope_sum` and `prefix_stability_gap` need formalization. Robustness radius δ★ = min(γ/(2L), ρ/(2L)) explicit.",
+      "key_theorem": "robustness_preserves_E4",
+      "helper_lemmas": ["lipschitz_slope_sum", "prefix_stability_gap"]
+    },
+    "mwu_step_improvement": {
+      "name": "MWU Step Improvement",
+      "status": "partial",
+      "file": "proofs/lean/mwu_potential.lean",
+      "line": 52,
+      "hypotheses": ["MWUConditions", "E3Lift", "ClauseGain", "BoundedRange"],
+      "proof_strategy": "Standard MWU regret analysis with combined score Δscore_i = Δclauses_i + λ * ΔK_i",
+      "progress": "Structure 100% complete. Helper lemma `mwu_regret_bound` and expectation bound need formalization. Constants explicit: η, α, κ, λ, B, γ_MWU.",
+      "key_result": "E[ΔΨ] ≥ η(α + λκ) - ½η²B²",
+      "helper_lemmas": ["mwu_regret_bound"]
+    },
+    "mwu_poly_convergence": {
+      "name": "MWU Polynomial Convergence",
+      "status": "partial",
+      "file": "proofs/lean/mwu_potential.lean",
+      "line": 118,
+      "hypotheses": ["MWUConditions", "E4Persistence"],
+      "proof_strategy": "Azuma-Hoeffding bound on non-improving steps, optional stopping on epochs",
+      "progress": "Structure 100% complete. Submartingale structure, bounded differences, Azuma-Hoeffding application, and epoch analysis need formalization.",
+      "key_result": "Pr[time_to_witness ≤ n^e] ≥ 2/3",
+      "helper_lemmas": ["submartingale_bounded_differences", "azuma_hoeffding_bounded"]
+    },
+    "existence_on_expanders": {
+      "name": "Existence on Bounded-Degree Expanders",
+      "status": "partial",
+      "file": "proofs/lean/restricted_class.lean",
+      "line": 173,
+      "hypotheses": ["BoundedDegreeExpander", "EdgeExpansion"],
+      "proof_strategy": "Expander mixing lemma: short motifs appear with near-independent frequencies, high-order composites exponentially rarer",
+      "progress": "Structure 100% complete. Expander mixing lemma, frequency bounds, thinning slope, and prefix gap proofs need formalization. Constants explicit: γ(ε, Δ), ρ(ε, Δ).",
+      "restriction": "Bounded-degree expanders only (beachhead for wider class)",
+      "helper_lemmas": ["expander_mixing_lemma", "motif_frequency_low_order", "motif_frequency_high_order", "thinning_slope_positive", "prefix_gap_positive"]
+    },
+    "build_cover_poly_time": {
+      "name": "Constructibility on Expanders",
+      "status": "partial",
+      "file": "proofs/lean/restricted_class.lean",
+      "line": 84,
+      "hypotheses": ["BoundedDegreeExpander"],
+      "proof_strategy": "Enumerate length-≤L motifs (BFS depth L), instantiate bridges, complexity O(n^c)",
+      "progress": "Structure 100% complete. Helper lemmas `ball_size_le` and `sum_motifs_poly` need formalization. Explicit L = O(log n) bound.",
+      "restriction": "Bounded-degree expanders only (beachhead)",
+      "helper_lemmas": ["ball_size_le", "sum_motifs_poly"]
+    }
+  },
+  "core_definitions": {
+    "BridgeCover": {
+      "status": "defined",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 20,
+      "fields": ["bridges", "size_bound", "e4_persistent", "renaming_invariant"]
+    },
+    "Constructible": {
+      "status": "defined",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 27,
+      "description": "Poly-time algorithm that builds bridge cover"
+    },
+    "HarmonyOptimizer": {
+      "status": "defined",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 33,
+      "fields": ["max_steps", "success_prob", "uses_only_bridges"]
+    },
+    "Robust": {
+      "status": "defined",
+      "file": "proofs/lean/p_vs_np_proof.lean",
+      "line": 39,
+      "description": "Holds under detune/noise/renaming"
+    }
+  },
+  "implementation_status": {
+    "HarmonyOptimizer_MWU": {
+      "status": "implemented",
+      "file": "code/p_vs_np_test.py",
+      "form": "MWU (Multiplicative Weights Update)",
+      "constants": {
+        "eta": 0.1,
+        "lambda_bridge": 1.0
+      },
+      "score_decomposition": "Δscore_i = Δclauses_i + λ * ΔK_i"
+    },
+    "adversarial_tests": {
+      "status": "pending",
+      "families": [
+        "random_3sat_phase_transition",
+        "planted_satisfiable_camouflage",
+        "xor_sat_gadgets",
+        "goldreich_generator",
+        "high_treewidth_benchmarks"
+      ]
+    }
+  },
+  "kill_switches": {
+    "slope_failure": {
+      "condition": "E4 slope ≤ 0 consistently on a family",
+      "action": "demote A3.1",
+      "status": "active"
+    },
+    "prefix_failure": {
+      "condition": "E4 prefix fails with success prob < 1/3",
+      "action": "demote A3.1",
+      "status": "active"
+    },
+    "exponential_steps": {
+      "condition": "Expected Harmony steps grow like 2^Ω(n^α) for any α > 0",
+      "action": "demote A3.3",
+      "status": "active"
+    },
+    "super_poly_order": {
+      "condition": "Cover order needed grows super-poly on typical inputs",
+      "action": "demote A3.2",
+      "status": "active"
+    }
+  }
+}
+

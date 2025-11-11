@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+
+\title{Robustness: E4 Persistence Under Perturbations}
+\author{P vs NP Proof}
+
+\begin{document}
+
+\section{Robustness Radius}
+
+If each $\Delta K_b$ is $L_b$-Lipschitz, then the thinning slope $\hat\lambda$ satisfies:
+
+\[
+|\hat\lambda(\theta+\delta)-\hat\lambda(\theta)| \le \Big(\sum_b w_b L_b\Big)|\delta|=:L|\delta|.
+\]
+
+This follows from the Lipschitz sum bound: if each bridge coupling is Lipschitz, their weighted sum (the slope) is also Lipschitz with constant $L = \sum_b w_b L_b$.
+
+If the order-gap is $\rho$ (i.e., scores of different orders differ by at least $\rho$), then perturbations $\le \rho/2$ keep the prefix unchanged. This is because:
+
+- Original gap: $s_i - s_j \ge \rho$ for order$(i) <$ order$(j)$
+- After perturbation: $|s'_i - s_i| \le \rho/2$ and $|s'_j - s_j| \le \rho/2$
+- New gap: $s'_i - s'_j \ge s_i - s_j - \rho \ge \rho - \rho = 0$
+
+Thus with $\delta^\star=\min(\gamma/(2L),\rho/(2L))$, E4 persistence is preserved for $|\delta|\le\delta^\star$.
+
+\section{Theorem Statement}
+
+\begin{theorem}[Robustness Preserves E4]
+Under conditions R1 (renaming invariance), R2 (Lipschitz couplings with constants $L_b$), and R3 (margin with slope $\gamma > 0$ and prefix gap $\rho > 0$), E4 persistence is preserved under:
+\begin{itemize}
+\item Renaming $\pi$ (from R1)
+\item Perturbation $\delta$ with $|\delta| \le \delta^\star = \min(\gamma/(2L), \rho/(2L))$ where $L = \sum_b w_b L_b$
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+\item \textbf{Renaming}: Immediate from R1 (renaming invariance).
+
+\item \textbf{Slope preservation}: From Lipschitz sum bound:
+\[
+|\hat\lambda(\theta+\delta)-\hat\lambda(\theta)| \le L|\delta| \le L \cdot \frac{\gamma}{2L} = \frac{\gamma}{2}.
+\]
+Since original slope $\ge \gamma$, perturbed slope $\ge \gamma/2 > 0$.
+
+\item \textbf{Prefix preservation}: From gap stability, perturbations $\le \rho/2$ preserve prefix ordering. Since $\delta \le \rho/(2L) \le \rho/2$ (for $L \ge 1$), prefix is unchanged.
+\end{enumerate}
+\end{proof}
+
+\end{document}
+

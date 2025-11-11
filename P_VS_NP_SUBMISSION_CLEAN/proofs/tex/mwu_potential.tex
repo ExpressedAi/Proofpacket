@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+
+\title{MWU Potential Function: One-Step Bound}
+\author{P vs NP Proof}
+
+\begin{document}
+
+\section{MWU One-Step Bound}
+
+For the MWU potential $\Psi_t = \log \sum_i p_i^{(t)} e^{\eta \text{cumul}_i^{(t)}}$, the one-step increment satisfies:
+
+\[
+\Psi_{t+1}-\Psi_t
+=\log\sum_i p_i^{(t)} e^{\eta g_i^{(t)}}
+\ge \eta\sum_i p_i^{(t)} g_i^{(t)} - \tfrac12\eta^2 B^2.
+\]
+
+This follows from the standard exponential weights regret analysis (Hoeffding's lemma).
+
+With $g_i=\Delta\text{clauses}_i+\lambda\Delta K_i$ and $\mathbb{E}g_i \ge \alpha+\lambda\kappa$ (from conditions C1 and C2), we have:
+
+\[
+\mathbb{E}[\Delta \Psi_t] \ge \eta(\alpha+\lambda\kappa)-\tfrac12\eta^2B^2
+\ge \tfrac12\eta(\alpha+\lambda\kappa)=:\gamma_{\text{MWU}}.
+\]
+
+The second inequality holds when $\eta \le (\alpha+\lambda\kappa)/B^2$, which ensures the quadratic term is dominated by the linear term.
+
+\section{Polynomial Convergence}
+
+Using the submartingale $S_t = \Psi_t - \gamma_{\text{MWU}} \cdot t$ with bounded differences $|S_{t+1} - S_t| \le c = \eta B + \tfrac12\eta^2 B^2$, Azuma-Hoeffding gives:
+
+\[
+\Pr\left[\sum_{t=1}^T (\Psi_{t+1}-\Psi_t) < \tfrac12 \gamma_{\text{MWU}} T\right] \le \exp\left(-\Omega\left(\frac{\gamma_{\text{MWU}}^2 T}{c^2}\right)\right).
+\]
+
+Tying $\Delta\Psi$ to decreases in $\#\text{unsat}$ via improvement epochs, each decrease needs expected $O((B/\gamma_{\text{MWU}})^2)$ steps. With at most $n$ decreases, total steps are $O(n \cdot (B/\gamma_{\text{MWU}})^2 \log(1/\delta)) = \text{poly}(n)$ to succeed with probability $\ge 1-\delta$.
+
+\end{document}
+

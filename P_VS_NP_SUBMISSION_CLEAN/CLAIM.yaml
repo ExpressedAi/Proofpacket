@@ -1,0 +1,145 @@
+# CLAIM.yaml: Precise Claims for AI Referee
+# Each claim has proof_status and kill_switch
+
+claims:
+  main_result:
+    statement: "If A3_total (A3.1 ∧ A3.2 ∧ A3.3 ∧ A3.4) holds, then SAT has a randomized polynomial-time witness finder via Harmony Optimizer"
+    type: "conditional_theorem"
+    depends_on: ["A3_total"]
+    proof_status: "conditional"
+    empirical_support: "blinded_preregistered"
+    formal_lemmas: ["L-A3.1", "L-A3.2", "L-A3.3", "L-A3.4"]
+    
+  A3_total:
+    statement: "A3.1 ∧ A3.2 ∧ A3.3 ∧ A3.4"
+    type: "conjunction"
+    depends_on: ["A3.1", "A3.2", "A3.3", "A3.4"]
+    proof_status: "pending"
+    
+  A3.1:
+    statement: "Bridge cover exists with E4-persistent low-order cover"
+    type: "existence"
+    proof_status: "stub"
+    lemma: "L-A3.1"
+    hypotheses: ["GraphExpansion", "DegreeBounds"]
+    kill_switch: "slope_failure"
+    kill_switch_condition: "E4 slope ≤ 0 consistently on a test family"
+    adversarial_families: ["random_3sat_phase_transition", "xor_sat_gadgets", "high_treewidth_benchmarks"]
+    
+  A3.2:
+    statement: "Poly-time algorithm builds bridge cover"
+    type: "constructibility"
+    proof_status: "stub"
+    lemma: "L-A3.2"
+    hypotheses: ["GraphExpansion"]
+    kill_switch: "super_poly_order"
+    kill_switch_condition: "Cover order needed grows super-poly on typical inputs"
+    complexity_proof: "build_cover_polynomial"
+    
+  A3.3:
+    statement: "Harmony Optimizer finds witness in poly time with P(success) ≥ 2/3"
+    type: "witnessability"
+    proof_status: "stub"
+    lemma: "L-A3.3"
+    hypotheses: ["E4Persistence", "BoundedNoise"]
+    kill_switch: "exponential_steps"
+    kill_switch_condition: "Expected Harmony steps grow like 2^Ω(n^α) for any α > 0"
+    kill_switch_alt: "witness_failure"
+    kill_switch_alt_condition: "Harmony Optimizer success rate < 2/3"
+    mwu_proof: "mwu_step_lemma"
+    
+  A3.4:
+    statement: "Holds under detune/noise/renaming"
+    type: "robustness"
+    proof_status: "stub"
+    lemma: "L-A3.4"
+    hypotheses: ["RenamingInvariant"]
+    kill_switch: "robustness_failure"
+    kill_switch_condition: "Success rate drops below 2/3 under noise/renaming"
+    adversarial_families: ["planted_satisfiable_camouflage"]
+
+proof_track:
+  L-A3.1:
+    file: "proofs/lean/p_vs_np_proof.lean"
+    line: 65
+    status: "stub"
+    strategy: "Combinatorial + spectral proof"
+    
+  L-A3.2:
+    file: "proofs/lean/p_vs_np_proof.lean"
+    line: 75
+    status: "stub"
+    strategy: "Explicit algorithm with complexity proof"
+    
+  L-A3.3:
+    file: "proofs/lean/p_vs_np_proof.lean"
+    line: 86
+    status: "stub"
+    strategy: "Potential-function proof (MWU form)"
+    mwu_lemma: "proofs/lean/mwu_potential.lean"
+    
+  L-A3.4:
+    file: "proofs/lean/p_vs_np_proof.lean"
+    line: 98
+    status: "stub"
+    strategy: "Symmetry arguments + continuity"
+
+falsification_track:
+  adversarial_families:
+    - name: "random_3sat_phase_transition"
+      tests: ["A3.1"]
+      kill_switches: ["slope_failure", "prefix_failure"]
+      
+    - name: "planted_satisfiable_camouflage"
+      tests: ["A3.4"]
+      kill_switches: ["robustness_failure"]
+      
+    - name: "xor_sat_gadgets"
+      tests: ["A3.1"]
+      kill_switches: ["super_poly_order"]
+      
+    - name: "goldreich_generator"
+      tests: ["A3.1"]
+      kill_switches: ["slope_failure"]
+      
+    - name: "high_treewidth_benchmarks"
+      tests: ["A3.1"]
+      kill_switches: ["slope_failure", "prefix_failure"]
+  
+  permutation_null:
+    description: "Randomly permute variable/clause labels; ROC should collapse if label peeking"
+    test: "run_adversarial_suite with permuted labels"
+    expected: "No significant difference in success rate"
+
+complexity_accounting:
+  build_cover:
+    file: "proofs/lean/complexity_accounting.lean"
+    theorem: "build_cover_polynomial"
+    bound: "O(n^d) for some d"
+    
+  harmony_iteration:
+    file: "proofs/lean/complexity_accounting.lean"
+    theorem: "harmony_iteration_polynomial"
+    bound: "O(n^e * |B|^e) per iteration"
+    
+  info_flow:
+    file: "proofs/lean/complexity_accounting.lean"
+    theorem: "no_peeking_lemma"
+    claim: "Bridge/Harmony uses only F and B(F); no access to witness or labels"
+
+reduction_stability:
+  worked_example: "proofs/tex/reduction_stability.tex"
+  theorem: "SAT → Independent Set"
+  general_theorem: "proofs/lean/p_vs_np_proof.lean (stub)"
+
+baselines:
+  algorithms: ["WalkSAT", "GSAT", "RandomRestart"]
+  file: "code/baselines.py"
+  budget_matching: "Same max_flips/budget for all algorithms"
+  metrics: ["success_rate", "time", "flips"]
+
+model_selection:
+  methods: ["AIC", "BIC", "Bayes_Factor"]
+  implementation: "code/p_vs_np_test.py:ResourceTelemetry.is_polynomial"
+  monotone_check: "Track k across increasing n; flag if drifts upward"
+

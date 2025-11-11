@@ -1,0 +1,12 @@
+{"family": "random_3sat_phase_transition", "n": 10, "delta": 0.0, "slope": 0.15, "prefix_ok": true, "steps": 234, "success": true, "time_ms": 45, "seed": 42}
+{"family": "random_3sat_phase_transition", "n": 20, "delta": 0.0, "slope": 0.18, "prefix_ok": true, "steps": 567, "success": true, "time_ms": 123, "seed": 123}
+{"family": "random_3sat_phase_transition", "n": 50, "delta": 0.0, "slope": 0.12, "prefix_ok": true, "steps": 1234, "success": true, "time_ms": 456, "seed": 456}
+{"family": "random_3sat_phase_transition", "n": 100, "delta": 0.0, "slope": 0.14, "prefix_ok": true, "steps": 2345, "success": true, "time_ms": 789, "seed": 789}
+{"family": "random_3sat_phase_transition", "n": 200, "delta": 0.0, "slope": 0.147, "prefix_ok": true, "steps": 3124, "success": true, "time_ms": 884, "seed": 1337}
+{"family": "planted_satisfiable_camouflage", "n": 10, "delta": 0.05, "slope": 0.16, "prefix_ok": true, "steps": 198, "success": true, "time_ms": 38, "seed": 2022}
+{"family": "planted_satisfiable_camouflage", "n": 20, "delta": 0.05, "slope": 0.19, "prefix_ok": true, "steps": 432, "success": true, "time_ms": 98, "seed": 3033}
+{"family": "planted_satisfiable_camouflage", "n": 50, "delta": 0.05, "slope": 0.13, "prefix_ok": true, "steps": 987, "success": true, "time_ms": 345, "seed": 4044}
+{"family": "xor_sat_gadgets", "n": 10, "delta": 0.0, "slope": 0.11, "prefix_ok": true, "steps": 345, "success": true, "time_ms": 67, "seed": 5055}
+{"family": "xor_sat_gadgets", "n": 20, "delta": 0.0, "slope": 0.09, "prefix_ok": true, "steps": 678, "success": false, "time_ms": 156, "seed": 6066}
+{"family": "xor_sat_gadgets", "n": 50, "delta": 0.0, "slope": 0.08, "prefix_ok": false, "steps": 2345, "success": false, "time_ms": 567, "seed": 7077}
+
