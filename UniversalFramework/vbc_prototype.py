@@ -159,14 +159,15 @@ class VariableBarrierController:
         # Determine current tick phase
         phase = TickPhase(self.context.tick % 4)
 
+        result = None
         if phase == TickPhase.CAPTURE:
-            return self._capture_phase(logits, token_strings)
+            self._capture_phase(logits, token_strings)
 
         elif phase == TickPhase.CLEAN:
-            return self._clean_phase()
+            self._clean_phase()
 
         elif phase == TickPhase.BRIDGE:
-            return self._bridge_phase()
+            self._bridge_phase()
 
         elif phase == TickPhase.COMMIT:
             result = self._commit_phase()
@@ -177,7 +178,7 @@ class VariableBarrierController:
 
         # Advance tick
         self.context.tick += 1
-        return None
+        return result
 
     def _capture_phase(self, logits: np.ndarray, token_strings: Optional[List[str]]) -> None:
         """CAPTURE: Gather top-k candidate tokens"""
