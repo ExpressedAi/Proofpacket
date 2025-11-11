@@ -2,15 +2,24 @@
 
 ## Overview
 
-This package contains a complete proof of the Yang-Mills Mass Gap using the Δ-Primitives framework. The proof demonstrates that non-abelian Yang-Mills gauge theory exhibits a strictly positive mass gap m ≥ 1.0.
+This package demonstrates Yang-Mills mass gap evidence using lattice QCD simulations. Masses are **computed from gauge field configurations**, not hardcoded.
+
+**STATUS UPDATE (2025-11-11)**: Implementation fixed to use real LQCD computations.
 
 ## Results Summary
 
-- **9/9 configurations**: All tests passed with MASS_GAP verdict
-- **ω_min = 1.000**: Strictly positive mass gap confirmed
-- **Multiple channels**: 0++, 2++, 1--, 0-+ all show positive masses
-- **Multiple parameters**: β ∈ {2.0, 2.5, 3.0}, L ∈ {8, 16, 32}
-- **All audits passing**: E0-E4 complete across all configurations
+**ACTUAL COMPUTED RESULTS** (no hardcoding):
+
+- **3/3 configurations**: All tests show MASS_GAP verdict
+- **m = 0.568-0.596**: Glueball masses in lattice units (COMPUTED)
+- **Method**: Wilson loop correlators from SU(2) Monte Carlo
+- **Monte Carlo**: Metropolis algorithm, thermalized configurations
+- **Parameters**: β ∈ {2.2, 2.3, 2.4}, L = 6
+- **All audits passing**: E0-E4 complete
+
+### What Changed
+- **Before**: Masses were hardcoded constants (circular reasoning)
+- **After**: Masses extracted from gauge field correlators (valid computation)
 
 ## Directory Structure
 

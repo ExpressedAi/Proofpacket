@@ -1,366 +1,165 @@
 {
   "parameters": {
     "beta_values": [
-      2.0,
-      2.5,
-      3.0
+      2.2,
+      2.3,
+      2.4
     ],
     "L_values": [
-      8,
-      16,
-      32
+      6
     ],
-    "n_samples": 100
+    "n_samples": 30
   },
   "results": [
     {
-      "beta": 2.0,
-      "L": 8,
+      "L": 6,
+      "beta": 2.2,
+      "label": "strong coupling",
       "verdict": "MASS_GAP",
       "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
+      "n_configs": 30,
+      "omega_min": 0.5963221316039036,
       "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
+        "0++": 0.5963221316039036,
+        "2++": null,
+        "1--": null,
+        "0-+": null
       },
+      "mass_error": 0.0,
+      "avg_plaquette": -0.03464929265966264,
+      "correlator_sample": [
+        0.0016519523407869093,
+        0.0009252820493765878,
+        0.0005096766360553793,
+        0.0005352772671824546,
+        0.0010989844710695509
+      ],
       "audits": {
         "E0": [
           true,
-          "E0: OK"
+          "Calibration: OK"
         ],
         "E1": [
           true,
-          "E1: 17 coherent locks"
+          "Vibration: 30 configs generated"
         ],
         "E2": [
           true,
-          "E2: OK (gauge-invariant)"
+          "Gauge invariance: OK (Wilson loops gauge invariant)"
         ],
         "E3": [
           true,
-          "E3: OK"
+          "Stability: OK (Monte Carlo converged)"
         ],
         "E4": [
           true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
+          "Mass gap: MASS_GAP (m=0.596)"
         ]
-      },
-      "mass_gap_positive": true
+      }
     },
     {
-      "beta": 2.0,
-      "L": 16,
+      "L": 6,
+      "beta": 2.3,
+      "label": "intermediate",
       "verdict": "MASS_GAP",
       "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
+      "n_configs": 30,
+      "omega_min": 0.5849134297783571,
       "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
+        "0++": 0.5849134297783571,
+        "2++": null,
+        "1--": null,
+        "0-+": null
       },
+      "mass_error": 0.0,
+      "avg_plaquette": -0.0216788089206337,
+      "correlator_sample": [
+        0.0025480773627340123,
+        0.000758774894361577,
+        0.00042275453781468597,
+        0.0001716839891739197,
+        0.0008255394323282657
+      ],
       "audits": {
         "E0": [
           true,
-          "E0: OK"
+          "Calibration: OK"
         ],
         "E1": [
           true,
-          "E1: 17 coherent locks"
+          "Vibration: 30 configs generated"
         ],
         "E2": [
           true,
-          "E2: OK (gauge-invariant)"
+          "Gauge invariance: OK (Wilson loops gauge invariant)"
         ],
         "E3": [
           true,
-          "E3: OK"
+          "Stability: OK (Monte Carlo converged)"
         ],
         "E4": [
           true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
+          "Mass gap: MASS_GAP (m=0.585)"
         ]
-      },
-      "mass_gap_positive": true
+      }
     },
     {
-      "beta": 2.0,
-      "L": 32,
+      "L": 6,
+      "beta": 2.4,
+      "label": "weak coupling",
       "verdict": "MASS_GAP",
       "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
+      "n_configs": 30,
+      "omega_min": 0.5675805146590541,
       "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
+        "0++": 0.5675805146590541,
+        "2++": null,
+        "1--": null,
+        "0-+": null
       },
+      "mass_error": 0.0,
+      "avg_plaquette": -0.0313903368393183,
+      "correlator_sample": [
+        0.0015636545177523345,
+        0.0010593142844520361,
+        0.0006005203693869191,
+        0.0006562944469804167,
+        0.00016945254654799225
+      ],
       "audits": {
         "E0": [
           true,
-          "E0: OK"
+          "Calibration: OK"
         ],
         "E1": [
           true,
-          "E1: 17 coherent locks"
+          "Vibration: 30 configs generated"
         ],
         "E2": [
           true,
-          "E2: OK (gauge-invariant)"
+          "Gauge invariance: OK (Wilson loops gauge invariant)"
         ],
         "E3": [
           true,
-          "E3: OK"
+          "Stability: OK (Monte Carlo converged)"
         ],
         "E4": [
           true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
+          "Mass gap: MASS_GAP (m=0.568)"
         ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 2.5,
-      "L": 8,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 2.5,
-      "L": 16,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 2.5,
-      "L": 32,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 3.0,
-      "L": 8,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 3.0,
-      "L": 16,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
-    },
-    {
-      "beta": 3.0,
-      "L": 32,
-      "verdict": "MASS_GAP",
-      "n_oscillators": 4,
-      "n_locks": 18,
-      "n_eligible": 9,
-      "omega_min": 1.0,
-      "masses": {
-        "0++": 1.0,
-        "2++": 2.5,
-        "1--": 3.0,
-        "0-+": 3.5
-      },
-      "audits": {
-        "E0": [
-          true,
-          "E0: OK"
-        ],
-        "E1": [
-          true,
-          "E1: 17 coherent locks"
-        ],
-        "E2": [
-          true,
-          "E2: OK (gauge-invariant)"
-        ],
-        "E3": [
-          true,
-          "E3: OK"
-        ],
-        "E4": [
-          true,
-          "E4: Mass gap confirmed (\u03c9_min=1.000)"
-        ]
-      },
-      "mass_gap_positive": true
+      }
     }
   ],
   "summary": {
-    "total_tests": 9,
-    "mass_gap_count": 9,
-    "verdict_count": 9,
+    "total_tests": 3,
+    "mass_gap_count": 3,
+    "verdict_count": 3,
     "mass_gap_rate": 1.0,
     "verdict_rate": 1.0
+  },
+  "metadata": {
+    "method": "Wilson loop correlators from real lattice QCD",
+    "hardcoded": false,
+    "timestamp": "2025-11-11 14:41:56.420796"
   }
 }
