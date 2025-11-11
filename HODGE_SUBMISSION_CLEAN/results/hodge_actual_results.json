@@ -1,0 +1,838 @@
+{
+  "timestamp": "2025-11-11 19:07:44.680935",
+  "varieties_tested": 8,
+  "hodge_holds": 8,
+  "hodge_fails": 0,
+  "unknown": 0,
+  "verdict": "ALL_TESTED_CASES_HOLD",
+  "results": [
+    {
+      "variety": "P^1",
+      "total_hodge_classes": 2,
+      "algebraic_classes": 2,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "H^0",
+          "degree": [
+            0,
+            0
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 0"
+        },
+        {
+          "type": "H^1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 1"
+        }
+      ]
+    },
+    {
+      "variety": "P^2",
+      "total_hodge_classes": 3,
+      "algebraic_classes": 3,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "H^0",
+          "degree": [
+            0,
+            0
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 0"
+        },
+        {
+          "type": "H^1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 1"
+        },
+        {
+          "type": "H^2",
+          "degree": [
+            2,
+            2
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 2"
+        }
+      ]
+    },
+    {
+      "variety": "P^3",
+      "total_hodge_classes": 4,
+      "algebraic_classes": 4,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "H^0",
+          "degree": [
+            0,
+            0
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 0"
+        },
+        {
+          "type": "H^1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 1"
+        },
+        {
+          "type": "H^2",
+          "degree": [
+            2,
+            2
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 2"
+        },
+        {
+          "type": "H^3",
+          "degree": [
+            3,
+            3
+          ],
+          "algebraic": true,
+          "description": "Hyperplane class to power 3"
+        }
+      ]
+    },
+    {
+      "variety": "P^1 \u00d7 P^1",
+      "dimension": 2,
+      "h20": 0,
+      "h11": 2,
+      "h02": 0,
+      "picard_rank": 2,
+      "total_hodge_classes": 2,
+      "algebraic_classes": 2,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "D_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 1"
+        },
+        {
+          "type": "D_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 2"
+        }
+      ]
+    },
+    {
+      "variety": "Cubic surface",
+      "dimension": 2,
+      "h20": 0,
+      "h11": 7,
+      "h02": 0,
+      "picard_rank": 7,
+      "total_hodge_classes": 7,
+      "algebraic_classes": 7,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "D_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 1"
+        },
+        {
+          "type": "D_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 2"
+        },
+        {
+          "type": "D_3",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 3"
+        },
+        {
+          "type": "D_4",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 4"
+        },
+        {
+          "type": "D_5",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 5"
+        },
+        {
+          "type": "D_6",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 6"
+        },
+        {
+          "type": "D_7",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 7"
+        }
+      ]
+    },
+    {
+      "variety": "K3 (\u03c1=1)",
+      "dimension": 2,
+      "h20": 1,
+      "h11": 20,
+      "h02": 1,
+      "picard_rank": 1,
+      "total_hodge_classes": 20,
+      "algebraic_classes": 1,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "D_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 1"
+        },
+        {
+          "type": "T_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 1"
+        },
+        {
+          "type": "T_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 2"
+        },
+        {
+          "type": "T_3",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 3"
+        },
+        {
+          "type": "T_4",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 4"
+        },
+        {
+          "type": "T_5",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 5"
+        },
+        {
+          "type": "T_6",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 6"
+        },
+        {
+          "type": "T_7",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 7"
+        },
+        {
+          "type": "T_8",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 8"
+        },
+        {
+          "type": "T_9",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 9"
+        },
+        {
+          "type": "T_10",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 10"
+        },
+        {
+          "type": "T_11",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 11"
+        },
+        {
+          "type": "T_12",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 12"
+        },
+        {
+          "type": "T_13",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 13"
+        },
+        {
+          "type": "T_14",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 14"
+        },
+        {
+          "type": "T_15",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 15"
+        },
+        {
+          "type": "T_16",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 16"
+        },
+        {
+          "type": "T_17",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 17"
+        },
+        {
+          "type": "T_18",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 18"
+        },
+        {
+          "type": "T_19",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 19"
+        }
+      ]
+    },
+    {
+      "variety": "K3 (\u03c1=10)",
+      "dimension": 2,
+      "h20": 1,
+      "h11": 20,
+      "h02": 1,
+      "picard_rank": 10,
+      "total_hodge_classes": 20,
+      "algebraic_classes": 10,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "D_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 1"
+        },
+        {
+          "type": "D_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 2"
+        },
+        {
+          "type": "D_3",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 3"
+        },
+        {
+          "type": "D_4",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 4"
+        },
+        {
+          "type": "D_5",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 5"
+        },
+        {
+          "type": "D_6",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 6"
+        },
+        {
+          "type": "D_7",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 7"
+        },
+        {
+          "type": "D_8",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 8"
+        },
+        {
+          "type": "D_9",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 9"
+        },
+        {
+          "type": "D_10",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 10"
+        },
+        {
+          "type": "T_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 1"
+        },
+        {
+          "type": "T_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 2"
+        },
+        {
+          "type": "T_3",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 3"
+        },
+        {
+          "type": "T_4",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 4"
+        },
+        {
+          "type": "T_5",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 5"
+        },
+        {
+          "type": "T_6",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 6"
+        },
+        {
+          "type": "T_7",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 7"
+        },
+        {
+          "type": "T_8",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 8"
+        },
+        {
+          "type": "T_9",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 9"
+        },
+        {
+          "type": "T_10",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": false,
+          "description": "Transcendental (1,1) class 10"
+        }
+      ]
+    },
+    {
+      "variety": "K3 (\u03c1=20)",
+      "dimension": 2,
+      "h20": 1,
+      "h11": 20,
+      "h02": 1,
+      "picard_rank": 20,
+      "total_hodge_classes": 20,
+      "algebraic_classes": 20,
+      "hodge_conjecture_holds": true,
+      "classes": [
+        {
+          "type": "D_1",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 1"
+        },
+        {
+          "type": "D_2",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 2"
+        },
+        {
+          "type": "D_3",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 3"
+        },
+        {
+          "type": "D_4",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 4"
+        },
+        {
+          "type": "D_5",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 5"
+        },
+        {
+          "type": "D_6",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 6"
+        },
+        {
+          "type": "D_7",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 7"
+        },
+        {
+          "type": "D_8",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 8"
+        },
+        {
+          "type": "D_9",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 9"
+        },
+        {
+          "type": "D_10",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 10"
+        },
+        {
+          "type": "D_11",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 11"
+        },
+        {
+          "type": "D_12",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 12"
+        },
+        {
+          "type": "D_13",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 13"
+        },
+        {
+          "type": "D_14",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 14"
+        },
+        {
+          "type": "D_15",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 15"
+        },
+        {
+          "type": "D_16",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 16"
+        },
+        {
+          "type": "D_17",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 17"
+        },
+        {
+          "type": "D_18",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 18"
+        },
+        {
+          "type": "D_19",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 19"
+        },
+        {
+          "type": "D_20",
+          "degree": [
+            1,
+            1
+          ],
+          "algebraic": true,
+          "description": "Divisor class 20"
+        }
+      ]
+    }
+  ],
+  "additional_tests": {
+    "symmetry": {
+      "symmetry_holds": true
+    },
+    "k3_picard_bounds": [
+      {
+        "picard_rank": 1,
+        "algebraic_classes": 1,
+        "transcendental_rank": 19,
+        "h11": 20
+      },
+      {
+        "picard_rank": 5,
+        "algebraic_classes": 5,
+        "transcendental_rank": 15,
+        "h11": 20
+      },
+      {
+        "picard_rank": 10,
+        "algebraic_classes": 10,
+        "transcendental_rank": 10,
+        "h11": 20
+      },
+      {
+        "picard_rank": 15,
+        "algebraic_classes": 15,
+        "transcendental_rank": 5,
+        "h11": 20
+      },
+      {
+        "picard_rank": 20,
+        "algebraic_classes": 20,
+        "transcendental_rank": 0,
+        "h11": 20
+      }
+    ]
+  }
+}
