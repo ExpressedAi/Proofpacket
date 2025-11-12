@@ -1,0 +1,6 @@
+Strategy,Total Return,CAGR,Volatility,Sharpe Ratio,Max Drawdown,Return/Vol
+χ-Threshold,272.91%,3.73%,11.20%,0.15,-33.29%,0.33
+60/40 Portfolio,119.64%,2.21%,14.51%,0.01,-55.26%,0.15
+70/30 Portfolio,95.82%,1.88%,16.61%,-0.01,-59.68%,0.11
+100% Stocks,-10.35%,-0.30%,24.36%,-0.09,-76.66%,-0.01
+Risk Parity,158.85%,2.68%,10.70%,0.06,-35.98%,0.25
