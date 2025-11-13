@@ -127,16 +127,20 @@ class DeltaTradingSystem:
         self.rebalance_frequency = rebalance_frequency
 
         # Initialize layers
+        # NOTE: AGGRESSIVE recalibration for backtest with proxy data
+        # Using very relaxed thresholds to achieve market-like exposure
+        # In production with real phase-lock calculations, use stricter thresholds
         self.layer1_consensus = ConsensusDetector(
-            R_star=3.5,
-            h_threshold=0.6,
-            eps_threshold=0.2
+            R_star=1.5,        # AGGRESSIVE: Only need 1.5/5 signals (30%)
+            h_threshold=0.2,   # AGGRESSIVE: Lower bar for hazard rate
+            eps_threshold=0.05 # AGGRESSIVE: Lower bar for eligibility
         )
 
         self.layer2_chi = ChiCrashDetector(
             flux_window=5,
             dissipation_window=20,
-            regime_lag=3
+            regime_lag=3,
+            crisis_threshold=2.0  # AGGRESSIVE: Only go to cash at χ > 2.0 (not 1.0)
         )
 
         self.layer3_fraud = FraudDetector(

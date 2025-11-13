@@ -68,6 +68,7 @@ class ChiCrashDetector:
         dissipation_window: int = 20,   # Mean reversion window (days)
         regime_lag: int = 3,             # Days to confirm regime change
         use_golden_ratio: bool = True,   # Use φ-based thresholds
+        crisis_threshold: float = None,  # Custom crisis threshold (overrides golden ratio)
     ):
         """
         Args:
@@ -75,6 +76,7 @@ class ChiCrashDetector:
             dissipation_window: Window for computing dissipation (mean reversion)
             regime_lag: Number of days to confirm regime change (avoid whipsaw)
             use_golden_ratio: Use 1/φ² and 1/φ as thresholds (recommended)
+            crisis_threshold: Custom CRISIS threshold (if None, uses 1.0 or golden ratio)
         """
         self.flux_window = flux_window
         self.dissipation_window = dissipation_window
@@ -90,6 +92,10 @@ class ChiCrashDetector:
             self.threshold_elevated = 0.35
             self.threshold_warning = 0.60
             self.threshold_crisis = 1.0
+
+        # Allow custom crisis threshold override
+        if crisis_threshold is not None:
+            self.threshold_crisis = crisis_threshold
 
         # State tracking
         self.chi_history: deque = deque(maxlen=100)
