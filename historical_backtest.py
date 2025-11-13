@@ -503,8 +503,8 @@ class HistoricalBacktest:
         # Total return
         total_return = (equity[-1] / equity[0]) - 1
 
-        # CAGR
-        n_years = len(dates) / 252
+        # CAGR - calculate actual years from date range
+        n_years = (dates[-1] - dates[0]).days / 365.25
         cagr = (equity[-1] / equity[0]) ** (1 / n_years) - 1
 
         # Sharpe ratio (annualized)
