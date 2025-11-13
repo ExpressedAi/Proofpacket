@@ -168,6 +168,7 @@ class PADChecker:
         Must pass ACTUALIZED first, then check:
         - E3 passed (live validation)
         - Evidence score > 0
+        - LOW gate passed (new!)
         """
         diagnostics = {}
 
@@ -200,6 +201,14 @@ class PADChecker:
             return False, diagnostics
         else:
             diagnostics["evidence"] = f"PASS: Evidence={lock.evidence_score:.3f} > {self.conditions.min_evidence_score}"
+
+        # Check 4: LOW gate (NEW!)
+        lock.update_low_order_score()  # Ensure current
+        if not lock.passes_low_gate():
+            diagnostics["low_gate"] = f"FAIL: LOW={lock.low_order_score:.3f} < 0 (complexity={lock.complexity:.0f}, ΔH*={lock.evidence_score:.3f}, λ={lock.lambda_low})"
+            return False, diagnostics
+        else:
+            diagnostics["low_gate"] = f"PASS: LOW={lock.low_order_score:.3f} ≥ 0 (ΔH* - λ*complexity)"
 
         return True, diagnostics
 

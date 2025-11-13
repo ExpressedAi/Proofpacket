@@ -94,6 +94,11 @@ class LockState:
     evidence_score: float = 0.0  # Aggregate ΔH*
     e_level_passed: int = 0      # Max E-level passed (0-4)
 
+    # LOW (Low-Order Wins)
+    complexity: float = 0.0      # Computed complexity score
+    low_order_score: float = 0.0  # ΔH* - λ*Complexity
+    lambda_low: float = 0.1       # LOW penalty weight
+
     # Audit results
     e0_status: EStatus = EStatus.PENDING
     e1_status: EStatus = EStatus.PENDING
@@ -102,8 +107,10 @@ class LockState:
     e4_status: EStatus = EStatus.PENDING
 
     def __post_init__(self):
-        """Compute order from p, q."""
+        """Compute order from p, q and LOW score."""
         self.order = self.p + self.q
+        self.complexity = float(self.order)  # For locks, complexity = order
+        self.update_low_order_score()
 
     def mdl_penalty(self) -> float:
         """
@@ -113,6 +120,20 @@ class LockState:
         This is a "priority weight", not a "penalty to subtract".
         """
         return 1.0 / (self.p * self.q)
+
+    def update_low_order_score(self):
+        """
+        Compute LOW score: ΔH* - λ*Complexity
+
+        This is the core LOW enforcement mechanism.
+        Positive score = simple structure with good evidence
+        Negative score = too complex for the evidence gain
+        """
+        self.low_order_score = self.evidence_score - (self.lambda_low * self.complexity)
+
+    def passes_low_gate(self) -> bool:
+        """Check if lock passes LOW constraint."""
+        return self.low_order_score >= 0.0
 
     def is_potential(self) -> bool:
         """P: Does lock meet basic potential criteria?"""
@@ -134,11 +155,16 @@ class LockState:
         )
 
     def is_deployable(self) -> bool:
-        """D: Can lock be traded?"""
+        """
+        D: Can lock be traded?
+
+        Now includes LOW gate: must have positive low_order_score.
+        """
         return (
             self.is_actualized() and
             self.e_level_passed >= 3 and
-            self.evidence_score > 0
+            self.evidence_score > 0 and
+            self.passes_low_gate()  # NEW: LOW enforcement
         )
 
 
@@ -231,6 +257,14 @@ class HazardItem:
     # Computed
     hazard: float              # h = κ·ε·g·(1-ζ/ζ*)·u·p
 
+    # LOW (Low-Order Wins)
+    num_epsilon_features: int = 0  # Features in ε computation
+    num_u_features: int = 0        # Features in u (alignment)
+    num_p_features: int = 0        # Features in p (prior)
+    complexity: float = 0.0         # Total feature count
+    low_order_score: float = 0.0    # hazard - λ*Complexity
+    lambda_low: float = 0.15        # LOW penalty weight (VBC)
+
     # Metadata
     meta: Dict[str, Any] = field(default_factory=dict)
     timestamp: datetime = field(default_factory=datetime.utcnow)
@@ -248,6 +282,23 @@ class HazardItem:
         """Compute hazard using canonical formula."""
         brittleness_factor = max(0, 1 - zeta / zeta_star)
         return kappa * epsilon * g_phi * brittleness_factor * u * p
+
+    def update_complexity(self):
+        """Compute total complexity from feature counts."""
+        self.complexity = float(
+            self.num_epsilon_features +
+            self.num_u_features +
+            self.num_p_features
+        )
+
+    def update_low_order_score(self):
+        """Compute LOW score: hazard - λ*Complexity"""
+        self.update_complexity()
+        self.low_order_score = self.hazard - (self.lambda_low * self.complexity)
+
+    def passes_low_gate(self) -> bool:
+        """Check if hazard passes LOW constraint."""
+        return self.low_order_score >= 0.0
 
 
 # ============================================================================
@@ -303,6 +354,15 @@ class StrategyState:
     risk_budget_fraction: float = 0.0  # 0-1 of total capital
     live_capital: float = 0.0
 
+    # LOW (Low-Order Wins)
+    num_parameters: int = 0           # Number of tunable parameters
+    num_features: int = 0             # Number of input features
+    branching_depth: int = 0          # Decision tree depth / conditional depth
+    num_hyperparams: int = 0          # Number of hyperparameters
+    complexity: float = 0.0           # Total complexity score
+    low_order_score: float = 0.0      # ΔH* - λ*Complexity
+    lambda_low: float = 0.2            # LOW penalty weight (strategies)
+
     # Mode history
     last_promotion: Optional[datetime] = None
     last_demotion: Optional[datetime] = None
@@ -318,7 +378,23 @@ class StrategyState:
         else:
             self.last_demotion = timestamp
 
-        self.operating_mode = new_mode
+    def update_complexity(self):
+        """Compute total complexity from components."""
+        self.complexity = float(
+            self.num_parameters +
+            self.num_features +
+            self.branching_depth +
+            self.num_hyperparams
+        )
+
+    def update_low_order_score(self):
+        """Compute LOW score: ΔH* - λ*Complexity"""
+        self.update_complexity()
+        self.low_order_score = self.evidence_score - (self.lambda_low * self.complexity)
+
+    def passes_low_gate(self) -> bool:
+        """Check if strategy passes LOW constraint."""
+        return self.low_order_score >= 0.0
 
 
 # ============================================================================

@@ -419,6 +419,8 @@ def update_lock_delta_h(
     """
     Update lock's evidence_score with new ΔH* measurement.
 
+    NOW INCLUDES LOW PENALTY: Updates low_order_score after ΔH* update.
+
     Args:
         state: DeltaState
         lock_id: Lock ID
@@ -438,10 +440,18 @@ def update_lock_delta_h(
         decay
     )
 
+    # Update LOW score
+    lock.update_low_order_score()
+
     # Update last_updated
     lock.last_updated = datetime.utcnow()
 
-    state.add_log(f"Updated {lock_id}: ΔH*={lock.evidence_score:.3f} (new={new_delta_h:.3f})")
+    # Log with LOW score
+    passed_low = "✓" if lock.passes_low_gate() else "✗"
+    state.add_log(
+        f"Updated {lock_id}: ΔH*={lock.evidence_score:.3f} (new={new_delta_h:.3f}), "
+        f"LOW={lock.low_order_score:.3f} {passed_low}"
+    )
 
 
 def update_strategy_delta_h(
@@ -452,6 +462,8 @@ def update_strategy_delta_h(
 ):
     """
     Update strategy's evidence_score with new ΔH* measurement.
+
+    NOW INCLUDES LOW PENALTY: Updates low_order_score after ΔH* update.
 
     Args:
         state: DeltaState
@@ -472,7 +484,15 @@ def update_strategy_delta_h(
         decay
     )
 
-    state.add_log(f"Updated {strategy_name}: ΔH*={strategy.evidence_score:.3f} (new={new_delta_h:.3f})")
+    # Update LOW score
+    strategy.update_low_order_score()
+
+    # Log with LOW score
+    passed_low = "✓" if strategy.passes_low_gate() else "✗"
+    state.add_log(
+        f"Updated {strategy_name}: ΔH*={strategy.evidence_score:.3f} (new={new_delta_h:.3f}), "
+        f"complexity={strategy.complexity:.0f}, LOW={strategy.low_order_score:.3f} {passed_low}"
+    )
 
 
 # ============================================================================
