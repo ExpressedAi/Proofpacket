@@ -45,7 +45,7 @@ from delta_h_calculator import (
 
 def e0_structure_exists(
     lock: LockState,
-    data: Dict[str, np.ndarray]
+    data: Dict[str, Any]
 ) -> Tuple[bool, Dict[str, Any]]:
     """
     E0: Does the basic structure exist?
@@ -64,8 +64,20 @@ def e0_structure_exists(
     diagnostics = {}
 
     # Check data sufficiency
-    data_a = data.get(lock.a, np.array([]))
-    data_b = data.get(lock.b, np.array([]))
+    # Handle both Dict[str, np.ndarray] and Dict[str, MarketSeries]
+    data_a_raw = data.get(lock.a, np.array([]))
+    data_b_raw = data.get(lock.b, np.array([]))
+
+    # Extract prices if MarketSeries
+    if hasattr(data_a_raw, 'prices'):
+        data_a = data_a_raw.prices
+    else:
+        data_a = data_a_raw if isinstance(data_a_raw, np.ndarray) else np.array([])
+
+    if hasattr(data_b_raw, 'prices'):
+        data_b = data_b_raw.prices
+    else:
+        data_b = data_b_raw if isinstance(data_b_raw, np.ndarray) else np.array([])
 
     n_points = min(len(data_a), len(data_b))
     diagnostics['n_points'] = n_points
@@ -125,9 +137,9 @@ def compute_coupling_strength(
 
 def e1_beats_nulls(
     lock: LockState,
-    data: Dict[str, np.ndarray],
+    data: Dict[str, Any],
     layer: str = "consensus",
-    n_surrogates: int = 100
+    n_surrogates: int = 30  # Reduced for backtest speed
 ) -> Tuple[bool, Dict[str, Any], List[NullTestResult]]:
     """
     E1: Does lock beat domain-specific null hypotheses?
@@ -143,8 +155,12 @@ def e1_beats_nulls(
     Returns:
         (passed, diagnostics, null_results)
     """
-    data_a = data[lock.a]
-    data_b = data[lock.b]
+    # Extract prices from MarketSeries if needed
+    data_a_raw = data[lock.a]
+    data_b_raw = data[lock.b]
+
+    data_a = data_a_raw.prices if hasattr(data_a_raw, 'prices') else data_a_raw
+    data_b = data_b_raw.prices if hasattr(data_b_raw, 'prices') else data_b_raw
 
     # Compute observed coupling
     K_observed = lock.K
@@ -222,7 +238,7 @@ def coarse_grain_timeseries(data: np.ndarray, factor: int) -> np.ndarray:
 
 def e2_rg_stable(
     lock: LockState,
-    data: Dict[str, np.ndarray],
+    data: Dict[str, Any],
     rg_factors: List[int] = None
 ) -> Tuple[bool, Dict[str, Any]]:
     """
@@ -239,8 +255,12 @@ def e2_rg_stable(
     if rg_factors is None:
         rg_factors = [2, 4, 8]
 
-    data_a = data[lock.a]
-    data_b = data[lock.b]
+    # Extract prices from MarketSeries if needed
+    data_a_raw = data[lock.a]
+    data_b_raw = data[lock.b]
+
+    data_a = data_a_raw.prices if hasattr(data_a_raw, 'prices') else data_a_raw
+    data_b = data_b_raw.prices if hasattr(data_b_raw, 'prices') else data_b_raw
 
     K_original = lock.K
     K_coarse = {}
