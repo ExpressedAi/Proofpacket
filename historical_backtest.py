@@ -241,6 +241,78 @@ class HistoricalBacktest:
 
         self.fundamental_data[ticker] = data
 
+    def load_realistic_data(self):
+        """
+        Load realistic S&P 500 data from spy_historical.csv and create
+        a universe of stocks that track the market with variations.
+
+        This provides more realistic behavior than synthetic data.
+        """
+        print("Loading realistic S&P 500 market data...")
+
+        # Load SPY data
+        try:
+            spy_df = pd.read_csv('spy_historical.csv', parse_dates=['Date'])
+            spy_df.set_index('Date', inplace=True)
+            print(f"✓ Loaded {len(spy_df)} days of SPY data")
+        except FileNotFoundError:
+            print("ERROR: spy_historical.csv not found. Run download_sp500_data.py first.")
+            return
+
+        # Filter to our date range
+        spy_df = spy_df[(spy_df.index >= self.start_date) & (spy_df.index <= self.end_date)]
+        dates = spy_df.index
+        n_days = len(dates)
+
+        print(f"  Date range: {dates[0]} to {dates[-1]}")
+        print(f"  Trading days: {n_days:,}")
+
+        # Generate stock universe that tracks SPY with variations
+        # This simulates different stocks/sectors with varying beta
+        tickers = [f"STOCK{i:02d}" for i in range(self.universe_size)]
+
+        # SPY returns
+        spy_returns = spy_df['Close'].pct_change().fillna(0).values
+        spy_prices = spy_df['Close'].values
+
+        for i, ticker in enumerate(tickers):
+            # Each stock has different characteristics
+            beta = 0.5 + np.random.random() * 1.5  # Beta between 0.5 and 2.0
+            idiosyncratic_vol = 0.005 + np.random.random() * 0.015  # 0.5-2% idio vol
+
+            # Generate stock-specific returns
+            # Return = beta * market_return + idiosyncratic_noise
+            stock_returns = np.zeros(n_days)
+            for day in range(n_days):
+                market_component = beta * spy_returns[day]
+                idio_component = np.random.normal(0, idiosyncratic_vol)
+                stock_returns[day] = market_component + idio_component
+
+            # Generate price series
+            start_price = 50 + np.random.random() * 150  # Random starting price
+            price = start_price * np.exp(np.cumsum(stock_returns))
+
+            # Volume correlates with SPY volume
+            spy_volume = spy_df['Volume'].values
+            stock_volume = spy_volume * (0.1 + np.random.random() * 0.5)  # Smaller volume
+
+            # Create DataFrame
+            df = pd.DataFrame({
+                'date': dates,
+                'price': price,
+                'volume': stock_volume,
+                'returns': stock_returns,
+                'beta': beta
+            })
+
+            self.price_data[ticker] = df
+
+            # Generate fundamental data (quarterly)
+            self._generate_fundamental_data(ticker, df)
+
+        print(f"✓ Generated universe of {len(tickers)} stocks tracking SPY")
+        print(f"  Beta range: {min([self.price_data[t]['beta'].iloc[0] for t in tickers]):.2f} to {max([self.price_data[t]['beta'].iloc[0] for t in tickers]):.2f}")
+
     def compute_market_correlation(self, date_idx: int, window: int = 20) -> np.ndarray:
         """
         Compute correlation matrix for all stocks.
@@ -282,8 +354,8 @@ class HistoricalBacktest:
         # Initialize system
         self.system.initialize()
 
-        # Generate data
-        self.generate_synthetic_data()
+        # Load realistic data
+        self.load_realistic_data()
 
         # Get trading dates (weekly rebalancing)
         all_dates = list(self.price_data[list(self.price_data.keys())[0]]['date'])

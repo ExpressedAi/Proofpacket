@@ -127,10 +127,12 @@ class DeltaTradingSystem:
         self.rebalance_frequency = rebalance_frequency
 
         # Initialize layers
+        # NOTE: Using relaxed thresholds for backtest with proxy data
+        # In production with real phase-lock calculations, use stricter thresholds
         self.layer1_consensus = ConsensusDetector(
-            R_star=3.5,
-            h_threshold=0.6,
-            eps_threshold=0.2
+            R_star=2.5,        # Lowered from 3.5 (need 2.5/5 signals)
+            h_threshold=0.3,   # Lowered from 0.6 (proxy h ~0.3-0.5)
+            eps_threshold=0.1  # Lowered from 0.2 (proxy eps ~0.1-0.3)
         )
 
         self.layer2_chi = ChiCrashDetector(
