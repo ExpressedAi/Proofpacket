@@ -248,6 +248,9 @@ class HistoricalBacktest:
 
         This provides more realistic behavior than synthetic data.
         """
+        # Set random seed for reproducible results
+        np.random.seed(42)
+
         print("Loading realistic S&P 500 market data...")
 
         # Load SPY data
