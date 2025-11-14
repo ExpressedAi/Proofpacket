@@ -1,9 +1,9 @@
 {
-  "session_id": 5,
-  "total_transitions": 5,
+  "session_id": 500,
+  "total_transitions": 500,
   "total_snaps": 1,
   "transitions": {
-    "compare\u2192differentiate": {
+    "evaluate_compound\u2192evaluate": {
       "usage_count": 1,
       "success_count": 1,
       "failure_count": 0,
@@ -22,34 +22,67 @@
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.1,
       "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:26:04.788894",
-      "last_used": "2025-11-14T14:26:04.788894",
+      "first_used": "2025-11-14T22:05:03.087072",
+      "last_used": "2025-11-14T22:05:03.087072",
       "session_count": 0
     },
-    "compare\u2192express": {
-      "usage_count": 1,
+    "evaluate_compound\u2192compound": {
+      "usage_count": 12,
       "success_count": 0,
-      "failure_count": 1,
+      "failure_count": 12,
       "epsilon_history": [
-        0.15
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057,
+        7.114812935012976,
+        7.169932578159879,
+        7.220252869856268
       ],
       "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
         1.0
       ],
       "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
         2.0000000000000013
       ],
-      "average_convergence_time": 2.0000000000000013,
+      "average_convergence_time": 2.000000000000001,
       "min_convergence_time": 2.0000000000000013,
       "success_rate": 0.0,
       "rg_persistence_score": 0.0,
-      "harmony_gain": 0.1,
-      "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:26:04.895863",
-      "last_used": "2025-11-14T14:26:04.895863",
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:03.208424",
+      "last_used": "2025-11-14T22:06:03.388902",
       "session_count": 0
     },
-    "compare\u2192compound": {
+    "iterate_filter\u2192iterate": {
       "usage_count": 3,
       "success_count": 0,
       "failure_count": 3,
@@ -74,13 +107,5245 @@
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.10000000000000002,
       "brittleness_reduction": -0.05000000000000001,
-      "first_used": "2025-11-14T14:26:05.032669",
-      "last_used": "2025-11-14T14:26:05.321885",
+      "first_used": "2025-11-14T22:05:03.343936",
+      "last_used": "2025-11-14T22:05:32.239377",
+      "session_count": 0
+    },
+    "iterate_filter\u2192compound": {
+      "usage_count": 8,
+      "success_count": 0,
+      "failure_count": 8,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:03.614823",
+      "last_used": "2025-11-14T22:06:00.653354",
+      "session_count": 0
+    },
+    "synthesize_synthesize\u2192compound": {
+      "usage_count": 10,
+      "success_count": 0,
+      "failure_count": 10,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057,
+        7.114812935012976
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.000000000000001,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:03.764597",
+      "last_used": "2025-11-14T22:06:03.672155",
+      "session_count": 0
+    },
+    "evaluate_compound\u2192iterate": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:03.899402",
+      "last_used": "2025-11-14T22:05:07.580302",
+      "session_count": 0
+    },
+    "evaluate_compound\u2192express": {
+      "usage_count": 9,
+      "success_count": 0,
+      "failure_count": 9,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:04.031475",
+      "last_used": "2025-11-14T22:06:10.665654",
+      "session_count": 0
+    },
+    "express_refine\u2192express": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:04.165713",
+      "last_used": "2025-11-14T22:05:58.412048",
+      "session_count": 0
+    },
+    "contextualize_contextualize\u2192compound": {
+      "usage_count": 8,
+      "success_count": 0,
+      "failure_count": 8,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:04.440460",
+      "last_used": "2025-11-14T22:06:10.402199",
+      "session_count": 0
+    },
+    "evaluate_express\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:04.599179",
+      "last_used": "2025-11-14T22:05:04.599179",
+      "session_count": 0
+    },
+    "discern_rank\u2192compound": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:05.147478",
+      "last_used": "2025-11-14T22:05:59.878668",
+      "session_count": 0
+    },
+    "compound_contextualize\u2192express": {
+      "usage_count": 9,
+      "success_count": 0,
+      "failure_count": 9,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:05.283297",
+      "last_used": "2025-11-14T22:05:48.391721",
+      "session_count": 0
+    },
+    "synthesize_judge\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:05.426892",
+      "last_used": "2025-11-14T22:05:05.426892",
+      "session_count": 0
+    },
+    "iterate_judge\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:05.561450",
+      "last_used": "2025-11-14T22:05:52.110229",
+      "session_count": 0
+    },
+    "compound_contextualize\u2192compound": {
+      "usage_count": 8,
+      "success_count": 0,
+      "failure_count": 8,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:05.701549",
+      "last_used": "2025-11-14T22:05:56.809553",
+      "session_count": 0
+    },
+    "refine_refine\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:05.842229",
+      "last_used": "2025-11-14T22:05:35.053545",
+      "session_count": 0
+    },
+    "synthesize_synthesize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:06.238521",
+      "last_used": "2025-11-14T22:05:53.145724",
+      "session_count": 0
+    },
+    "focus_synthesize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:06.371506",
+      "last_used": "2025-11-14T22:05:55.175966",
+      "session_count": 0
+    },
+    "ideate_curate\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:06.765821",
+      "last_used": "2025-11-14T22:05:58.143073",
+      "session_count": 0
+    },
+    "iterate_judge\u2192express": {
+      "usage_count": 7,
+      "success_count": 0,
+      "failure_count": 7,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:07.031281",
+      "last_used": "2025-11-14T22:06:04.480378",
+      "session_count": 0
+    },
+    "express_refine\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:07.167232",
+      "last_used": "2025-11-14T22:06:07.539578",
+      "session_count": 0
+    },
+    "compound_contextualize\u2192iterate": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:07.309859",
+      "last_used": "2025-11-14T22:05:59.083922",
+      "session_count": 0
+    },
+    "differentiate_evaluate\u2192compound": {
+      "usage_count": 10,
+      "success_count": 0,
+      "failure_count": 10,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057,
+        7.114812935012976
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.000000000000001,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:07.439823",
+      "last_used": "2025-11-14T22:05:34.081795",
+      "session_count": 0
+    },
+    "evaluate_curate\u2192express": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:07.732316",
+      "last_used": "2025-11-14T22:05:50.419382",
+      "session_count": 0
+    },
+    "ideate\u2192express": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:08.124374",
+      "last_used": "2025-11-14T22:05:45.994211",
+      "session_count": 0
+    },
+    "refine_filter\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:08.526239",
+      "last_used": "2025-11-14T22:05:33.389819",
+      "session_count": 0
+    },
+    "refine_refine\u2192compound": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:08.801658",
+      "last_used": "2025-11-14T22:06:01.765135",
+      "session_count": 0
+    },
+    "discern_discern\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:09.228605",
+      "last_used": "2025-11-14T22:05:57.337718",
+      "session_count": 0
+    },
+    "filter_express\u2192compound": {
+      "usage_count": 10,
+      "success_count": 0,
+      "failure_count": 10,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057,
+        7.114812935012976
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.000000000000001,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:09.504289",
+      "last_used": "2025-11-14T22:05:54.232413",
+      "session_count": 0
+    },
+    "iterate_filter\u2192express": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:09.639391",
+      "last_used": "2025-11-14T22:05:52.390884",
+      "session_count": 0
+    },
+    "evaluate_curate\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:09.777111",
+      "last_used": "2025-11-14T22:06:10.799997",
+      "session_count": 0
+    },
+    "filter_express\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:10.042699",
+      "last_used": "2025-11-14T22:05:39.684540",
+      "session_count": 0
+    },
+    "ideate\u2192compound": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:10.169748",
+      "last_used": "2025-11-14T22:05:50.154588",
+      "session_count": 0
+    },
+    "discern_rank\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:10.573999",
+      "last_used": "2025-11-14T22:05:23.436496",
+      "session_count": 0
+    },
+    "curate_contextualize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:10.708540",
+      "last_used": "2025-11-14T22:05:45.575953",
+      "session_count": 0
+    },
+    "understand_compound\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:10.844492",
+      "last_used": "2025-11-14T22:06:05.598369",
+      "session_count": 0
+    },
+    "filter_focus\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:11.386208",
+      "last_used": "2025-11-14T22:05:27.152390",
+      "session_count": 0
+    },
+    "focus\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:11.526149",
+      "last_used": "2025-11-14T22:06:01.084925",
+      "session_count": 0
+    },
+    "judge_synthesize\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:11.663777",
+      "last_used": "2025-11-14T22:06:05.898665",
+      "session_count": 0
+    },
+    "evaluate_ideate\u2192express": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:12.074451",
+      "last_used": "2025-11-14T22:06:08.634958",
+      "session_count": 0
+    },
+    "refine_differentiate\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:12.749804",
+      "last_used": "2025-11-14T22:05:21.149223",
+      "session_count": 0
+    },
+    "rank_evaluate\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:12.884387",
+      "last_used": "2025-11-14T22:06:09.853819",
+      "session_count": 0
+    },
+    "differentiate_evaluate\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:13.981592",
+      "last_used": "2025-11-14T22:05:50.027858",
+      "session_count": 0
+    },
+    "rank_evaluate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:14.264038",
+      "last_used": "2025-11-14T22:05:14.264038",
+      "session_count": 0
+    },
+    "rank_discern\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:14.532991",
+      "last_used": "2025-11-14T22:06:11.641222",
+      "session_count": 0
+    },
+    "curate_contextualize\u2192compound": {
+      "usage_count": 6,
+      "success_count": 0,
+      "failure_count": 6,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:14.805283",
+      "last_used": "2025-11-14T22:05:38.977034",
+      "session_count": 0
+    },
+    "evaluate_ideate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:14.946494",
+      "last_used": "2025-11-14T22:05:14.946494",
+      "session_count": 0
+    },
+    "contextualize_filter\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:15.374041",
+      "last_used": "2025-11-14T22:05:55.854110",
+      "session_count": 0
+    },
+    "understand_rank\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:15.776388",
+      "last_used": "2025-11-14T22:05:49.880452",
+      "session_count": 0
+    },
+    "curate_synthesize\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:15.911089",
+      "last_used": "2025-11-14T22:05:15.911089",
+      "session_count": 0
+    },
+    "synthesize_express\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:16.170914",
+      "last_used": "2025-11-14T22:06:08.076989",
+      "session_count": 0
+    },
+    "ideate_focus\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:16.304470",
+      "last_used": "2025-11-14T22:05:16.304470",
+      "session_count": 0
+    },
+    "ideate\u2192iterate": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:16.578371",
+      "last_used": "2025-11-14T22:05:59.473759",
+      "session_count": 0
+    },
+    "filter\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:16.699465",
+      "last_used": "2025-11-14T22:06:02.922517",
+      "session_count": 0
+    },
+    "rank_refine\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:16.830777",
+      "last_used": "2025-11-14T22:06:04.216491",
+      "session_count": 0
+    },
+    "evaluate_ideate\u2192compound": {
+      "usage_count": 10,
+      "success_count": 0,
+      "failure_count": 10,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057,
+        7.114812935012976
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.000000000000001,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:16.969971",
+      "last_used": "2025-11-14T22:06:08.355386",
+      "session_count": 0
+    },
+    "judge_ideate\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:17.104061",
+      "last_used": "2025-11-14T22:05:30.868976",
+      "session_count": 0
+    },
+    "focus_synthesize\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:17.361636",
+      "last_used": "2025-11-14T22:05:49.128594",
+      "session_count": 0
+    },
+    "judge_synthesize\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:17.494067",
+      "last_used": "2025-11-14T22:05:39.257930",
+      "session_count": 0
+    },
+    "rank_synthesize\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:18.610388",
+      "last_used": "2025-11-14T22:05:47.550466",
+      "session_count": 0
+    },
+    "rank_synthesize\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:19.000442",
+      "last_used": "2025-11-14T22:05:56.129997",
+      "session_count": 0
+    },
+    "discern_curate\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:19.139684",
+      "last_used": "2025-11-14T22:05:28.416998",
+      "session_count": 0
+    },
+    "filter_express\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:19.278707",
+      "last_used": "2025-11-14T22:05:19.278707",
+      "session_count": 0
+    },
+    "rank_synthesize\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:19.412521",
+      "last_used": "2025-11-14T22:05:19.412521",
+      "session_count": 0
+    },
+    "contextualize_contextualize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:19.813722",
+      "last_used": "2025-11-14T22:05:40.256085",
+      "session_count": 0
+    },
+    "filter\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:20.075790",
+      "last_used": "2025-11-14T22:05:29.790668",
+      "session_count": 0
+    },
+    "ideate_curate\u2192compound": {
+      "usage_count": 9,
+      "success_count": 0,
+      "failure_count": 9,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253,
+        6.8193930108235445,
+        6.90854120549042,
+        6.9857648842777555,
+        7.053880996402057
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.09999999999999999,
+      "brittleness_reduction": -0.049999999999999996,
+      "first_used": "2025-11-14T22:05:20.344775",
+      "last_used": "2025-11-14T22:06:05.459981",
+      "session_count": 0
+    },
+    "filter_focus\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:20.746219",
+      "last_used": "2025-11-14T22:05:23.984886",
+      "session_count": 0
+    },
+    "rank_rank\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:21.018605",
+      "last_used": "2025-11-14T22:05:53.416298",
+      "session_count": 0
+    },
+    "iterate_contextualize\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:21.281386",
+      "last_used": "2025-11-14T22:05:23.570308",
+      "session_count": 0
+    },
+    "rank_filter\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:21.819714",
+      "last_used": "2025-11-14T22:05:59.745466",
+      "session_count": 0
+    },
+    "discern_iterate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:21.955524",
+      "last_used": "2025-11-14T22:05:21.955524",
+      "session_count": 0
+    },
+    "judge_synthesize\u2192iterate": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:22.638697",
+      "last_used": "2025-11-14T22:05:31.952568",
+      "session_count": 0
+    },
+    "understand_express\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:22.904156",
+      "last_used": "2025-11-14T22:05:22.904156",
+      "session_count": 0
+    },
+    "compound\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:23.158298",
+      "last_used": "2025-11-14T22:05:23.158298",
+      "session_count": 0
+    },
+    "iterate_discern\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:24.127801",
+      "last_used": "2025-11-14T22:05:59.611512",
+      "session_count": 0
+    },
+    "rank_evaluate\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:24.258482",
+      "last_used": "2025-11-14T22:05:41.640646",
+      "session_count": 0
+    },
+    "judge_judge\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:24.544575",
+      "last_used": "2025-11-14T22:05:24.544575",
+      "session_count": 0
+    },
+    "focus_contextualize\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:24.959320",
+      "last_used": "2025-11-14T22:05:24.959320",
+      "session_count": 0
+    },
+    "focus_synthesize\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:25.091342",
+      "last_used": "2025-11-14T22:05:25.091342",
+      "session_count": 0
+    },
+    "rank_focus\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:25.504802",
+      "last_used": "2025-11-14T22:05:50.701724",
+      "session_count": 0
+    },
+    "discern_curate\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:26.463800",
+      "last_used": "2025-11-14T22:05:30.724631",
+      "session_count": 0
+    },
+    "refine_express\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:26.864481",
+      "last_used": "2025-11-14T22:05:40.109538",
+      "session_count": 0
+    },
+    "curate_ideate\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:27.014606",
+      "last_used": "2025-11-14T22:06:07.816083",
+      "session_count": 0
+    },
+    "contextualize_differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:28.137489",
+      "last_used": "2025-11-14T22:05:28.137489",
+      "session_count": 0
+    },
+    "synthesize_synthesize\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:28.272471",
+      "last_used": "2025-11-14T22:05:28.272471",
+      "session_count": 0
+    },
+    "differentiate_filter\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:28.692933",
+      "last_used": "2025-11-14T22:05:28.692933",
+      "session_count": 0
+    },
+    "curate_synthesize\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:28.950795",
+      "last_used": "2025-11-14T22:05:28.950795",
+      "session_count": 0
+    },
+    "refine_filter\u2192compound": {
+      "usage_count": 5,
+      "success_count": 0,
+      "failure_count": 5,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033,
+        6.713953075980253
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:29.083343",
+      "last_used": "2025-11-14T22:06:09.720332",
+      "session_count": 0
+    },
+    "understand_compound\u2192iterate": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:29.233887",
+      "last_used": "2025-11-14T22:05:42.798785",
+      "session_count": 0
+    },
+    "iterate_express\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:29.367590",
+      "last_used": "2025-11-14T22:06:06.179676",
+      "session_count": 0
+    },
+    "rank_refine\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:29.640528",
+      "last_used": "2025-11-14T22:06:07.678812",
+      "session_count": 0
+    },
+    "synthesize_express\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:29.924736",
+      "last_used": "2025-11-14T22:05:29.924736",
+      "session_count": 0
+    },
+    "judge\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:30.588570",
+      "last_used": "2025-11-14T22:06:11.776915",
+      "session_count": 0
+    },
+    "compound_compound\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:31.144613",
+      "last_used": "2025-11-14T22:05:52.952082",
+      "session_count": 0
+    },
+    "discern_differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:31.412242",
+      "last_used": "2025-11-14T22:05:31.412242",
+      "session_count": 0
+    },
+    "refine_differentiate\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:31.543085",
+      "last_used": "2025-11-14T22:06:09.043863",
+      "session_count": 0
+    },
+    "ideate_ideate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:31.680384",
+      "last_used": "2025-11-14T22:05:31.680384",
+      "session_count": 0
+    },
+    "understand_synthesize\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:31.816098",
+      "last_used": "2025-11-14T22:05:46.700822",
+      "session_count": 0
+    },
+    "contextualize_express\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:32.526645",
+      "last_used": "2025-11-14T22:06:06.043343",
+      "session_count": 0
+    },
+    "rank_focus\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:33.665808",
+      "last_used": "2025-11-14T22:05:33.665808",
+      "session_count": 0
+    },
+    "understand_compound\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:33.800686",
+      "last_used": "2025-11-14T22:06:09.321037",
+      "session_count": 0
+    },
+    "compound_refine\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:33.935490",
+      "last_used": "2025-11-14T22:05:53.824795",
+      "session_count": 0
+    },
+    "curate_evaluate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:34.351970",
+      "last_used": "2025-11-14T22:05:34.351970",
+      "session_count": 0
+    },
+    "discern_refine\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:34.490006",
+      "last_used": "2025-11-14T22:06:11.065795",
+      "session_count": 0
+    },
+    "understand_synthesize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:35.458571",
+      "last_used": "2025-11-14T22:06:00.804281",
+      "session_count": 0
+    },
+    "rank_ideate\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:35.594234",
+      "last_used": "2025-11-14T22:05:35.594234",
+      "session_count": 0
+    },
+    "differentiate_refine\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:36.020605",
+      "last_used": "2025-11-14T22:06:00.415161",
+      "session_count": 0
+    },
+    "refine_rank\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:36.426596",
+      "last_used": "2025-11-14T22:05:50.837160",
+      "session_count": 0
+    },
+    "iterate_express\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:37.122833",
+      "last_used": "2025-11-14T22:05:52.526299",
+      "session_count": 0
+    },
+    "generate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:37.259907",
+      "last_used": "2025-11-14T22:05:37.259907",
+      "session_count": 0
+    },
+    "iterate_discern\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:38.146011",
+      "last_used": "2025-11-14T22:06:10.533273",
+      "session_count": 0
+    },
+    "understand_contextualize\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:38.562754",
+      "last_used": "2025-11-14T22:05:38.562754",
+      "session_count": 0
+    },
+    "evaluate_differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:38.840427",
+      "last_used": "2025-11-14T22:05:38.840427",
+      "session_count": 0
+    },
+    "synthesize_understand\u2192compound": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:39.125639",
+      "last_used": "2025-11-14T22:06:06.314192",
+      "session_count": 0
+    },
+    "compound\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:39.396023",
+      "last_used": "2025-11-14T22:05:39.396023",
+      "session_count": 0
+    },
+    "focus_iterate\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:39.541826",
+      "last_used": "2025-11-14T22:05:59.215248",
+      "session_count": 0
+    },
+    "contextualize_refine\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:39.966406",
+      "last_used": "2025-11-14T22:05:39.966406",
+      "session_count": 0
+    },
+    "rank_discern\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:40.391737",
+      "last_used": "2025-11-14T22:05:40.391737",
+      "session_count": 0
+    },
+    "contextualize_refine\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:41.079300",
+      "last_used": "2025-11-14T22:06:00.009621",
+      "session_count": 0
+    },
+    "evaluate_contextualize\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:41.214049",
+      "last_used": "2025-11-14T22:05:41.214049",
+      "session_count": 0
+    },
+    "synthesize_curate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:41.357386",
+      "last_used": "2025-11-14T22:05:41.357386",
+      "session_count": 0
+    },
+    "ideate_evaluate\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:41.772683",
+      "last_used": "2025-11-14T22:05:56.264754",
+      "session_count": 0
+    },
+    "refine_rank\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:42.044260",
+      "last_used": "2025-11-14T22:05:42.044260",
+      "session_count": 0
+    },
+    "understand\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:42.261652",
+      "last_used": "2025-11-14T22:05:42.261652",
+      "session_count": 0
+    },
+    "refine_judge\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:42.398683",
+      "last_used": "2025-11-14T22:05:51.833406",
+      "session_count": 0
+    },
+    "compound_curate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:42.526921",
+      "last_used": "2025-11-14T22:05:42.526921",
+      "session_count": 0
+    },
+    "differentiate\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:42.658903",
+      "last_used": "2025-11-14T22:05:42.658903",
+      "session_count": 0
+    },
+    "express_evaluate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:43.071703",
+      "last_used": "2025-11-14T22:05:43.071703",
+      "session_count": 0
+    },
+    "contextualize_understand\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:43.208222",
+      "last_used": "2025-11-14T22:05:43.208222",
+      "session_count": 0
+    },
+    "refine_rank\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:43.339613",
+      "last_used": "2025-11-14T22:06:02.793019",
+      "session_count": 0
+    },
+    "discern\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:44.322154",
+      "last_used": "2025-11-14T22:05:44.322154",
+      "session_count": 0
+    },
+    "contextualize_understand\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:44.607098",
+      "last_used": "2025-11-14T22:05:44.607098",
+      "session_count": 0
+    },
+    "focus_focus\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:45.162757",
+      "last_used": "2025-11-14T22:05:45.162757",
+      "session_count": 0
+    },
+    "refine_refine\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:46.270784",
+      "last_used": "2025-11-14T22:05:46.270784",
+      "session_count": 0
+    },
+    "refine_express\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:46.425388",
+      "last_used": "2025-11-14T22:05:46.560919",
+      "session_count": 0
+    },
+    "understand_differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:46.841462",
+      "last_used": "2025-11-14T22:05:46.841462",
+      "session_count": 0
+    },
+    "understand_express\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:46.977957",
+      "last_used": "2025-11-14T22:05:46.977957",
+      "session_count": 0
+    },
+    "understand_express\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:47.406260",
+      "last_used": "2025-11-14T22:06:04.080460",
+      "session_count": 0
+    },
+    "refine_judge\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:47.686411",
+      "last_used": "2025-11-14T22:05:47.686411",
+      "session_count": 0
+    },
+    "understand_understand\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:48.110166",
+      "last_used": "2025-11-14T22:05:48.110166",
+      "session_count": 0
+    },
+    "contextualize_focus\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:48.247420",
+      "last_used": "2025-11-14T22:06:09.452639",
+      "session_count": 0
+    },
+    "discern_refine\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:48.675886",
+      "last_used": "2025-11-14T22:05:48.675886",
+      "session_count": 0
+    },
+    "judge_refine\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:48.837200",
+      "last_used": "2025-11-14T22:05:48.837200",
+      "session_count": 0
+    },
+    "filter_understand\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:48.982024",
+      "last_used": "2025-11-14T22:05:48.982024",
+      "session_count": 0
+    },
+    "evaluate_express\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:49.265712",
+      "last_used": "2025-11-14T22:05:58.003100",
+      "session_count": 0
+    },
+    "understand_focus\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:49.466635",
+      "last_used": "2025-11-14T22:05:54.905634",
+      "session_count": 0
+    },
+    "ideate_differentiate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:50.288334",
+      "last_used": "2025-11-14T22:05:50.288334",
+      "session_count": 0
+    },
+    "rank_discern\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:50.973477",
+      "last_used": "2025-11-14T22:05:50.973477",
+      "session_count": 0
+    },
+    "ideate_curate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:51.127104",
+      "last_used": "2025-11-14T22:05:51.127104",
+      "session_count": 0
+    },
+    "understand_focus\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:51.562523",
+      "last_used": "2025-11-14T22:05:51.562523",
+      "session_count": 0
+    },
+    "compound_express\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:51.978734",
+      "last_used": "2025-11-14T22:05:54.366771",
+      "session_count": 0
+    },
+    "curate_differentiate\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:52.666680",
+      "last_used": "2025-11-14T22:06:02.643403",
+      "session_count": 0
+    },
+    "curate_differentiate\u2192express": {
+      "usage_count": 4,
+      "success_count": 0,
+      "failure_count": 4,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822,
+        6.584905025245033
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:52.819413",
+      "last_used": "2025-11-14T22:06:10.932977",
+      "session_count": 0
+    },
+    "understand_evaluate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:54.098151",
+      "last_used": "2025-11-14T22:05:54.098151",
+      "session_count": 0
+    },
+    "synthesize_ideate\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:54.773345",
+      "last_used": "2025-11-14T22:05:55.578307",
+      "session_count": 0
+    },
+    "express_evaluate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:55.314100",
+      "last_used": "2025-11-14T22:05:55.314100",
+      "session_count": 0
+    },
+    "evaluate_contextualize\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:55.715963",
+      "last_used": "2025-11-14T22:05:55.715963",
+      "session_count": 0
+    },
+    "understand_contextualize\u2192express": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:56.402385",
+      "last_used": "2025-11-14T22:06:08.500215",
+      "session_count": 0
+    },
+    "synthesize_differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:56.671208",
+      "last_used": "2025-11-14T22:05:56.671208",
+      "session_count": 0
+    },
+    "judge_focus\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:57.079381",
+      "last_used": "2025-11-14T22:05:57.079381",
+      "session_count": 0
+    },
+    "evaluate_judge\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:57.458238",
+      "last_used": "2025-11-14T22:05:57.458238",
+      "session_count": 0
+    },
+    "ideate_filter\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:57.864140",
+      "last_used": "2025-11-14T22:05:57.864140",
+      "session_count": 0
+    },
+    "ideate_filter\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:58.546246",
+      "last_used": "2025-11-14T22:05:58.546246",
+      "session_count": 0
+    },
+    "synthesize_understand\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:58.681468",
+      "last_used": "2025-11-14T22:05:58.681468",
+      "session_count": 0
+    },
+    "rank_filter\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:05:58.818026",
+      "last_used": "2025-11-14T22:05:58.818026",
+      "session_count": 0
+    },
+    "iterate_curate\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:05:58.951441",
+      "last_used": "2025-11-14T22:06:10.269724",
+      "session_count": 0
+    },
+    "focus_contextualize\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:01.357426",
+      "last_used": "2025-11-14T22:06:01.357426",
+      "session_count": 0
+    },
+    "discern_iterate\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:01.908007",
+      "last_used": "2025-11-14T22:06:01.908007",
+      "session_count": 0
+    },
+    "synthesize_refine\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:02.185504",
+      "last_used": "2025-11-14T22:06:02.185504",
+      "session_count": 0
+    },
+    "compound_compound\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T22:06:02.486592",
+      "last_used": "2025-11-14T22:06:11.240656",
+      "session_count": 0
+    },
+    "contextualize_differentiate\u2192express": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:03.194741",
+      "last_used": "2025-11-14T22:06:08.906913",
+      "session_count": 0
+    },
+    "synthesize_rank\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:03.942439",
+      "last_used": "2025-11-14T22:06:09.585513",
+      "session_count": 0
+    },
+    "synthesize\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:04.345905",
+      "last_used": "2025-11-14T22:06:04.345905",
+      "session_count": 0
+    },
+    "differentiate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:04.609102",
+      "last_used": "2025-11-14T22:06:04.609102",
+      "session_count": 0
+    },
+    "compound_evaluate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:04.892199",
+      "last_used": "2025-11-14T22:06:04.892199",
+      "session_count": 0
+    },
+    "understand_iterate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:05.032571",
+      "last_used": "2025-11-14T22:06:05.032571",
+      "session_count": 0
+    },
+    "focus_focus\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:05.173168",
+      "last_used": "2025-11-14T22:06:05.173168",
+      "session_count": 0
+    },
+    "iterate_synthesize\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:05.306193",
+      "last_used": "2025-11-14T22:06:05.306193",
+      "session_count": 0
+    },
+    "discern_express\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:06.444890",
+      "last_used": "2025-11-14T22:06:06.444890",
+      "session_count": 0
+    },
+    "understand_iterate\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:06.583835",
+      "last_used": "2025-11-14T22:06:06.583835",
+      "session_count": 0
+    },
+    "refine\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:06.848804",
+      "last_used": "2025-11-14T22:06:06.848804",
+      "session_count": 0
+    },
+    "focus_filter\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:06.987881",
+      "last_used": "2025-11-14T22:06:06.987881",
+      "session_count": 0
+    },
+    "ideate_rank\u2192compound": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:07.133277",
+      "last_used": "2025-11-14T22:06:10.138520",
+      "session_count": 0
+    },
+    "compare\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:07.398976",
+      "last_used": "2025-11-14T22:06:07.398976",
+      "session_count": 0
+    },
+    "understand_contextualize\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:08.212059",
+      "last_used": "2025-11-14T22:06:08.212059",
+      "session_count": 0
+    },
+    "compound_judge\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:08.768934",
+      "last_used": "2025-11-14T22:06:08.768934",
+      "session_count": 0
+    },
+    "compound_evaluate\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:09.182952",
+      "last_used": "2025-11-14T22:06:09.182952",
+      "session_count": 0
+    },
+    "focus_iterate\u2192iterate": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:09.994246",
+      "last_used": "2025-11-14T22:06:09.994246",
+      "session_count": 0
+    },
+    "understand\u2192interpret": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:11.105117",
+      "last_used": "2025-11-14T22:06:11.105117",
+      "session_count": 0
+    },
+    "differentiate\u2192compound": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:11.373236",
+      "last_used": "2025-11-14T22:06:11.373236",
+      "session_count": 0
+    },
+    "rank_filter\u2192express": {
+      "usage_count": 1,
+      "success_count": 0,
+      "failure_count": 1,
+      "epsilon_history": [
+        0.15
+      ],
+      "K_history": [
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T22:06:11.504357",
+      "last_used": "2025-11-14T22:06:11.504357",
       "session_count": 0
     }
   },
   "attractors": {
-    "differentiate": {
+    "evaluate": {
       "visit_count": 1,
       "basin_depth": -2.7750000000000004,
       "convergence_radius": 0.1,
@@ -90,25 +5355,25 @@
       "archetype": "ORDER_2",
       "low_order": true,
       "order": 2,
-      "incoming_pathways": "{'compare'}",
+      "incoming_pathways": "{'evaluate_compound'}",
       "strongest_parent": null,
-      "first_visited": "2025-11-14T14:26:04.788739",
-      "last_visited": "2025-11-14T14:26:04.788739"
+      "first_visited": "2025-11-14T22:05:03.086977",
+      "last_visited": "2025-11-14T22:05:03.086977"
     }
   },
   "anticipation_cache": [
     {
       "source_region": [
-        0.6202494859828215,
-        1.2974032953274235,
-        0.45
+        0.7853981633974482,
+        1.3821799406194926,
+        0.37500000000000006
       ],
       "dissonance_direction": [
-        0.8796459430051422,
-        1.0471975511965976,
-        1.118033988749895
+        3.141592653589793,
+        1.5707963267948966,
+        1.0
       ],
-      "predicted_target": "differentiate",
+      "predicted_target": "evaluate",
       "confidence": 0.9,
       "hit_count": 0,
       "miss_count": 0
