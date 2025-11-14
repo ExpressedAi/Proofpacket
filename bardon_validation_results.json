@@ -1,0 +1,116 @@
+{
+  "system_name": "Bardon_Tetrapolar_Magnet",
+  "validity_score": 0.625,
+  "verdict": "TESTABLE (moderate similarity, experiments needed)",
+  "top_matches": [
+    [
+      "Seasons",
+      0.75
+    ],
+    [
+      "Cancer_Multi_Scale",
+      0.625
+    ],
+    [
+      "Thermodynamic_Carnot_Cycle",
+      0.5
+    ]
+  ],
+  "semantic_analysis": {
+    "Fire": [
+      [
+        "generate",
+        0.3487119154832538
+      ],
+      [
+        "compound",
+        0.3491761732993819
+      ],
+      [
+        "differentiate",
+        0.48006666203767984
+      ],
+      [
+        "iterate",
+        0.48006666203767984
+      ],
+      [
+        "focus",
+        0.4805996254680188
+      ]
+    ],
+    "Water": [
+      [
+        "Earth",
+        0.6932712311931022
+      ],
+      [
+        "interpret",
+        0.8952228772769383
+      ],
+      [
+        "understand",
+        0.8967948483348909
+      ],
+      [
+        "contextualize",
+        0.9627959285331446
+      ],
+      [
+        "differentiate_differentiate",
+        1.0395311443145896
+      ]
+    ],
+    "Air": [
+      [
+        "differentiate_differentiate",
+        0.19821855593593996
+      ],
+      [
+        "differentiate_filter",
+        0.2035611812916272
+      ],
+      [
+        "differentiate_rank",
+        0.2035611812916272
+      ],
+      [
+        "filter_differentiate",
+        0.2035611812916272
+      ],
+      [
+        "rank_differentiate",
+        0.2035611812916272
+      ]
+    ],
+    "Earth": [
+      [
+        "Air",
+        0.3750000000000001
+      ],
+      [
+        "interpret",
+        0.3815450224843045
+      ],
+      [
+        "understand",
+        0.3825372620662736
+      ],
+      [
+        "contextualize",
+        0.38817047462723286
+      ],
+      [
+        "differentiate_differentiate",
+        0.4241645858830384
+      ]
+    ]
+  },
+  "predictions": [
+    "Should exhibit critical transitions similar to Seasons: Spring, Fall",
+    "State dynamics should follow TETRAPOLAR pattern with 4 phases",
+    "'Fire' should behave like 'generate' (semantic similarity)",
+    "'Water' should behave like 'Earth' (semantic similarity)",
+    "'Air' should behave like 'differentiate_differentiate' (semantic similarity)"
+  ]
+}
