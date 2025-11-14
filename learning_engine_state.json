@@ -3,32 +3,6 @@
   "total_transitions": 5,
   "total_snaps": 0,
   "transitions": {
-    "compare\u2192express": {
-      "usage_count": 2,
-      "success_count": 0,
-      "failure_count": 2,
-      "epsilon_history": [
-        0.15,
-        6.184045166212309
-      ],
-      "K_history": [
-        1.0,
-        1.0
-      ],
-      "convergence_time_history": [
-        2.0000000000000013,
-        2.0000000000000013
-      ],
-      "average_convergence_time": 2.0000000000000013,
-      "min_convergence_time": 2.0000000000000013,
-      "success_rate": 0.0,
-      "rg_persistence_score": 0.0,
-      "harmony_gain": 0.1,
-      "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:11:49.311317",
-      "last_used": "2025-11-14T14:11:49.352890",
-      "session_count": 0
-    },
     "compare\u2192interpret": {
       "usage_count": 2,
       "success_count": 0,
@@ -51,11 +25,37 @@
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.1,
       "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:11:49.410327",
-      "last_used": "2025-11-14T14:11:49.495308",
+      "first_used": "2025-11-14T14:18:36.662709",
+      "last_used": "2025-11-14T14:18:36.767355",
       "session_count": 0
     },
     "compare\u2192generate": {
+      "usage_count": 2,
+      "success_count": 0,
+      "failure_count": 2,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309
+      ],
+      "K_history": [
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.1,
+      "brittleness_reduction": -0.05,
+      "first_used": "2025-11-14T14:18:36.705645",
+      "last_used": "2025-11-14T14:18:36.810824",
+      "session_count": 0
+    },
+    "compare\u2192compound": {
       "usage_count": 1,
       "success_count": 0,
       "failure_count": 1,
@@ -74,8 +74,8 @@
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.1,
       "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:11:49.452328",
-      "last_used": "2025-11-14T14:11:49.452328",
+      "first_used": "2025-11-14T14:18:36.855401",
+      "last_used": "2025-11-14T14:18:36.855401",
       "session_count": 0
     }
   },
