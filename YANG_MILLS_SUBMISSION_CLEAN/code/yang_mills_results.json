@@ -1,0 +1,296 @@
+{
+  "verdict": "MASS_GAP",
+  "oscillators": [
+    {
+      "channel": "0++",
+      "A": 0.9090909090909091,
+      "omega": 1.0,
+      "theta": 10.057258278135615,
+      "Gamma": 0.1,
+      "Q": 10.0
+    },
+    {
+      "channel": "2++",
+      "A": 0.8,
+      "omega": 2.5,
+      "theta": 24.925509735519356,
+      "Gamma": 0.25,
+      "Q": 10.0
+    },
+    {
+      "channel": "1--",
+      "A": 0.7692307692307692,
+      "omega": 3.0,
+      "theta": 29.984474095117527,
+      "Gamma": 0.30000000000000004,
+      "Q": 9.999999999999998
+    },
+    {
+      "channel": "0-+",
+      "A": 0.7407407407407407,
+      "omega": 3.5,
+      "theta": 35.03606478914358,
+      "Gamma": 0.35000000000000003,
+      "Q": 9.999999999999998
+    }
+  ],
+  "locks": [
+    {
+      "channel_i": "0++",
+      "channel_j": "2++",
+      "ratio": "1:1",
+      "K": 1.6623927932114537,
+      "omega_i": 1.0,
+      "omega_j": 2.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 10.095121973067439,
+      "s_f": 0.1485866148028541,
+      "order": 2,
+      "eligible": true
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "2++",
+      "ratio": "2:1",
+      "K": 1.2454553767083014,
+      "omega_i": 1.0,
+      "omega_j": 2.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 7.475426923681416,
+      "s_f": 0.06688581202179227,
+      "order": 3,
+      "eligible": true
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "2++",
+      "ratio": "1:2",
+      "K": 0.24510851311111054,
+      "omega_i": 1.0,
+      "omega_j": 2.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 1.1900622082443646,
+      "s_f": 3.3611688299059486,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "1--",
+      "ratio": "1:1",
+      "K": 1.175258770338909,
+      "omega_i": 1.0,
+      "omega_j": 3.0,
+      "omega_min": 1.0,
+      "epsilon_cap": 6.98436863792738,
+      "s_f": 0.2863537284013552,
+      "order": 2,
+      "eligible": false
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "1--",
+      "ratio": "2:1",
+      "K": 2.3288779025549435,
+      "omega_i": 1.0,
+      "omega_j": 3.0,
+      "omega_min": 1.0,
+      "epsilon_cap": 14.232771419548433,
+      "s_f": 0.07026038503130315,
+      "order": 3,
+      "eligible": true
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "1--",
+      "ratio": "1:2",
+      "K": 2.240664393339361,
+      "omega_i": 1.0,
+      "omega_j": 3.0,
+      "omega_min": 1.0,
+      "epsilon_cap": 13.678509594550333,
+      "s_f": 0.3655369004523749,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "0-+",
+      "ratio": "1:1",
+      "K": 2.4447155541013466,
+      "omega_i": 1.0,
+      "omega_j": 3.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 14.910600849762982,
+      "s_f": 0.16766594620764325,
+      "order": 2,
+      "eligible": true
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "0-+",
+      "ratio": "2:1",
+      "K": 2.3447659003260806,
+      "omega_i": 1.0,
+      "omega_j": 3.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 14.282598653704545,
+      "s_f": 0.10502290489069634,
+      "order": 3,
+      "eligible": true
+    },
+    {
+      "channel_i": "0++",
+      "channel_j": "0-+",
+      "ratio": "1:2",
+      "K": 1.7475806041094208,
+      "omega_i": 1.0,
+      "omega_j": 3.5,
+      "omega_min": 1.0,
+      "epsilon_cap": 10.530372774852339,
+      "s_f": 0.5697803988790069,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "1--",
+      "ratio": "1:1",
+      "K": 0.8488705305079511,
+      "omega_i": 2.5,
+      "omega_j": 3.0,
+      "omega_min": 2.5,
+      "epsilon_cap": 4.7836108449853,
+      "s_f": 0.10452355264729661,
+      "order": 2,
+      "eligible": true
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "1--",
+      "ratio": "2:1",
+      "K": 2.209765105939964,
+      "omega_i": 2.5,
+      "omega_j": 3.0,
+      "omega_min": 2.5,
+      "epsilon_cap": 13.334363645960122,
+      "s_f": 0.14998840987855724,
+      "order": 3,
+      "eligible": true
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "1--",
+      "ratio": "1:2",
+      "K": 1.3143167078639573,
+      "omega_i": 2.5,
+      "omega_j": 3.0,
+      "omega_min": 2.5,
+      "epsilon_cap": 7.70809542783146,
+      "s_f": 0.4540680681459421,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "0-+",
+      "ratio": "1:1",
+      "K": 1.931955762413031,
+      "omega_i": 2.5,
+      "omega_j": 3.5,
+      "omega_min": 2.5,
+      "epsilon_cap": 11.538836060514493,
+      "s_f": 0.08666385368121887,
+      "order": 2,
+      "eligible": true
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "0-+",
+      "ratio": "2:1",
+      "K": 0.986969704806103,
+      "omega_i": 2.5,
+      "omega_j": 3.5,
+      "omega_min": 2.5,
+      "epsilon_cap": 5.601313547869079,
+      "s_f": 0.2677943284518769,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "2++",
+      "channel_j": "0-+",
+      "ratio": "1:2",
+      "K": 1.5653591850817385,
+      "omega_i": 2.5,
+      "omega_j": 3.5,
+      "omega_min": 2.5,
+      "epsilon_cap": 9.23544183216419,
+      "s_f": 0.4872533530911202,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "1--",
+      "channel_j": "0-+",
+      "ratio": "1:1",
+      "K": 0.8315398620018701,
+      "omega_i": 3.0,
+      "omega_j": 3.5,
+      "omega_min": 3.0,
+      "epsilon_cap": 4.574719043264291,
+      "s_f": 0.10929632951693248,
+      "order": 2,
+      "eligible": true
+    },
+    {
+      "channel_i": "1--",
+      "channel_j": "0-+",
+      "ratio": "2:1",
+      "K": 1.8233685153633954,
+      "omega_i": 3.0,
+      "omega_j": 3.5,
+      "omega_min": 3.0,
+      "epsilon_cap": 10.806562265305141,
+      "s_f": 0.23134091477234536,
+      "order": 3,
+      "eligible": false
+    },
+    {
+      "channel_i": "1--",
+      "channel_j": "0-+",
+      "ratio": "1:2",
+      "K": 2.4493647521711974,
+      "omega_i": 3.0,
+      "omega_j": 3.5,
+      "omega_min": 3.0,
+      "epsilon_cap": 14.739812622765635,
+      "s_f": 0.27137387037213767,
+      "order": 3,
+      "eligible": false
+    }
+  ],
+  "audits": {
+    "E0": [
+      true,
+      "E0: OK"
+    ],
+    "E1": [
+      true,
+      "E1: 17 coherent locks"
+    ],
+    "E2": [
+      true,
+      "E2: OK (gauge-invariant)"
+    ],
+    "E3": [
+      true,
+      "E3: OK"
+    ],
+    "E4": [
+      true,
+      "E4: Mass gap confirmed (\u03c9_min=1.000)"
+    ]
+  },
+  "mass_gap": 1.0
+}

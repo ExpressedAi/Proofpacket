@@ -1,0 +1,8727 @@
+{
+  "base_primitives": [
+    "compare",
+    "interpret",
+    "generate",
+    "select"
+  ],
+  "ruleset": "cognitive",
+  "max_generations": 2,
+  "statistics": {
+    "total_concepts": 276,
+    "total_pairs": 272,
+    "concepts_by_generation": {
+      "0": 4,
+      "1": 16,
+      "2": 256
+    },
+    "max_generation": 2,
+    "base_primitives": [
+      "compare",
+      "interpret",
+      "generate",
+      "select"
+    ],
+    "expansion_ratio": 69.0
+  },
+  "concepts": {
+    "compare": {
+      "name": "compare",
+      "generation": 0,
+      "polarity_signature": {
+        "activity": 0.6,
+        "complexity": 0.4,
+        "external": 0.7
+      },
+      "parents": null,
+      "lineage": [
+        "compare"
+      ]
+    },
+    "interpret": {
+      "name": "interpret",
+      "generation": 0,
+      "polarity_signature": {
+        "activity": 0.3,
+        "complexity": 0.8,
+        "external": 0.3
+      },
+      "parents": null,
+      "lineage": [
+        "interpret"
+      ]
+    },
+    "generate": {
+      "name": "generate",
+      "generation": 0,
+      "polarity_signature": {
+        "activity": 0.9,
+        "complexity": 0.6,
+        "external": 0.5
+      },
+      "parents": null,
+      "lineage": [
+        "generate"
+      ]
+    },
+    "select": {
+      "name": "select",
+      "generation": 0,
+      "polarity_signature": {
+        "activity": 0.7,
+        "complexity": 0.3,
+        "external": 0.6
+      },
+      "parents": null,
+      "lineage": [
+        "select"
+      ]
+    },
+    "differentiate": {
+      "name": "differentiate",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.8,
+        "complexity": 0.6,
+        "external": 0.7
+      },
+      "parents": [
+        "compare",
+        "compare"
+      ],
+      "lineage": [
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "evaluate": {
+      "name": "evaluate",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.7,
+        "external": 0.5
+      },
+      "parents": [
+        "compare",
+        "interpret"
+      ],
+      "lineage": [
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "synthesize": {
+      "name": "synthesize",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.6,
+        "complexity": 0.8,
+        "external": 0.6
+      },
+      "parents": [
+        "compare",
+        "generate"
+      ],
+      "lineage": [
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "filter": {
+      "name": "filter",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.7,
+        "complexity": 0.4,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "compare",
+        "select"
+      ],
+      "lineage": [
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "contextualize": {
+      "name": "contextualize",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.4,
+        "complexity": 0.7,
+        "external": 0.5
+      },
+      "parents": [
+        "interpret",
+        "compare"
+      ],
+      "lineage": [
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "understand": {
+      "name": "understand",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.3,
+        "complexity": 0.9,
+        "external": 0.3
+      },
+      "parents": [
+        "interpret",
+        "interpret"
+      ],
+      "lineage": [
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "ideate": {
+      "name": "ideate",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.6,
+        "complexity": 0.8,
+        "external": 0.4
+      },
+      "parents": [
+        "interpret",
+        "generate"
+      ],
+      "lineage": [
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "judge": {
+      "name": "judge",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.6,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "interpret",
+        "select"
+      ],
+      "lineage": [
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "iterate": {
+      "name": "iterate",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.8,
+        "complexity": 0.6,
+        "external": 0.6
+      },
+      "parents": [
+        "generate",
+        "compare"
+      ],
+      "lineage": [
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "express": {
+      "name": "express",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.7,
+        "complexity": 0.7,
+        "external": 0.4
+      },
+      "parents": [
+        "generate",
+        "interpret"
+      ],
+      "lineage": [
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "compound": {
+      "name": "compound",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.9,
+        "complexity": 0.8,
+        "external": 0.5
+      },
+      "parents": [
+        "generate",
+        "generate"
+      ],
+      "lineage": [
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "refine": {
+      "name": "refine",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.6,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "generate",
+        "select"
+      ],
+      "lineage": [
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "rank": {
+      "name": "rank",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.6,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "select",
+        "compare"
+      ],
+      "lineage": [
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "discern": {
+      "name": "discern",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.7,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "select",
+        "interpret"
+      ],
+      "lineage": [
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "curate": {
+      "name": "curate",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.7,
+        "complexity": 0.6,
+        "external": 0.55
+      },
+      "parents": [
+        "select",
+        "generate"
+      ],
+      "lineage": [
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "focus": {
+      "name": "focus",
+      "generation": 1,
+      "polarity_signature": {
+        "activity": 0.8,
+        "complexity": 0.4,
+        "external": 0.6
+      },
+      "parents": [
+        "select",
+        "select"
+      ],
+      "lineage": [
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "differentiate_differentiate": {
+      "name": "differentiate_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.7
+      },
+      "parents": [
+        "differentiate",
+        "differentiate"
+      ],
+      "lineage": [
+        "differentiate_differentiate",
+        "differentiate",
+        "compare",
+        "compare",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "differentiate_evaluate": {
+      "name": "differentiate_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "differentiate",
+        "evaluate"
+      ],
+      "lineage": [
+        "differentiate_evaluate",
+        "differentiate",
+        "compare",
+        "compare",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "differentiate_synthesize": {
+      "name": "differentiate_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "differentiate",
+        "synthesize"
+      ],
+      "lineage": [
+        "differentiate_synthesize",
+        "differentiate",
+        "compare",
+        "compare",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "differentiate_filter": {
+      "name": "differentiate_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6749999999999999
+      },
+      "parents": [
+        "differentiate",
+        "filter"
+      ],
+      "lineage": [
+        "differentiate_filter",
+        "differentiate",
+        "compare",
+        "compare",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "differentiate_contextualize": {
+      "name": "differentiate_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "differentiate",
+        "contextualize"
+      ],
+      "lineage": [
+        "differentiate_contextualize",
+        "differentiate",
+        "compare",
+        "compare",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "differentiate_understand": {
+      "name": "differentiate_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "differentiate",
+        "understand"
+      ],
+      "lineage": [
+        "differentiate_understand",
+        "differentiate",
+        "compare",
+        "compare",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "differentiate_ideate": {
+      "name": "differentiate_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "differentiate",
+        "ideate"
+      ],
+      "lineage": [
+        "differentiate_ideate",
+        "differentiate",
+        "compare",
+        "compare",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "differentiate_judge": {
+      "name": "differentiate_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "differentiate",
+        "judge"
+      ],
+      "lineage": [
+        "differentiate_judge",
+        "differentiate",
+        "compare",
+        "compare",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "differentiate_iterate": {
+      "name": "differentiate_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "differentiate",
+        "iterate"
+      ],
+      "lineage": [
+        "differentiate_iterate",
+        "differentiate",
+        "compare",
+        "compare",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "differentiate_express": {
+      "name": "differentiate_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "differentiate",
+        "express"
+      ],
+      "lineage": [
+        "differentiate_express",
+        "differentiate",
+        "compare",
+        "compare",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "differentiate_compound": {
+      "name": "differentiate_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "differentiate",
+        "compound"
+      ],
+      "lineage": [
+        "differentiate_compound",
+        "differentiate",
+        "compare",
+        "compare",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "differentiate_refine": {
+      "name": "differentiate_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "differentiate",
+        "refine"
+      ],
+      "lineage": [
+        "differentiate_refine",
+        "differentiate",
+        "compare",
+        "compare",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "differentiate_rank": {
+      "name": "differentiate_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6749999999999999
+      },
+      "parents": [
+        "differentiate",
+        "rank"
+      ],
+      "lineage": [
+        "differentiate_rank",
+        "differentiate",
+        "compare",
+        "compare",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "differentiate_discern": {
+      "name": "differentiate_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "differentiate",
+        "discern"
+      ],
+      "lineage": [
+        "differentiate_discern",
+        "differentiate",
+        "compare",
+        "compare",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "differentiate_curate": {
+      "name": "differentiate_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "differentiate",
+        "curate"
+      ],
+      "lineage": [
+        "differentiate_curate",
+        "differentiate",
+        "compare",
+        "compare",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "differentiate_focus": {
+      "name": "differentiate_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "differentiate",
+        "focus"
+      ],
+      "lineage": [
+        "differentiate_focus",
+        "differentiate",
+        "compare",
+        "compare",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "evaluate_differentiate": {
+      "name": "evaluate_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "evaluate",
+        "differentiate"
+      ],
+      "lineage": [
+        "evaluate_differentiate",
+        "evaluate",
+        "compare",
+        "interpret",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "evaluate_evaluate": {
+      "name": "evaluate_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "evaluate",
+        "evaluate"
+      ],
+      "lineage": [
+        "evaluate_evaluate",
+        "evaluate",
+        "compare",
+        "interpret",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "evaluate_synthesize": {
+      "name": "evaluate_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "evaluate",
+        "synthesize"
+      ],
+      "lineage": [
+        "evaluate_synthesize",
+        "evaluate",
+        "compare",
+        "interpret",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "evaluate_filter": {
+      "name": "evaluate_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "evaluate",
+        "filter"
+      ],
+      "lineage": [
+        "evaluate_filter",
+        "evaluate",
+        "compare",
+        "interpret",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "evaluate_contextualize": {
+      "name": "evaluate_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "evaluate",
+        "contextualize"
+      ],
+      "lineage": [
+        "evaluate_contextualize",
+        "evaluate",
+        "compare",
+        "interpret",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "evaluate_understand": {
+      "name": "evaluate_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "evaluate",
+        "understand"
+      ],
+      "lineage": [
+        "evaluate_understand",
+        "evaluate",
+        "compare",
+        "interpret",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "evaluate_ideate": {
+      "name": "evaluate_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "evaluate",
+        "ideate"
+      ],
+      "lineage": [
+        "evaluate_ideate",
+        "evaluate",
+        "compare",
+        "interpret",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "evaluate_judge": {
+      "name": "evaluate_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "evaluate",
+        "judge"
+      ],
+      "lineage": [
+        "evaluate_judge",
+        "evaluate",
+        "compare",
+        "interpret",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "evaluate_iterate": {
+      "name": "evaluate_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "evaluate",
+        "iterate"
+      ],
+      "lineage": [
+        "evaluate_iterate",
+        "evaluate",
+        "compare",
+        "interpret",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "evaluate_express": {
+      "name": "evaluate_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "evaluate",
+        "express"
+      ],
+      "lineage": [
+        "evaluate_express",
+        "evaluate",
+        "compare",
+        "interpret",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "evaluate_compound": {
+      "name": "evaluate_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "evaluate",
+        "compound"
+      ],
+      "lineage": [
+        "evaluate_compound",
+        "evaluate",
+        "compare",
+        "interpret",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "evaluate_refine": {
+      "name": "evaluate_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "evaluate",
+        "refine"
+      ],
+      "lineage": [
+        "evaluate_refine",
+        "evaluate",
+        "compare",
+        "interpret",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "evaluate_rank": {
+      "name": "evaluate_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "evaluate",
+        "rank"
+      ],
+      "lineage": [
+        "evaluate_rank",
+        "evaluate",
+        "compare",
+        "interpret",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "evaluate_discern": {
+      "name": "evaluate_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "evaluate",
+        "discern"
+      ],
+      "lineage": [
+        "evaluate_discern",
+        "evaluate",
+        "compare",
+        "interpret",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "evaluate_curate": {
+      "name": "evaluate_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "evaluate",
+        "curate"
+      ],
+      "lineage": [
+        "evaluate_curate",
+        "evaluate",
+        "compare",
+        "interpret",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "evaluate_focus": {
+      "name": "evaluate_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "evaluate",
+        "focus"
+      ],
+      "lineage": [
+        "evaluate_focus",
+        "evaluate",
+        "compare",
+        "interpret",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "synthesize_differentiate": {
+      "name": "synthesize_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "synthesize",
+        "differentiate"
+      ],
+      "lineage": [
+        "synthesize_differentiate",
+        "synthesize",
+        "compare",
+        "generate",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "synthesize_evaluate": {
+      "name": "synthesize_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "synthesize",
+        "evaluate"
+      ],
+      "lineage": [
+        "synthesize_evaluate",
+        "synthesize",
+        "compare",
+        "generate",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "synthesize_synthesize": {
+      "name": "synthesize_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "synthesize",
+        "synthesize"
+      ],
+      "lineage": [
+        "synthesize_synthesize",
+        "synthesize",
+        "compare",
+        "generate",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "synthesize_filter": {
+      "name": "synthesize_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "synthesize",
+        "filter"
+      ],
+      "lineage": [
+        "synthesize_filter",
+        "synthesize",
+        "compare",
+        "generate",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "synthesize_contextualize": {
+      "name": "synthesize_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "synthesize",
+        "contextualize"
+      ],
+      "lineage": [
+        "synthesize_contextualize",
+        "synthesize",
+        "compare",
+        "generate",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "synthesize_understand": {
+      "name": "synthesize_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "synthesize",
+        "understand"
+      ],
+      "lineage": [
+        "synthesize_understand",
+        "synthesize",
+        "compare",
+        "generate",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "synthesize_ideate": {
+      "name": "synthesize_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "synthesize",
+        "ideate"
+      ],
+      "lineage": [
+        "synthesize_ideate",
+        "synthesize",
+        "compare",
+        "generate",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "synthesize_judge": {
+      "name": "synthesize_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "synthesize",
+        "judge"
+      ],
+      "lineage": [
+        "synthesize_judge",
+        "synthesize",
+        "compare",
+        "generate",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "synthesize_iterate": {
+      "name": "synthesize_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "synthesize",
+        "iterate"
+      ],
+      "lineage": [
+        "synthesize_iterate",
+        "synthesize",
+        "compare",
+        "generate",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "synthesize_express": {
+      "name": "synthesize_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "synthesize",
+        "express"
+      ],
+      "lineage": [
+        "synthesize_express",
+        "synthesize",
+        "compare",
+        "generate",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "synthesize_compound": {
+      "name": "synthesize_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "synthesize",
+        "compound"
+      ],
+      "lineage": [
+        "synthesize_compound",
+        "synthesize",
+        "compare",
+        "generate",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "synthesize_refine": {
+      "name": "synthesize_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "synthesize",
+        "refine"
+      ],
+      "lineage": [
+        "synthesize_refine",
+        "synthesize",
+        "compare",
+        "generate",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "synthesize_rank": {
+      "name": "synthesize_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "synthesize",
+        "rank"
+      ],
+      "lineage": [
+        "synthesize_rank",
+        "synthesize",
+        "compare",
+        "generate",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "synthesize_discern": {
+      "name": "synthesize_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "synthesize",
+        "discern"
+      ],
+      "lineage": [
+        "synthesize_discern",
+        "synthesize",
+        "compare",
+        "generate",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "synthesize_curate": {
+      "name": "synthesize_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "synthesize",
+        "curate"
+      ],
+      "lineage": [
+        "synthesize_curate",
+        "synthesize",
+        "compare",
+        "generate",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "synthesize_focus": {
+      "name": "synthesize_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "synthesize",
+        "focus"
+      ],
+      "lineage": [
+        "synthesize_focus",
+        "synthesize",
+        "compare",
+        "generate",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "filter_differentiate": {
+      "name": "filter_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6749999999999999
+      },
+      "parents": [
+        "filter",
+        "differentiate"
+      ],
+      "lineage": [
+        "filter_differentiate",
+        "filter",
+        "compare",
+        "select",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "filter_evaluate": {
+      "name": "filter_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "filter",
+        "evaluate"
+      ],
+      "lineage": [
+        "filter_evaluate",
+        "filter",
+        "compare",
+        "select",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "filter_synthesize": {
+      "name": "filter_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "filter",
+        "synthesize"
+      ],
+      "lineage": [
+        "filter_synthesize",
+        "filter",
+        "compare",
+        "select",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "filter_filter": {
+      "name": "filter_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "filter",
+        "filter"
+      ],
+      "lineage": [
+        "filter_filter",
+        "filter",
+        "compare",
+        "select",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "filter_contextualize": {
+      "name": "filter_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "filter",
+        "contextualize"
+      ],
+      "lineage": [
+        "filter_contextualize",
+        "filter",
+        "compare",
+        "select",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "filter_understand": {
+      "name": "filter_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "filter",
+        "understand"
+      ],
+      "lineage": [
+        "filter_understand",
+        "filter",
+        "compare",
+        "select",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "filter_ideate": {
+      "name": "filter_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "filter",
+        "ideate"
+      ],
+      "lineage": [
+        "filter_ideate",
+        "filter",
+        "compare",
+        "select",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "filter_judge": {
+      "name": "filter_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "filter",
+        "judge"
+      ],
+      "lineage": [
+        "filter_judge",
+        "filter",
+        "compare",
+        "select",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "filter_iterate": {
+      "name": "filter_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "filter",
+        "iterate"
+      ],
+      "lineage": [
+        "filter_iterate",
+        "filter",
+        "compare",
+        "select",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "filter_express": {
+      "name": "filter_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "filter",
+        "express"
+      ],
+      "lineage": [
+        "filter_express",
+        "filter",
+        "compare",
+        "select",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "filter_compound": {
+      "name": "filter_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "filter",
+        "compound"
+      ],
+      "lineage": [
+        "filter_compound",
+        "filter",
+        "compare",
+        "select",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "filter_refine": {
+      "name": "filter_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "filter",
+        "refine"
+      ],
+      "lineage": [
+        "filter_refine",
+        "filter",
+        "compare",
+        "select",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "filter_rank": {
+      "name": "filter_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "filter",
+        "rank"
+      ],
+      "lineage": [
+        "filter_rank",
+        "filter",
+        "compare",
+        "select",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "filter_discern": {
+      "name": "filter_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "filter",
+        "discern"
+      ],
+      "lineage": [
+        "filter_discern",
+        "filter",
+        "compare",
+        "select",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "filter_curate": {
+      "name": "filter_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "filter",
+        "curate"
+      ],
+      "lineage": [
+        "filter_curate",
+        "filter",
+        "compare",
+        "select",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "filter_focus": {
+      "name": "filter_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "filter",
+        "focus"
+      ],
+      "lineage": [
+        "filter_focus",
+        "filter",
+        "compare",
+        "select",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "contextualize_differentiate": {
+      "name": "contextualize_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "contextualize",
+        "differentiate"
+      ],
+      "lineage": [
+        "contextualize_differentiate",
+        "contextualize",
+        "interpret",
+        "compare",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "contextualize_evaluate": {
+      "name": "contextualize_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "contextualize",
+        "evaluate"
+      ],
+      "lineage": [
+        "contextualize_evaluate",
+        "contextualize",
+        "interpret",
+        "compare",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "contextualize_synthesize": {
+      "name": "contextualize_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "contextualize",
+        "synthesize"
+      ],
+      "lineage": [
+        "contextualize_synthesize",
+        "contextualize",
+        "interpret",
+        "compare",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "contextualize_filter": {
+      "name": "contextualize_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "contextualize",
+        "filter"
+      ],
+      "lineage": [
+        "contextualize_filter",
+        "contextualize",
+        "interpret",
+        "compare",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "contextualize_contextualize": {
+      "name": "contextualize_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "contextualize",
+        "contextualize"
+      ],
+      "lineage": [
+        "contextualize_contextualize",
+        "contextualize",
+        "interpret",
+        "compare",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "contextualize_understand": {
+      "name": "contextualize_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "contextualize",
+        "understand"
+      ],
+      "lineage": [
+        "contextualize_understand",
+        "contextualize",
+        "interpret",
+        "compare",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "contextualize_ideate": {
+      "name": "contextualize_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "contextualize",
+        "ideate"
+      ],
+      "lineage": [
+        "contextualize_ideate",
+        "contextualize",
+        "interpret",
+        "compare",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "contextualize_judge": {
+      "name": "contextualize_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "contextualize",
+        "judge"
+      ],
+      "lineage": [
+        "contextualize_judge",
+        "contextualize",
+        "interpret",
+        "compare",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "contextualize_iterate": {
+      "name": "contextualize_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "contextualize",
+        "iterate"
+      ],
+      "lineage": [
+        "contextualize_iterate",
+        "contextualize",
+        "interpret",
+        "compare",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "contextualize_express": {
+      "name": "contextualize_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "contextualize",
+        "express"
+      ],
+      "lineage": [
+        "contextualize_express",
+        "contextualize",
+        "interpret",
+        "compare",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "contextualize_compound": {
+      "name": "contextualize_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "contextualize",
+        "compound"
+      ],
+      "lineage": [
+        "contextualize_compound",
+        "contextualize",
+        "interpret",
+        "compare",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "contextualize_refine": {
+      "name": "contextualize_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "contextualize",
+        "refine"
+      ],
+      "lineage": [
+        "contextualize_refine",
+        "contextualize",
+        "interpret",
+        "compare",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "contextualize_rank": {
+      "name": "contextualize_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "contextualize",
+        "rank"
+      ],
+      "lineage": [
+        "contextualize_rank",
+        "contextualize",
+        "interpret",
+        "compare",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "contextualize_discern": {
+      "name": "contextualize_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "contextualize",
+        "discern"
+      ],
+      "lineage": [
+        "contextualize_discern",
+        "contextualize",
+        "interpret",
+        "compare",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "contextualize_curate": {
+      "name": "contextualize_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "contextualize",
+        "curate"
+      ],
+      "lineage": [
+        "contextualize_curate",
+        "contextualize",
+        "interpret",
+        "compare",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "contextualize_focus": {
+      "name": "contextualize_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "contextualize",
+        "focus"
+      ],
+      "lineage": [
+        "contextualize_focus",
+        "contextualize",
+        "interpret",
+        "compare",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "understand_differentiate": {
+      "name": "understand_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "understand",
+        "differentiate"
+      ],
+      "lineage": [
+        "understand_differentiate",
+        "understand",
+        "interpret",
+        "interpret",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "understand_evaluate": {
+      "name": "understand_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "understand",
+        "evaluate"
+      ],
+      "lineage": [
+        "understand_evaluate",
+        "understand",
+        "interpret",
+        "interpret",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "understand_synthesize": {
+      "name": "understand_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "understand",
+        "synthesize"
+      ],
+      "lineage": [
+        "understand_synthesize",
+        "understand",
+        "interpret",
+        "interpret",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "understand_filter": {
+      "name": "understand_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "understand",
+        "filter"
+      ],
+      "lineage": [
+        "understand_filter",
+        "understand",
+        "interpret",
+        "interpret",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "understand_contextualize": {
+      "name": "understand_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "understand",
+        "contextualize"
+      ],
+      "lineage": [
+        "understand_contextualize",
+        "understand",
+        "interpret",
+        "interpret",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "understand_understand": {
+      "name": "understand_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.3
+      },
+      "parents": [
+        "understand",
+        "understand"
+      ],
+      "lineage": [
+        "understand_understand",
+        "understand",
+        "interpret",
+        "interpret",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "understand_ideate": {
+      "name": "understand_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.35
+      },
+      "parents": [
+        "understand",
+        "ideate"
+      ],
+      "lineage": [
+        "understand_ideate",
+        "understand",
+        "interpret",
+        "interpret",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "understand_judge": {
+      "name": "understand_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.375
+      },
+      "parents": [
+        "understand",
+        "judge"
+      ],
+      "lineage": [
+        "understand_judge",
+        "understand",
+        "interpret",
+        "interpret",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "understand_iterate": {
+      "name": "understand_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "understand",
+        "iterate"
+      ],
+      "lineage": [
+        "understand_iterate",
+        "understand",
+        "interpret",
+        "interpret",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "understand_express": {
+      "name": "understand_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.35
+      },
+      "parents": [
+        "understand",
+        "express"
+      ],
+      "lineage": [
+        "understand_express",
+        "understand",
+        "interpret",
+        "interpret",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "understand_compound": {
+      "name": "understand_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "understand",
+        "compound"
+      ],
+      "lineage": [
+        "understand_compound",
+        "understand",
+        "interpret",
+        "interpret",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "understand_refine": {
+      "name": "understand_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.42500000000000004
+      },
+      "parents": [
+        "understand",
+        "refine"
+      ],
+      "lineage": [
+        "understand_refine",
+        "understand",
+        "interpret",
+        "interpret",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "understand_rank": {
+      "name": "understand_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "understand",
+        "rank"
+      ],
+      "lineage": [
+        "understand_rank",
+        "understand",
+        "interpret",
+        "interpret",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "understand_discern": {
+      "name": "understand_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.375
+      },
+      "parents": [
+        "understand",
+        "discern"
+      ],
+      "lineage": [
+        "understand_discern",
+        "understand",
+        "interpret",
+        "interpret",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "understand_curate": {
+      "name": "understand_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.42500000000000004
+      },
+      "parents": [
+        "understand",
+        "curate"
+      ],
+      "lineage": [
+        "understand_curate",
+        "understand",
+        "interpret",
+        "interpret",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "understand_focus": {
+      "name": "understand_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "understand",
+        "focus"
+      ],
+      "lineage": [
+        "understand_focus",
+        "understand",
+        "interpret",
+        "interpret",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "ideate_differentiate": {
+      "name": "ideate_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "ideate",
+        "differentiate"
+      ],
+      "lineage": [
+        "ideate_differentiate",
+        "ideate",
+        "interpret",
+        "generate",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "ideate_evaluate": {
+      "name": "ideate_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "ideate",
+        "evaluate"
+      ],
+      "lineage": [
+        "ideate_evaluate",
+        "ideate",
+        "interpret",
+        "generate",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "ideate_synthesize": {
+      "name": "ideate_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "ideate",
+        "synthesize"
+      ],
+      "lineage": [
+        "ideate_synthesize",
+        "ideate",
+        "interpret",
+        "generate",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "ideate_filter": {
+      "name": "ideate_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "ideate",
+        "filter"
+      ],
+      "lineage": [
+        "ideate_filter",
+        "ideate",
+        "interpret",
+        "generate",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "ideate_contextualize": {
+      "name": "ideate_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "ideate",
+        "contextualize"
+      ],
+      "lineage": [
+        "ideate_contextualize",
+        "ideate",
+        "interpret",
+        "generate",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "ideate_understand": {
+      "name": "ideate_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.35
+      },
+      "parents": [
+        "ideate",
+        "understand"
+      ],
+      "lineage": [
+        "ideate_understand",
+        "ideate",
+        "interpret",
+        "generate",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "ideate_ideate": {
+      "name": "ideate_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "ideate",
+        "ideate"
+      ],
+      "lineage": [
+        "ideate_ideate",
+        "ideate",
+        "interpret",
+        "generate",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "ideate_judge": {
+      "name": "ideate_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "ideate",
+        "judge"
+      ],
+      "lineage": [
+        "ideate_judge",
+        "ideate",
+        "interpret",
+        "generate",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "ideate_iterate": {
+      "name": "ideate_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "ideate",
+        "iterate"
+      ],
+      "lineage": [
+        "ideate_iterate",
+        "ideate",
+        "interpret",
+        "generate",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "ideate_express": {
+      "name": "ideate_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "ideate",
+        "express"
+      ],
+      "lineage": [
+        "ideate_express",
+        "ideate",
+        "interpret",
+        "generate",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "ideate_compound": {
+      "name": "ideate_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "ideate",
+        "compound"
+      ],
+      "lineage": [
+        "ideate_compound",
+        "ideate",
+        "interpret",
+        "generate",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "ideate_refine": {
+      "name": "ideate_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "ideate",
+        "refine"
+      ],
+      "lineage": [
+        "ideate_refine",
+        "ideate",
+        "interpret",
+        "generate",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "ideate_rank": {
+      "name": "ideate_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "ideate",
+        "rank"
+      ],
+      "lineage": [
+        "ideate_rank",
+        "ideate",
+        "interpret",
+        "generate",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "ideate_discern": {
+      "name": "ideate_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "ideate",
+        "discern"
+      ],
+      "lineage": [
+        "ideate_discern",
+        "ideate",
+        "interpret",
+        "generate",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "ideate_curate": {
+      "name": "ideate_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "ideate",
+        "curate"
+      ],
+      "lineage": [
+        "ideate_curate",
+        "ideate",
+        "interpret",
+        "generate",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "ideate_focus": {
+      "name": "ideate_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "ideate",
+        "focus"
+      ],
+      "lineage": [
+        "ideate_focus",
+        "ideate",
+        "interpret",
+        "generate",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "judge_differentiate": {
+      "name": "judge_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "judge",
+        "differentiate"
+      ],
+      "lineage": [
+        "judge_differentiate",
+        "judge",
+        "interpret",
+        "select",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "judge_evaluate": {
+      "name": "judge_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "judge",
+        "evaluate"
+      ],
+      "lineage": [
+        "judge_evaluate",
+        "judge",
+        "interpret",
+        "select",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "judge_synthesize": {
+      "name": "judge_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "judge",
+        "synthesize"
+      ],
+      "lineage": [
+        "judge_synthesize",
+        "judge",
+        "interpret",
+        "select",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "judge_filter": {
+      "name": "judge_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "judge",
+        "filter"
+      ],
+      "lineage": [
+        "judge_filter",
+        "judge",
+        "interpret",
+        "select",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "judge_contextualize": {
+      "name": "judge_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "judge",
+        "contextualize"
+      ],
+      "lineage": [
+        "judge_contextualize",
+        "judge",
+        "interpret",
+        "select",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "judge_understand": {
+      "name": "judge_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.375
+      },
+      "parents": [
+        "judge",
+        "understand"
+      ],
+      "lineage": [
+        "judge_understand",
+        "judge",
+        "interpret",
+        "select",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "judge_ideate": {
+      "name": "judge_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "judge",
+        "ideate"
+      ],
+      "lineage": [
+        "judge_ideate",
+        "judge",
+        "interpret",
+        "select",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "judge_judge": {
+      "name": "judge_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "judge",
+        "judge"
+      ],
+      "lineage": [
+        "judge_judge",
+        "judge",
+        "interpret",
+        "select",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "judge_iterate": {
+      "name": "judge_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "judge",
+        "iterate"
+      ],
+      "lineage": [
+        "judge_iterate",
+        "judge",
+        "interpret",
+        "select",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "judge_express": {
+      "name": "judge_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "judge",
+        "express"
+      ],
+      "lineage": [
+        "judge_express",
+        "judge",
+        "interpret",
+        "select",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "judge_compound": {
+      "name": "judge_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "judge",
+        "compound"
+      ],
+      "lineage": [
+        "judge_compound",
+        "judge",
+        "interpret",
+        "select",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "judge_refine": {
+      "name": "judge_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "judge",
+        "refine"
+      ],
+      "lineage": [
+        "judge_refine",
+        "judge",
+        "interpret",
+        "select",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "judge_rank": {
+      "name": "judge_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "judge",
+        "rank"
+      ],
+      "lineage": [
+        "judge_rank",
+        "judge",
+        "interpret",
+        "select",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "judge_discern": {
+      "name": "judge_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "judge",
+        "discern"
+      ],
+      "lineage": [
+        "judge_discern",
+        "judge",
+        "interpret",
+        "select",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "judge_curate": {
+      "name": "judge_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "judge",
+        "curate"
+      ],
+      "lineage": [
+        "judge_curate",
+        "judge",
+        "interpret",
+        "select",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "judge_focus": {
+      "name": "judge_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "judge",
+        "focus"
+      ],
+      "lineage": [
+        "judge_focus",
+        "judge",
+        "interpret",
+        "select",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "iterate_differentiate": {
+      "name": "iterate_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "iterate",
+        "differentiate"
+      ],
+      "lineage": [
+        "iterate_differentiate",
+        "iterate",
+        "generate",
+        "compare",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "iterate_evaluate": {
+      "name": "iterate_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "iterate",
+        "evaluate"
+      ],
+      "lineage": [
+        "iterate_evaluate",
+        "iterate",
+        "generate",
+        "compare",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "iterate_synthesize": {
+      "name": "iterate_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "iterate",
+        "synthesize"
+      ],
+      "lineage": [
+        "iterate_synthesize",
+        "iterate",
+        "generate",
+        "compare",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "iterate_filter": {
+      "name": "iterate_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "iterate",
+        "filter"
+      ],
+      "lineage": [
+        "iterate_filter",
+        "iterate",
+        "generate",
+        "compare",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "iterate_contextualize": {
+      "name": "iterate_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "iterate",
+        "contextualize"
+      ],
+      "lineage": [
+        "iterate_contextualize",
+        "iterate",
+        "generate",
+        "compare",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "iterate_understand": {
+      "name": "iterate_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "iterate",
+        "understand"
+      ],
+      "lineage": [
+        "iterate_understand",
+        "iterate",
+        "generate",
+        "compare",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "iterate_ideate": {
+      "name": "iterate_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "iterate",
+        "ideate"
+      ],
+      "lineage": [
+        "iterate_ideate",
+        "iterate",
+        "generate",
+        "compare",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "iterate_judge": {
+      "name": "iterate_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "iterate",
+        "judge"
+      ],
+      "lineage": [
+        "iterate_judge",
+        "iterate",
+        "generate",
+        "compare",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "iterate_iterate": {
+      "name": "iterate_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "iterate",
+        "iterate"
+      ],
+      "lineage": [
+        "iterate_iterate",
+        "iterate",
+        "generate",
+        "compare",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "iterate_express": {
+      "name": "iterate_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "iterate",
+        "express"
+      ],
+      "lineage": [
+        "iterate_express",
+        "iterate",
+        "generate",
+        "compare",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "iterate_compound": {
+      "name": "iterate_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "iterate",
+        "compound"
+      ],
+      "lineage": [
+        "iterate_compound",
+        "iterate",
+        "generate",
+        "compare",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "iterate_refine": {
+      "name": "iterate_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "iterate",
+        "refine"
+      ],
+      "lineage": [
+        "iterate_refine",
+        "iterate",
+        "generate",
+        "compare",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "iterate_rank": {
+      "name": "iterate_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "iterate",
+        "rank"
+      ],
+      "lineage": [
+        "iterate_rank",
+        "iterate",
+        "generate",
+        "compare",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "iterate_discern": {
+      "name": "iterate_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "iterate",
+        "discern"
+      ],
+      "lineage": [
+        "iterate_discern",
+        "iterate",
+        "generate",
+        "compare",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "iterate_curate": {
+      "name": "iterate_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "iterate",
+        "curate"
+      ],
+      "lineage": [
+        "iterate_curate",
+        "iterate",
+        "generate",
+        "compare",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "iterate_focus": {
+      "name": "iterate_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "iterate",
+        "focus"
+      ],
+      "lineage": [
+        "iterate_focus",
+        "iterate",
+        "generate",
+        "compare",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "express_differentiate": {
+      "name": "express_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "express",
+        "differentiate"
+      ],
+      "lineage": [
+        "express_differentiate",
+        "express",
+        "generate",
+        "interpret",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "express_evaluate": {
+      "name": "express_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "express",
+        "evaluate"
+      ],
+      "lineage": [
+        "express_evaluate",
+        "express",
+        "generate",
+        "interpret",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "express_synthesize": {
+      "name": "express_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "express",
+        "synthesize"
+      ],
+      "lineage": [
+        "express_synthesize",
+        "express",
+        "generate",
+        "interpret",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "express_filter": {
+      "name": "express_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "express",
+        "filter"
+      ],
+      "lineage": [
+        "express_filter",
+        "express",
+        "generate",
+        "interpret",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "express_contextualize": {
+      "name": "express_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "express",
+        "contextualize"
+      ],
+      "lineage": [
+        "express_contextualize",
+        "express",
+        "generate",
+        "interpret",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "express_understand": {
+      "name": "express_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.35
+      },
+      "parents": [
+        "express",
+        "understand"
+      ],
+      "lineage": [
+        "express_understand",
+        "express",
+        "generate",
+        "interpret",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "express_ideate": {
+      "name": "express_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "express",
+        "ideate"
+      ],
+      "lineage": [
+        "express_ideate",
+        "express",
+        "generate",
+        "interpret",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "express_judge": {
+      "name": "express_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "express",
+        "judge"
+      ],
+      "lineage": [
+        "express_judge",
+        "express",
+        "generate",
+        "interpret",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "express_iterate": {
+      "name": "express_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "express",
+        "iterate"
+      ],
+      "lineage": [
+        "express_iterate",
+        "express",
+        "generate",
+        "interpret",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "express_express": {
+      "name": "express_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "express",
+        "express"
+      ],
+      "lineage": [
+        "express_express",
+        "express",
+        "generate",
+        "interpret",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "express_compound": {
+      "name": "express_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "express",
+        "compound"
+      ],
+      "lineage": [
+        "express_compound",
+        "express",
+        "generate",
+        "interpret",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "express_refine": {
+      "name": "express_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "express",
+        "refine"
+      ],
+      "lineage": [
+        "express_refine",
+        "express",
+        "generate",
+        "interpret",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "express_rank": {
+      "name": "express_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "express",
+        "rank"
+      ],
+      "lineage": [
+        "express_rank",
+        "express",
+        "generate",
+        "interpret",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "express_discern": {
+      "name": "express_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "express",
+        "discern"
+      ],
+      "lineage": [
+        "express_discern",
+        "express",
+        "generate",
+        "interpret",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "express_curate": {
+      "name": "express_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "express",
+        "curate"
+      ],
+      "lineage": [
+        "express_curate",
+        "express",
+        "generate",
+        "interpret",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "express_focus": {
+      "name": "express_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "express",
+        "focus"
+      ],
+      "lineage": [
+        "express_focus",
+        "express",
+        "generate",
+        "interpret",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "compound_differentiate": {
+      "name": "compound_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "compound",
+        "differentiate"
+      ],
+      "lineage": [
+        "compound_differentiate",
+        "compound",
+        "generate",
+        "generate",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "compound_evaluate": {
+      "name": "compound_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "compound",
+        "evaluate"
+      ],
+      "lineage": [
+        "compound_evaluate",
+        "compound",
+        "generate",
+        "generate",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "compound_synthesize": {
+      "name": "compound_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "compound",
+        "synthesize"
+      ],
+      "lineage": [
+        "compound_synthesize",
+        "compound",
+        "generate",
+        "generate",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "compound_filter": {
+      "name": "compound_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "compound",
+        "filter"
+      ],
+      "lineage": [
+        "compound_filter",
+        "compound",
+        "generate",
+        "generate",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "compound_contextualize": {
+      "name": "compound_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "compound",
+        "contextualize"
+      ],
+      "lineage": [
+        "compound_contextualize",
+        "compound",
+        "generate",
+        "generate",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "compound_understand": {
+      "name": "compound_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.4
+      },
+      "parents": [
+        "compound",
+        "understand"
+      ],
+      "lineage": [
+        "compound_understand",
+        "compound",
+        "generate",
+        "generate",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "compound_ideate": {
+      "name": "compound_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "compound",
+        "ideate"
+      ],
+      "lineage": [
+        "compound_ideate",
+        "compound",
+        "generate",
+        "generate",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "compound_judge": {
+      "name": "compound_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "compound",
+        "judge"
+      ],
+      "lineage": [
+        "compound_judge",
+        "compound",
+        "generate",
+        "generate",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "compound_iterate": {
+      "name": "compound_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "compound",
+        "iterate"
+      ],
+      "lineage": [
+        "compound_iterate",
+        "compound",
+        "generate",
+        "generate",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "compound_express": {
+      "name": "compound_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.45
+      },
+      "parents": [
+        "compound",
+        "express"
+      ],
+      "lineage": [
+        "compound_express",
+        "compound",
+        "generate",
+        "generate",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "compound_compound": {
+      "name": "compound_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "compound",
+        "compound"
+      ],
+      "lineage": [
+        "compound_compound",
+        "compound",
+        "generate",
+        "generate",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "compound_refine": {
+      "name": "compound_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "compound",
+        "refine"
+      ],
+      "lineage": [
+        "compound_refine",
+        "compound",
+        "generate",
+        "generate",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "compound_rank": {
+      "name": "compound_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "compound",
+        "rank"
+      ],
+      "lineage": [
+        "compound_rank",
+        "compound",
+        "generate",
+        "generate",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "compound_discern": {
+      "name": "compound_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "compound",
+        "discern"
+      ],
+      "lineage": [
+        "compound_discern",
+        "compound",
+        "generate",
+        "generate",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "compound_curate": {
+      "name": "compound_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "compound",
+        "curate"
+      ],
+      "lineage": [
+        "compound_curate",
+        "compound",
+        "generate",
+        "generate",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "compound_focus": {
+      "name": "compound_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "compound",
+        "focus"
+      ],
+      "lineage": [
+        "compound_focus",
+        "compound",
+        "generate",
+        "generate",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "refine_differentiate": {
+      "name": "refine_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "refine",
+        "differentiate"
+      ],
+      "lineage": [
+        "refine_differentiate",
+        "refine",
+        "generate",
+        "select",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "refine_evaluate": {
+      "name": "refine_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "refine",
+        "evaluate"
+      ],
+      "lineage": [
+        "refine_evaluate",
+        "refine",
+        "generate",
+        "select",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "refine_synthesize": {
+      "name": "refine_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "refine",
+        "synthesize"
+      ],
+      "lineage": [
+        "refine_synthesize",
+        "refine",
+        "generate",
+        "select",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "refine_filter": {
+      "name": "refine_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "refine",
+        "filter"
+      ],
+      "lineage": [
+        "refine_filter",
+        "refine",
+        "generate",
+        "select",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "refine_contextualize": {
+      "name": "refine_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "refine",
+        "contextualize"
+      ],
+      "lineage": [
+        "refine_contextualize",
+        "refine",
+        "generate",
+        "select",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "refine_understand": {
+      "name": "refine_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.42500000000000004
+      },
+      "parents": [
+        "refine",
+        "understand"
+      ],
+      "lineage": [
+        "refine_understand",
+        "refine",
+        "generate",
+        "select",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "refine_ideate": {
+      "name": "refine_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "refine",
+        "ideate"
+      ],
+      "lineage": [
+        "refine_ideate",
+        "refine",
+        "generate",
+        "select",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "refine_judge": {
+      "name": "refine_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "refine",
+        "judge"
+      ],
+      "lineage": [
+        "refine_judge",
+        "refine",
+        "generate",
+        "select",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "refine_iterate": {
+      "name": "refine_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "refine",
+        "iterate"
+      ],
+      "lineage": [
+        "refine_iterate",
+        "refine",
+        "generate",
+        "select",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "refine_express": {
+      "name": "refine_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "refine",
+        "express"
+      ],
+      "lineage": [
+        "refine_express",
+        "refine",
+        "generate",
+        "select",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "refine_compound": {
+      "name": "refine_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "refine",
+        "compound"
+      ],
+      "lineage": [
+        "refine_compound",
+        "refine",
+        "generate",
+        "select",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "refine_refine": {
+      "name": "refine_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "refine",
+        "refine"
+      ],
+      "lineage": [
+        "refine_refine",
+        "refine",
+        "generate",
+        "select",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "refine_rank": {
+      "name": "refine_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "refine",
+        "rank"
+      ],
+      "lineage": [
+        "refine_rank",
+        "refine",
+        "generate",
+        "select",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "refine_discern": {
+      "name": "refine_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "refine",
+        "discern"
+      ],
+      "lineage": [
+        "refine_discern",
+        "refine",
+        "generate",
+        "select",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "refine_curate": {
+      "name": "refine_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "refine",
+        "curate"
+      ],
+      "lineage": [
+        "refine_curate",
+        "refine",
+        "generate",
+        "select",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "refine_focus": {
+      "name": "refine_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "refine",
+        "focus"
+      ],
+      "lineage": [
+        "refine_focus",
+        "refine",
+        "generate",
+        "select",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "rank_differentiate": {
+      "name": "rank_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6749999999999999
+      },
+      "parents": [
+        "rank",
+        "differentiate"
+      ],
+      "lineage": [
+        "rank_differentiate",
+        "rank",
+        "select",
+        "compare",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "rank_evaluate": {
+      "name": "rank_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "rank",
+        "evaluate"
+      ],
+      "lineage": [
+        "rank_evaluate",
+        "rank",
+        "select",
+        "compare",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "rank_synthesize": {
+      "name": "rank_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "rank",
+        "synthesize"
+      ],
+      "lineage": [
+        "rank_synthesize",
+        "rank",
+        "select",
+        "compare",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "rank_filter": {
+      "name": "rank_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "rank",
+        "filter"
+      ],
+      "lineage": [
+        "rank_filter",
+        "rank",
+        "select",
+        "compare",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "rank_contextualize": {
+      "name": "rank_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "rank",
+        "contextualize"
+      ],
+      "lineage": [
+        "rank_contextualize",
+        "rank",
+        "select",
+        "compare",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "rank_understand": {
+      "name": "rank_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "rank",
+        "understand"
+      ],
+      "lineage": [
+        "rank_understand",
+        "rank",
+        "select",
+        "compare",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "rank_ideate": {
+      "name": "rank_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "rank",
+        "ideate"
+      ],
+      "lineage": [
+        "rank_ideate",
+        "rank",
+        "select",
+        "compare",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "rank_judge": {
+      "name": "rank_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "rank",
+        "judge"
+      ],
+      "lineage": [
+        "rank_judge",
+        "rank",
+        "select",
+        "compare",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "rank_iterate": {
+      "name": "rank_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "rank",
+        "iterate"
+      ],
+      "lineage": [
+        "rank_iterate",
+        "rank",
+        "select",
+        "compare",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "rank_express": {
+      "name": "rank_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "rank",
+        "express"
+      ],
+      "lineage": [
+        "rank_express",
+        "rank",
+        "select",
+        "compare",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "rank_compound": {
+      "name": "rank_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "rank",
+        "compound"
+      ],
+      "lineage": [
+        "rank_compound",
+        "rank",
+        "select",
+        "compare",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "rank_refine": {
+      "name": "rank_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "rank",
+        "refine"
+      ],
+      "lineage": [
+        "rank_refine",
+        "rank",
+        "select",
+        "compare",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "rank_rank": {
+      "name": "rank_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "rank",
+        "rank"
+      ],
+      "lineage": [
+        "rank_rank",
+        "rank",
+        "select",
+        "compare",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "rank_discern": {
+      "name": "rank_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "rank",
+        "discern"
+      ],
+      "lineage": [
+        "rank_discern",
+        "rank",
+        "select",
+        "compare",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "rank_curate": {
+      "name": "rank_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "rank",
+        "curate"
+      ],
+      "lineage": [
+        "rank_curate",
+        "rank",
+        "select",
+        "compare",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "rank_focus": {
+      "name": "rank_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "rank",
+        "focus"
+      ],
+      "lineage": [
+        "rank_focus",
+        "rank",
+        "select",
+        "compare",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "discern_differentiate": {
+      "name": "discern_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "discern",
+        "differentiate"
+      ],
+      "lineage": [
+        "discern_differentiate",
+        "discern",
+        "select",
+        "interpret",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "discern_evaluate": {
+      "name": "discern_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "discern",
+        "evaluate"
+      ],
+      "lineage": [
+        "discern_evaluate",
+        "discern",
+        "select",
+        "interpret",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "discern_synthesize": {
+      "name": "discern_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "discern",
+        "synthesize"
+      ],
+      "lineage": [
+        "discern_synthesize",
+        "discern",
+        "select",
+        "interpret",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "discern_filter": {
+      "name": "discern_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "discern",
+        "filter"
+      ],
+      "lineage": [
+        "discern_filter",
+        "discern",
+        "select",
+        "interpret",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "discern_contextualize": {
+      "name": "discern_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "discern",
+        "contextualize"
+      ],
+      "lineage": [
+        "discern_contextualize",
+        "discern",
+        "select",
+        "interpret",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "discern_understand": {
+      "name": "discern_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.375
+      },
+      "parents": [
+        "discern",
+        "understand"
+      ],
+      "lineage": [
+        "discern_understand",
+        "discern",
+        "select",
+        "interpret",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "discern_ideate": {
+      "name": "discern_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "discern",
+        "ideate"
+      ],
+      "lineage": [
+        "discern_ideate",
+        "discern",
+        "select",
+        "interpret",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "discern_judge": {
+      "name": "discern_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "discern",
+        "judge"
+      ],
+      "lineage": [
+        "discern_judge",
+        "discern",
+        "select",
+        "interpret",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "discern_iterate": {
+      "name": "discern_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "discern",
+        "iterate"
+      ],
+      "lineage": [
+        "discern_iterate",
+        "discern",
+        "select",
+        "interpret",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "discern_express": {
+      "name": "discern_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.425
+      },
+      "parents": [
+        "discern",
+        "express"
+      ],
+      "lineage": [
+        "discern_express",
+        "discern",
+        "select",
+        "interpret",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "discern_compound": {
+      "name": "discern_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.475
+      },
+      "parents": [
+        "discern",
+        "compound"
+      ],
+      "lineage": [
+        "discern_compound",
+        "discern",
+        "select",
+        "interpret",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "discern_refine": {
+      "name": "discern_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "discern",
+        "refine"
+      ],
+      "lineage": [
+        "discern_refine",
+        "discern",
+        "select",
+        "interpret",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "discern_rank": {
+      "name": "discern_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5499999999999999
+      },
+      "parents": [
+        "discern",
+        "rank"
+      ],
+      "lineage": [
+        "discern_rank",
+        "discern",
+        "select",
+        "interpret",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "discern_discern": {
+      "name": "discern_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "discern",
+        "discern"
+      ],
+      "lineage": [
+        "discern_discern",
+        "discern",
+        "select",
+        "interpret",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "discern_curate": {
+      "name": "discern_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "discern",
+        "curate"
+      ],
+      "lineage": [
+        "discern_curate",
+        "discern",
+        "select",
+        "interpret",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "discern_focus": {
+      "name": "discern_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "discern",
+        "focus"
+      ],
+      "lineage": [
+        "discern_focus",
+        "discern",
+        "select",
+        "interpret",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "curate_differentiate": {
+      "name": "curate_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "curate",
+        "differentiate"
+      ],
+      "lineage": [
+        "curate_differentiate",
+        "curate",
+        "select",
+        "generate",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "curate_evaluate": {
+      "name": "curate_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "curate",
+        "evaluate"
+      ],
+      "lineage": [
+        "curate_evaluate",
+        "curate",
+        "select",
+        "generate",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "curate_synthesize": {
+      "name": "curate_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "curate",
+        "synthesize"
+      ],
+      "lineage": [
+        "curate_synthesize",
+        "curate",
+        "select",
+        "generate",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "curate_filter": {
+      "name": "curate_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "curate",
+        "filter"
+      ],
+      "lineage": [
+        "curate_filter",
+        "curate",
+        "select",
+        "generate",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "curate_contextualize": {
+      "name": "curate_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "curate",
+        "contextualize"
+      ],
+      "lineage": [
+        "curate_contextualize",
+        "curate",
+        "select",
+        "generate",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "curate_understand": {
+      "name": "curate_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.42500000000000004
+      },
+      "parents": [
+        "curate",
+        "understand"
+      ],
+      "lineage": [
+        "curate_understand",
+        "curate",
+        "select",
+        "generate",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "curate_ideate": {
+      "name": "curate_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "curate",
+        "ideate"
+      ],
+      "lineage": [
+        "curate_ideate",
+        "curate",
+        "select",
+        "generate",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "curate_judge": {
+      "name": "curate_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "curate",
+        "judge"
+      ],
+      "lineage": [
+        "curate_judge",
+        "curate",
+        "select",
+        "generate",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "curate_iterate": {
+      "name": "curate_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "curate",
+        "iterate"
+      ],
+      "lineage": [
+        "curate_iterate",
+        "curate",
+        "select",
+        "generate",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "curate_express": {
+      "name": "curate_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.47500000000000003
+      },
+      "parents": [
+        "curate",
+        "express"
+      ],
+      "lineage": [
+        "curate_express",
+        "curate",
+        "select",
+        "generate",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "curate_compound": {
+      "name": "curate_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.525
+      },
+      "parents": [
+        "curate",
+        "compound"
+      ],
+      "lineage": [
+        "curate_compound",
+        "curate",
+        "select",
+        "generate",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "curate_refine": {
+      "name": "curate_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "curate",
+        "refine"
+      ],
+      "lineage": [
+        "curate_refine",
+        "curate",
+        "select",
+        "generate",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "curate_rank": {
+      "name": "curate_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "curate",
+        "rank"
+      ],
+      "lineage": [
+        "curate_rank",
+        "curate",
+        "select",
+        "generate",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "curate_discern": {
+      "name": "curate_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "curate",
+        "discern"
+      ],
+      "lineage": [
+        "curate_discern",
+        "curate",
+        "select",
+        "generate",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "curate_curate": {
+      "name": "curate_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "curate",
+        "curate"
+      ],
+      "lineage": [
+        "curate_curate",
+        "curate",
+        "select",
+        "generate",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "curate_focus": {
+      "name": "curate_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "curate",
+        "focus"
+      ],
+      "lineage": [
+        "curate_focus",
+        "curate",
+        "select",
+        "generate",
+        "focus",
+        "select",
+        "select"
+      ]
+    },
+    "focus_differentiate": {
+      "name": "focus_differentiate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6499999999999999
+      },
+      "parents": [
+        "focus",
+        "differentiate"
+      ],
+      "lineage": [
+        "focus_differentiate",
+        "focus",
+        "select",
+        "select",
+        "differentiate",
+        "compare",
+        "compare"
+      ]
+    },
+    "focus_evaluate": {
+      "name": "focus_evaluate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "focus",
+        "evaluate"
+      ],
+      "lineage": [
+        "focus_evaluate",
+        "focus",
+        "select",
+        "select",
+        "evaluate",
+        "compare",
+        "interpret"
+      ]
+    },
+    "focus_synthesize": {
+      "name": "focus_synthesize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "focus",
+        "synthesize"
+      ],
+      "lineage": [
+        "focus_synthesize",
+        "focus",
+        "select",
+        "select",
+        "synthesize",
+        "compare",
+        "generate"
+      ]
+    },
+    "focus_filter": {
+      "name": "focus_filter",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "focus",
+        "filter"
+      ],
+      "lineage": [
+        "focus_filter",
+        "focus",
+        "select",
+        "select",
+        "filter",
+        "compare",
+        "select"
+      ]
+    },
+    "focus_contextualize": {
+      "name": "focus_contextualize",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "focus",
+        "contextualize"
+      ],
+      "lineage": [
+        "focus_contextualize",
+        "focus",
+        "select",
+        "select",
+        "contextualize",
+        "interpret",
+        "compare"
+      ]
+    },
+    "focus_understand": {
+      "name": "focus_understand",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.44999999999999996
+      },
+      "parents": [
+        "focus",
+        "understand"
+      ],
+      "lineage": [
+        "focus_understand",
+        "focus",
+        "select",
+        "select",
+        "understand",
+        "interpret",
+        "interpret"
+      ]
+    },
+    "focus_ideate": {
+      "name": "focus_ideate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "focus",
+        "ideate"
+      ],
+      "lineage": [
+        "focus_ideate",
+        "focus",
+        "select",
+        "select",
+        "ideate",
+        "interpret",
+        "generate"
+      ]
+    },
+    "focus_judge": {
+      "name": "focus_judge",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "focus",
+        "judge"
+      ],
+      "lineage": [
+        "focus_judge",
+        "focus",
+        "select",
+        "select",
+        "judge",
+        "interpret",
+        "select"
+      ]
+    },
+    "focus_iterate": {
+      "name": "focus_iterate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "focus",
+        "iterate"
+      ],
+      "lineage": [
+        "focus_iterate",
+        "focus",
+        "select",
+        "select",
+        "iterate",
+        "generate",
+        "compare"
+      ]
+    },
+    "focus_express": {
+      "name": "focus_express",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5
+      },
+      "parents": [
+        "focus",
+        "express"
+      ],
+      "lineage": [
+        "focus_express",
+        "focus",
+        "select",
+        "select",
+        "express",
+        "generate",
+        "interpret"
+      ]
+    },
+    "focus_compound": {
+      "name": "focus_compound",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.55
+      },
+      "parents": [
+        "focus",
+        "compound"
+      ],
+      "lineage": [
+        "focus_compound",
+        "focus",
+        "select",
+        "select",
+        "compound",
+        "generate",
+        "generate"
+      ]
+    },
+    "focus_refine": {
+      "name": "focus_refine",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "focus",
+        "refine"
+      ],
+      "lineage": [
+        "focus_refine",
+        "focus",
+        "select",
+        "select",
+        "refine",
+        "generate",
+        "select"
+      ]
+    },
+    "focus_rank": {
+      "name": "focus_rank",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.625
+      },
+      "parents": [
+        "focus",
+        "rank"
+      ],
+      "lineage": [
+        "focus_rank",
+        "focus",
+        "select",
+        "select",
+        "rank",
+        "select",
+        "compare"
+      ]
+    },
+    "focus_discern": {
+      "name": "focus_discern",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.5249999999999999
+      },
+      "parents": [
+        "focus",
+        "discern"
+      ],
+      "lineage": [
+        "focus_discern",
+        "focus",
+        "select",
+        "select",
+        "discern",
+        "select",
+        "interpret"
+      ]
+    },
+    "focus_curate": {
+      "name": "focus_curate",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.575
+      },
+      "parents": [
+        "focus",
+        "curate"
+      ],
+      "lineage": [
+        "focus_curate",
+        "focus",
+        "select",
+        "select",
+        "curate",
+        "select",
+        "generate"
+      ]
+    },
+    "focus_focus": {
+      "name": "focus_focus",
+      "generation": 2,
+      "polarity_signature": {
+        "activity": 0.5,
+        "complexity": 0.5,
+        "external": 0.6
+      },
+      "parents": [
+        "focus",
+        "focus"
+      ],
+      "lineage": [
+        "focus_focus",
+        "focus",
+        "select",
+        "select",
+        "focus",
+        "select",
+        "select"
+      ]
+    }
+  },
+  "pairs_by_generation": {
+    "1": [
+      {
+        "first": "compare",
+        "second": "compare",
+        "result": "differentiate",
+        "polarities": {
+          "activity": 0.8,
+          "complexity": 0.6,
+          "external": 0.7
+        }
+      },
+      {
+        "first": "compare",
+        "second": "interpret",
+        "result": "evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.7,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "compare",
+        "second": "generate",
+        "result": "synthesize",
+        "polarities": {
+          "activity": 0.6,
+          "complexity": 0.8,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "compare",
+        "second": "select",
+        "result": "filter",
+        "polarities": {
+          "activity": 0.7,
+          "complexity": 0.4,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "interpret",
+        "second": "compare",
+        "result": "contextualize",
+        "polarities": {
+          "activity": 0.4,
+          "complexity": 0.7,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "interpret",
+        "second": "interpret",
+        "result": "understand",
+        "polarities": {
+          "activity": 0.3,
+          "complexity": 0.9,
+          "external": 0.3
+        }
+      },
+      {
+        "first": "interpret",
+        "second": "generate",
+        "result": "ideate",
+        "polarities": {
+          "activity": 0.6,
+          "complexity": 0.8,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "interpret",
+        "second": "select",
+        "result": "judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.6,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "generate",
+        "second": "compare",
+        "result": "iterate",
+        "polarities": {
+          "activity": 0.8,
+          "complexity": 0.6,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "generate",
+        "second": "interpret",
+        "result": "express",
+        "polarities": {
+          "activity": 0.7,
+          "complexity": 0.7,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "generate",
+        "second": "generate",
+        "result": "compound",
+        "polarities": {
+          "activity": 0.9,
+          "complexity": 0.8,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "generate",
+        "second": "select",
+        "result": "refine",
+        "polarities": {
+          "activity": 0.6,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "select",
+        "second": "compare",
+        "result": "rank",
+        "polarities": {
+          "activity": 0.6,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "select",
+        "second": "interpret",
+        "result": "discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.7,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "select",
+        "second": "generate",
+        "result": "curate",
+        "polarities": {
+          "activity": 0.7,
+          "complexity": 0.6,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "select",
+        "second": "select",
+        "result": "focus",
+        "polarities": {
+          "activity": 0.8,
+          "complexity": 0.4,
+          "external": 0.6
+        }
+      }
+    ],
+    "2": [
+      {
+        "first": "differentiate",
+        "second": "differentiate",
+        "result": "differentiate_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.7
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "evaluate",
+        "result": "differentiate_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "synthesize",
+        "result": "differentiate_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "filter",
+        "result": "differentiate_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6749999999999999
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "contextualize",
+        "result": "differentiate_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "understand",
+        "result": "differentiate_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "ideate",
+        "result": "differentiate_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "judge",
+        "result": "differentiate_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "iterate",
+        "result": "differentiate_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "express",
+        "result": "differentiate_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "compound",
+        "result": "differentiate_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "refine",
+        "result": "differentiate_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "rank",
+        "result": "differentiate_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6749999999999999
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "discern",
+        "result": "differentiate_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "curate",
+        "result": "differentiate_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "differentiate",
+        "second": "focus",
+        "result": "differentiate_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "differentiate",
+        "result": "evaluate_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "evaluate",
+        "result": "evaluate_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "synthesize",
+        "result": "evaluate_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "filter",
+        "result": "evaluate_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "contextualize",
+        "result": "evaluate_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "understand",
+        "result": "evaluate_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "ideate",
+        "result": "evaluate_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "judge",
+        "result": "evaluate_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "iterate",
+        "result": "evaluate_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "express",
+        "result": "evaluate_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "compound",
+        "result": "evaluate_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "refine",
+        "result": "evaluate_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "rank",
+        "result": "evaluate_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "discern",
+        "result": "evaluate_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "curate",
+        "result": "evaluate_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "evaluate",
+        "second": "focus",
+        "result": "evaluate_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "differentiate",
+        "result": "synthesize_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "evaluate",
+        "result": "synthesize_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "synthesize",
+        "result": "synthesize_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "filter",
+        "result": "synthesize_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "contextualize",
+        "result": "synthesize_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "understand",
+        "result": "synthesize_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "ideate",
+        "result": "synthesize_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "judge",
+        "result": "synthesize_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "iterate",
+        "result": "synthesize_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "express",
+        "result": "synthesize_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "compound",
+        "result": "synthesize_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "refine",
+        "result": "synthesize_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "rank",
+        "result": "synthesize_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "discern",
+        "result": "synthesize_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "curate",
+        "result": "synthesize_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "synthesize",
+        "second": "focus",
+        "result": "synthesize_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "filter",
+        "second": "differentiate",
+        "result": "filter_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6749999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "evaluate",
+        "result": "filter_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "filter",
+        "second": "synthesize",
+        "result": "filter_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "filter",
+        "second": "filter",
+        "result": "filter_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "contextualize",
+        "result": "filter_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "filter",
+        "second": "understand",
+        "result": "filter_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "filter",
+        "second": "ideate",
+        "result": "filter_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "judge",
+        "result": "filter_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "iterate",
+        "result": "filter_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "filter",
+        "second": "express",
+        "result": "filter_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "compound",
+        "result": "filter_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "filter",
+        "second": "refine",
+        "result": "filter_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "filter",
+        "second": "rank",
+        "result": "filter_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "discern",
+        "result": "filter_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "filter",
+        "second": "curate",
+        "result": "filter_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "filter",
+        "second": "focus",
+        "result": "filter_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "differentiate",
+        "result": "contextualize_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "evaluate",
+        "result": "contextualize_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "synthesize",
+        "result": "contextualize_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "filter",
+        "result": "contextualize_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "contextualize",
+        "result": "contextualize_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "understand",
+        "result": "contextualize_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "ideate",
+        "result": "contextualize_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "judge",
+        "result": "contextualize_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "iterate",
+        "result": "contextualize_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "express",
+        "result": "contextualize_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "compound",
+        "result": "contextualize_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "refine",
+        "result": "contextualize_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "rank",
+        "result": "contextualize_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "discern",
+        "result": "contextualize_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "curate",
+        "result": "contextualize_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "contextualize",
+        "second": "focus",
+        "result": "contextualize_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "understand",
+        "second": "differentiate",
+        "result": "understand_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "understand",
+        "second": "evaluate",
+        "result": "understand_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "understand",
+        "second": "synthesize",
+        "result": "understand_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "understand",
+        "second": "filter",
+        "result": "understand_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "understand",
+        "second": "contextualize",
+        "result": "understand_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "understand",
+        "second": "understand",
+        "result": "understand_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.3
+        }
+      },
+      {
+        "first": "understand",
+        "second": "ideate",
+        "result": "understand_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.35
+        }
+      },
+      {
+        "first": "understand",
+        "second": "judge",
+        "result": "understand_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.375
+        }
+      },
+      {
+        "first": "understand",
+        "second": "iterate",
+        "result": "understand_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "understand",
+        "second": "express",
+        "result": "understand_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.35
+        }
+      },
+      {
+        "first": "understand",
+        "second": "compound",
+        "result": "understand_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "understand",
+        "second": "refine",
+        "result": "understand_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.42500000000000004
+        }
+      },
+      {
+        "first": "understand",
+        "second": "rank",
+        "result": "understand_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "understand",
+        "second": "discern",
+        "result": "understand_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.375
+        }
+      },
+      {
+        "first": "understand",
+        "second": "curate",
+        "result": "understand_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.42500000000000004
+        }
+      },
+      {
+        "first": "understand",
+        "second": "focus",
+        "result": "understand_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "differentiate",
+        "result": "ideate_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "evaluate",
+        "result": "ideate_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "synthesize",
+        "result": "ideate_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "filter",
+        "result": "ideate_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "contextualize",
+        "result": "ideate_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "understand",
+        "result": "ideate_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.35
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "ideate",
+        "result": "ideate_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "judge",
+        "result": "ideate_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "iterate",
+        "result": "ideate_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "express",
+        "result": "ideate_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "compound",
+        "result": "ideate_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "refine",
+        "result": "ideate_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "rank",
+        "result": "ideate_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "discern",
+        "result": "ideate_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "curate",
+        "result": "ideate_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "ideate",
+        "second": "focus",
+        "result": "ideate_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "judge",
+        "second": "differentiate",
+        "result": "judge_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "judge",
+        "second": "evaluate",
+        "result": "judge_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "judge",
+        "second": "synthesize",
+        "result": "judge_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "judge",
+        "second": "filter",
+        "result": "judge_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "judge",
+        "second": "contextualize",
+        "result": "judge_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "judge",
+        "second": "understand",
+        "result": "judge_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.375
+        }
+      },
+      {
+        "first": "judge",
+        "second": "ideate",
+        "result": "judge_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "judge",
+        "second": "judge",
+        "result": "judge_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "judge",
+        "second": "iterate",
+        "result": "judge_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "judge",
+        "second": "express",
+        "result": "judge_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "judge",
+        "second": "compound",
+        "result": "judge_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "judge",
+        "second": "refine",
+        "result": "judge_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "judge",
+        "second": "rank",
+        "result": "judge_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "judge",
+        "second": "discern",
+        "result": "judge_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "judge",
+        "second": "curate",
+        "result": "judge_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "judge",
+        "second": "focus",
+        "result": "judge_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "differentiate",
+        "result": "iterate_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "evaluate",
+        "result": "iterate_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "synthesize",
+        "result": "iterate_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "filter",
+        "result": "iterate_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "contextualize",
+        "result": "iterate_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "understand",
+        "result": "iterate_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "ideate",
+        "result": "iterate_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "judge",
+        "result": "iterate_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "iterate",
+        "result": "iterate_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "express",
+        "result": "iterate_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "compound",
+        "result": "iterate_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "refine",
+        "result": "iterate_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "rank",
+        "result": "iterate_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "discern",
+        "result": "iterate_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "curate",
+        "result": "iterate_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "iterate",
+        "second": "focus",
+        "result": "iterate_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "express",
+        "second": "differentiate",
+        "result": "express_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "express",
+        "second": "evaluate",
+        "result": "express_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "express",
+        "second": "synthesize",
+        "result": "express_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "express",
+        "second": "filter",
+        "result": "express_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "express",
+        "second": "contextualize",
+        "result": "express_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "express",
+        "second": "understand",
+        "result": "express_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.35
+        }
+      },
+      {
+        "first": "express",
+        "second": "ideate",
+        "result": "express_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "express",
+        "second": "judge",
+        "result": "express_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "express",
+        "second": "iterate",
+        "result": "express_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "express",
+        "second": "express",
+        "result": "express_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "express",
+        "second": "compound",
+        "result": "express_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "express",
+        "second": "refine",
+        "result": "express_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "express",
+        "second": "rank",
+        "result": "express_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "express",
+        "second": "discern",
+        "result": "express_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "express",
+        "second": "curate",
+        "result": "express_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "express",
+        "second": "focus",
+        "result": "express_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "compound",
+        "second": "differentiate",
+        "result": "compound_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "compound",
+        "second": "evaluate",
+        "result": "compound_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "compound",
+        "second": "synthesize",
+        "result": "compound_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "compound",
+        "second": "filter",
+        "result": "compound_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "compound",
+        "second": "contextualize",
+        "result": "compound_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "compound",
+        "second": "understand",
+        "result": "compound_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.4
+        }
+      },
+      {
+        "first": "compound",
+        "second": "ideate",
+        "result": "compound_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "compound",
+        "second": "judge",
+        "result": "compound_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "compound",
+        "second": "iterate",
+        "result": "compound_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "compound",
+        "second": "express",
+        "result": "compound_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.45
+        }
+      },
+      {
+        "first": "compound",
+        "second": "compound",
+        "result": "compound_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "compound",
+        "second": "refine",
+        "result": "compound_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "compound",
+        "second": "rank",
+        "result": "compound_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "compound",
+        "second": "discern",
+        "result": "compound_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "compound",
+        "second": "curate",
+        "result": "compound_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "compound",
+        "second": "focus",
+        "result": "compound_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "refine",
+        "second": "differentiate",
+        "result": "refine_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "refine",
+        "second": "evaluate",
+        "result": "refine_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "refine",
+        "second": "synthesize",
+        "result": "refine_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "refine",
+        "second": "filter",
+        "result": "refine_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "refine",
+        "second": "contextualize",
+        "result": "refine_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "refine",
+        "second": "understand",
+        "result": "refine_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.42500000000000004
+        }
+      },
+      {
+        "first": "refine",
+        "second": "ideate",
+        "result": "refine_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "refine",
+        "second": "judge",
+        "result": "refine_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "refine",
+        "second": "iterate",
+        "result": "refine_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "refine",
+        "second": "express",
+        "result": "refine_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "refine",
+        "second": "compound",
+        "result": "refine_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "refine",
+        "second": "refine",
+        "result": "refine_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "refine",
+        "second": "rank",
+        "result": "refine_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "refine",
+        "second": "discern",
+        "result": "refine_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "refine",
+        "second": "curate",
+        "result": "refine_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "refine",
+        "second": "focus",
+        "result": "refine_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "rank",
+        "second": "differentiate",
+        "result": "rank_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6749999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "evaluate",
+        "result": "rank_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "rank",
+        "second": "synthesize",
+        "result": "rank_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "rank",
+        "second": "filter",
+        "result": "rank_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "contextualize",
+        "result": "rank_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "rank",
+        "second": "understand",
+        "result": "rank_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "rank",
+        "second": "ideate",
+        "result": "rank_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "judge",
+        "result": "rank_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "iterate",
+        "result": "rank_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "rank",
+        "second": "express",
+        "result": "rank_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "compound",
+        "result": "rank_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "rank",
+        "second": "refine",
+        "result": "rank_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "rank",
+        "second": "rank",
+        "result": "rank_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "discern",
+        "result": "rank_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "rank",
+        "second": "curate",
+        "result": "rank_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "rank",
+        "second": "focus",
+        "result": "rank_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "discern",
+        "second": "differentiate",
+        "result": "discern_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "discern",
+        "second": "evaluate",
+        "result": "discern_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "discern",
+        "second": "synthesize",
+        "result": "discern_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "discern",
+        "second": "filter",
+        "result": "discern_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "discern",
+        "second": "contextualize",
+        "result": "discern_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "discern",
+        "second": "understand",
+        "result": "discern_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.375
+        }
+      },
+      {
+        "first": "discern",
+        "second": "ideate",
+        "result": "discern_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "discern",
+        "second": "judge",
+        "result": "discern_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "discern",
+        "second": "iterate",
+        "result": "discern_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "discern",
+        "second": "express",
+        "result": "discern_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.425
+        }
+      },
+      {
+        "first": "discern",
+        "second": "compound",
+        "result": "discern_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.475
+        }
+      },
+      {
+        "first": "discern",
+        "second": "refine",
+        "result": "discern_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "discern",
+        "second": "rank",
+        "result": "discern_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5499999999999999
+        }
+      },
+      {
+        "first": "discern",
+        "second": "discern",
+        "result": "discern_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "discern",
+        "second": "curate",
+        "result": "discern_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "discern",
+        "second": "focus",
+        "result": "discern_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "curate",
+        "second": "differentiate",
+        "result": "curate_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "curate",
+        "second": "evaluate",
+        "result": "curate_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "curate",
+        "second": "synthesize",
+        "result": "curate_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "curate",
+        "second": "filter",
+        "result": "curate_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "curate",
+        "second": "contextualize",
+        "result": "curate_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "curate",
+        "second": "understand",
+        "result": "curate_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.42500000000000004
+        }
+      },
+      {
+        "first": "curate",
+        "second": "ideate",
+        "result": "curate_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "curate",
+        "second": "judge",
+        "result": "curate_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "curate",
+        "second": "iterate",
+        "result": "curate_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "curate",
+        "second": "express",
+        "result": "curate_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.47500000000000003
+        }
+      },
+      {
+        "first": "curate",
+        "second": "compound",
+        "result": "curate_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.525
+        }
+      },
+      {
+        "first": "curate",
+        "second": "refine",
+        "result": "curate_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "curate",
+        "second": "rank",
+        "result": "curate_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "curate",
+        "second": "discern",
+        "result": "curate_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "curate",
+        "second": "curate",
+        "result": "curate_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "curate",
+        "second": "focus",
+        "result": "curate_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "focus",
+        "second": "differentiate",
+        "result": "focus_differentiate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6499999999999999
+        }
+      },
+      {
+        "first": "focus",
+        "second": "evaluate",
+        "result": "focus_evaluate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "focus",
+        "second": "synthesize",
+        "result": "focus_synthesize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "focus",
+        "second": "filter",
+        "result": "focus_filter",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "focus",
+        "second": "contextualize",
+        "result": "focus_contextualize",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "focus",
+        "second": "understand",
+        "result": "focus_understand",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.44999999999999996
+        }
+      },
+      {
+        "first": "focus",
+        "second": "ideate",
+        "result": "focus_ideate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "focus",
+        "second": "judge",
+        "result": "focus_judge",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "focus",
+        "second": "iterate",
+        "result": "focus_iterate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      },
+      {
+        "first": "focus",
+        "second": "express",
+        "result": "focus_express",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5
+        }
+      },
+      {
+        "first": "focus",
+        "second": "compound",
+        "result": "focus_compound",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.55
+        }
+      },
+      {
+        "first": "focus",
+        "second": "refine",
+        "result": "focus_refine",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "focus",
+        "second": "rank",
+        "result": "focus_rank",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.625
+        }
+      },
+      {
+        "first": "focus",
+        "second": "discern",
+        "result": "focus_discern",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.5249999999999999
+        }
+      },
+      {
+        "first": "focus",
+        "second": "curate",
+        "result": "focus_curate",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.575
+        }
+      },
+      {
+        "first": "focus",
+        "second": "focus",
+        "result": "focus_focus",
+        "polarities": {
+          "activity": 0.5,
+          "complexity": 0.5,
+          "external": 0.6
+        }
+      }
+    ]
+  }
+}

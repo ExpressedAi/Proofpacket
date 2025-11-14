@@ -1,0 +1,343 @@
+{
+  "parameters": {
+    "nu_values": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "n_shells_values": [
+      16,
+      24,
+      32
+    ],
+    "n_steps": 5000
+  },
+  "results": [
+    {
+      "nu": 0.001,
+      "n_shells": 16,
+      "verdict": "SINGULAR",
+      "n_locks": 14,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.0061587056315955116,
+      "mean_chi": 2.9568870320755076,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "3 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 36.162965 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.002107 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.001,
+      "n_shells": 24,
+      "verdict": "SINGULAR",
+      "n_locks": 22,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.0061587056315955116,
+      "mean_chi": 1.8816553840480503,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "3 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 36.162965 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.002107 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.001,
+      "n_shells": 32,
+      "verdict": "SINGULAR",
+      "n_locks": 30,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.0061587056315955116,
+      "mean_chi": 1.3798806149685703,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "3 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 36.162965 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.002107 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 16,
+      "verdict": "SINGULAR",
+      "n_locks": 14,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.00389665013096681,
+      "mean_chi": 0.45970830902916143,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 4.597578 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.001314 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 24,
+      "verdict": "SINGULAR",
+      "n_locks": 22,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.00389665013096681,
+      "mean_chi": 0.29254165120037545,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 4.597578 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.001314 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.01,
+      "n_shells": 32,
+      "verdict": "SINGULAR",
+      "n_locks": 30,
+      "n_eligible": 3,
+      "n_supercritical": 2,
+      "max_K": 0.00389665013096681,
+      "mean_chi": 0.21453054421360868,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 4.597578 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.001314 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 16,
+      "verdict": "SINGULAR",
+      "n_locks": 14,
+      "n_eligible": 3,
+      "n_supercritical": 1,
+      "max_K": 0.0006135740040496448,
+      "mean_chi": 1.050805716262262,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 13.769443 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.000207 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0
+      ]
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 24,
+      "verdict": "SINGULAR",
+      "n_locks": 22,
+      "n_eligible": 3,
+      "n_supercritical": 1,
+      "max_K": 0.0006135740040496448,
+      "mean_chi": 0.6686945467123485,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 13.769443 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.000207 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0
+      ]
+    },
+    {
+      "nu": 0.1,
+      "n_shells": 32,
+      "verdict": "SINGULAR",
+      "n_locks": 30,
+      "n_eligible": 3,
+      "n_supercritical": 1,
+      "max_K": 0.0006135740040496448,
+      "mean_chi": 0.4903760009223889,
+      "audits": {
+        "E0": {
+          "passed": true,
+          "message": "3 eligible locks"
+        },
+        "E1": {
+          "passed": true,
+          "message": "2 nonzero couplings"
+        },
+        "E2": {
+          "passed": false,
+          "message": "max \u03c7 = 13.769443 < 1.0"
+        },
+        "E3": {
+          "passed": false,
+          "message": "0 stable locks"
+        },
+        "E4": {
+          "passed": true,
+          "message": "low-order K=0.000207 >= high-order K=0.000000"
+        }
+      },
+      "supercritical_indices": [
+        0
+      ]
+    }
+  ],
+  "summary": {
+    "total_tests": 9,
+    "smooth_count": 0,
+    "smooth_rate": 0.0
+  }
+}
