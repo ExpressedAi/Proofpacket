@@ -75,7 +75,7 @@ class Resonance:
     @property
     def is_eligible(self) -> bool:
         """Check frequency eligibility"""
-        return abs(self.detune) <= np.pi / 18  # ~10 degrees
+        return abs(self.detune) <= np.pi / 6  # ~30 degrees (loosened)
 
     def local_potential(self, lambda_order: float = 0.2, gamma_detune: float = 1.0,
                        w_K: float = 1.0, w_H: float = 1.0, w_zeta: float = 0.5) -> float:
@@ -134,9 +134,9 @@ class OmegaFlowController:
         # Low-order resonances (these win by default)
         self.low_order_resonances = [r for r in ResonanceOrder]
 
-        # Snap control
-        self.delta_snap = np.deg2rad(10)  # eligibility threshold (10°)
-        self.tau_V = 0.1                   # minimum gain for snap
+        # Snap control (loosened for easier triggering)
+        self.delta_snap = np.deg2rad(30)  # eligibility threshold (30° - much wider)
+        self.tau_V = 0.01                  # minimum gain for snap (lower threshold)
         self.snaps_this_window = 0
         self.max_snaps_per_window = 1
 
@@ -310,12 +310,22 @@ class OmegaFlowController:
 
             delta_V = V_test - V_current
 
-            # Check gain
-            if delta_V >= -self.tau_V:
-                continue  # not enough gain
+            # Check gain OR already at minimum
+            # If delta_V is small and positive, we're at the minimum - SNAP!
+            # If delta_V is negative, we're approaching - SNAP!
+            at_minimum = (delta_V >= 0 and delta_V < 0.001)  # tiny positive = at minimum
+            approaching = (delta_V < -self.tau_V)  # negative = approaching
+
+            if not (at_minimum or approaching):
+                continue  # neither at minimum nor approaching
 
             # Quality score
-            quality = abs(delta_V) * (1.0 / r.order) * r.H_star * (1.0 - r.zeta)
+            if at_minimum:
+                # Already there - high quality!
+                quality = 2.0 * (1.0 / r.order) * r.H_star * (1.0 - r.zeta)
+            else:
+                # Approaching - quality based on gain magnitude
+                quality = abs(delta_V) * (1.0 / r.order) * r.H_star * (1.0 - r.zeta)
 
             # Boost if pathway memory shows this is strong
             if pathway_memory is not None:
@@ -372,6 +382,11 @@ class OmegaFlowController:
         B_d = self.dissonance_field(state.n, dissonance_info, active_context)
 
         for step_num in range(max_steps):
+            # Update all resonance phases to current state
+            current_phase = np.arctan2(state.n[1], state.n[0])
+            for r in resonances:
+                r.theta_n = current_phase
+
             # Check for snap
             snap_result = self.check_snap_eligibility(state.n, resonances, pathway_memory)
 

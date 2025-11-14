@@ -224,10 +224,19 @@ class GenerativeLearningEngine:
             else:
                 print("  ✓ QVBC approved")
 
+        # Filter out resonances that are same as initial concept (prevent self-loops)
+        if request.initial_concepts:
+            filtered_resonances = [
+                r for r in resonances
+                if r.name not in request.initial_concepts
+            ]
+        else:
+            filtered_resonances = resonances
+
         # Run Ω*-flow evolution
         state = self.omega_flow.evolve(
             initial_state=initial_state,
-            resonances=resonances,
+            resonances=filtered_resonances,
             dissonance_info=dissonance_info,
             active_context=active_context,
             max_steps=200,
@@ -394,34 +403,65 @@ class GenerativeLearningEngine:
         all_concepts = list(self.pairing_gen.concepts.values())
 
         # Sample relevant concepts (low-order preferred)
-        candidates = sorted(all_concepts, key=lambda c: c.generation)[:10]
+        candidates = sorted(all_concepts, key=lambda c: c.generation)[:20]  # more candidates
 
         for concept in candidates:
-            # Create resonance
+            # Find actual Bloch coordinates for this concept
+            theta_actual = 0.0
+            coords_found = False
+
+            for bloch_concept in self.semantic_sphere.concepts:
+                if bloch_concept.name == concept.name:
+                    # Extract phase from Bloch coordinates
+                    theta_actual = np.arctan2(bloch_concept.coordinates[1],
+                                             bloch_concept.coordinates[0])
+                    coords_found = True
+                    break
+
+            if not coords_found:
+                # Skip concepts not on sphere
+                continue
+
+            # Base parameters
+            base_K = 2.5  # stronger baseline coupling
+            base_Gamma = 0.3  # lower damping
+            base_H_star = 0.8
+            base_zeta = 0.25
+
+            # Check if pathway exists from initial concepts
+            pathway_strength = 0.0
+            if initial_concepts and concept.parents:
+                for init_c in initial_concepts:
+                    pathway_key = (init_c, concept.name)
+                    if pathway_key in self.pathway_memory.transitions:
+                        stats = self.pathway_memory.transitions[pathway_key]
+                        pathway_strength = max(pathway_strength, stats.strength)
+
+            # Strengthen based on pathway memory
+            K_adjusted = base_K * (1.0 + 2.0 * pathway_strength)  # big boost for strong pathways
+            H_star_adjusted = min(1.0, base_H_star + 0.2 * pathway_strength)
+            zeta_adjusted = max(0.05, base_zeta * (1.0 - 0.8 * pathway_strength))  # lower brittleness
+
+            # Create resonance with actual phase
             resonance = Resonance(
                 name=concept.name,
-                p=1 if concept.generation == 0 else 2,
+                p=1 if concept.generation == 0 else min(2, concept.generation),
                 q=1,
-                K=1.5,
-                Gamma=0.5,
-                theta_a=np.random.uniform(0, 2*np.pi),
-                theta_n=0.0,
-                H_star=0.8,
-                zeta=0.2,
-                coherence=0.75
+                K=K_adjusted,
+                Gamma=base_Gamma,
+                theta_a=theta_actual,  # USE ACTUAL PHASE!
+                theta_n=0.0,  # will be updated during evolution
+                H_star=H_star_adjusted,
+                zeta=zeta_adjusted,
+                coherence=0.85
             )
-
-            # Strengthen if pathway exists
-            if concept.parents:
-                pathway_key = (concept.parents[0], concept.name)
-                if pathway_key in self.pathway_memory.transitions:
-                    stats = self.pathway_memory.transitions[pathway_key]
-                    resonance.K *= (1.0 + 0.5 * stats.strength)
-                    resonance.H_star = min(1.0, resonance.H_star + 0.1 * stats.strength)
 
             resonances.append(resonance)
 
-        return resonances
+        # Sort by potential (K/order ratio) - prefer low-order with high coupling
+        resonances.sort(key=lambda r: r.K / r.order, reverse=True)
+
+        return resonances[:15]  # keep top 15
 
     def _state_to_concept(self, n: np.ndarray) -> str:
         """Map Bloch state to nearest concept"""

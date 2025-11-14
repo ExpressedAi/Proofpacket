@@ -1,61 +1,32 @@
 {
   "session_id": 5,
   "total_transitions": 5,
-  "total_snaps": 0,
+  "total_snaps": 1,
   "transitions": {
-    "compare\u2192interpret": {
-      "usage_count": 2,
-      "success_count": 0,
-      "failure_count": 2,
+    "compare\u2192differentiate": {
+      "usage_count": 1,
+      "success_count": 1,
+      "failure_count": 0,
       "epsilon_history": [
-        0.15,
-        6.184045166212309
+        0.15
       ],
       "K_history": [
-        1.0,
         1.0
       ],
       "convergence_time_history": [
-        2.0000000000000013,
-        2.0000000000000013
+        0.0
       ],
-      "average_convergence_time": 2.0000000000000013,
-      "min_convergence_time": 2.0000000000000013,
-      "success_rate": 0.0,
+      "average_convergence_time": 0.0,
+      "min_convergence_time": 0.0,
+      "success_rate": 1.0,
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.1,
       "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:18:36.662709",
-      "last_used": "2025-11-14T14:18:36.767355",
+      "first_used": "2025-11-14T14:26:04.788894",
+      "last_used": "2025-11-14T14:26:04.788894",
       "session_count": 0
     },
-    "compare\u2192generate": {
-      "usage_count": 2,
-      "success_count": 0,
-      "failure_count": 2,
-      "epsilon_history": [
-        0.15,
-        6.184045166212309
-      ],
-      "K_history": [
-        1.0,
-        1.0
-      ],
-      "convergence_time_history": [
-        2.0000000000000013,
-        2.0000000000000013
-      ],
-      "average_convergence_time": 2.0000000000000013,
-      "min_convergence_time": 2.0000000000000013,
-      "success_rate": 0.0,
-      "rg_persistence_score": 0.0,
-      "harmony_gain": 0.1,
-      "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:18:36.705645",
-      "last_used": "2025-11-14T14:18:36.810824",
-      "session_count": 0
-    },
-    "compare\u2192compound": {
+    "compare\u2192express": {
       "usage_count": 1,
       "success_count": 0,
       "failure_count": 1,
@@ -74,13 +45,75 @@
       "rg_persistence_score": 0.0,
       "harmony_gain": 0.1,
       "brittleness_reduction": -0.05,
-      "first_used": "2025-11-14T14:18:36.855401",
-      "last_used": "2025-11-14T14:18:36.855401",
+      "first_used": "2025-11-14T14:26:04.895863",
+      "last_used": "2025-11-14T14:26:04.895863",
+      "session_count": 0
+    },
+    "compare\u2192compound": {
+      "usage_count": 3,
+      "success_count": 0,
+      "failure_count": 3,
+      "epsilon_history": [
+        0.15,
+        6.184045166212309,
+        6.418533151790822
+      ],
+      "K_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "convergence_time_history": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "average_convergence_time": 2.0000000000000013,
+      "min_convergence_time": 2.0000000000000013,
+      "success_rate": 0.0,
+      "rg_persistence_score": 0.0,
+      "harmony_gain": 0.10000000000000002,
+      "brittleness_reduction": -0.05000000000000001,
+      "first_used": "2025-11-14T14:26:05.032669",
+      "last_used": "2025-11-14T14:26:05.321885",
       "session_count": 0
     }
   },
-  "attractors": {},
-  "anticipation_cache": [],
+  "attractors": {
+    "differentiate": {
+      "visit_count": 1,
+      "basin_depth": -2.7750000000000004,
+      "convergence_radius": 0.1,
+      "stability_score": 3.846153846153846,
+      "harmony_score": 0.8,
+      "coherence_score": 0.85,
+      "archetype": "ORDER_2",
+      "low_order": true,
+      "order": 2,
+      "incoming_pathways": "{'compare'}",
+      "strongest_parent": null,
+      "first_visited": "2025-11-14T14:26:04.788739",
+      "last_visited": "2025-11-14T14:26:04.788739"
+    }
+  },
+  "anticipation_cache": [
+    {
+      "source_region": [
+        0.6202494859828215,
+        1.2974032953274235,
+        0.45
+      ],
+      "dissonance_direction": [
+        0.8796459430051422,
+        1.0471975511965976,
+        1.118033988749895
+      ],
+      "predicted_target": "differentiate",
+      "confidence": 0.9,
+      "hit_count": 0,
+      "miss_count": 0
+    }
+  ],
   "promoted_primitives": [],
   "validated_roads": []
 }
