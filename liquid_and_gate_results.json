@@ -1,0 +1,285 @@
+{
+  "gate_type": "AND",
+  "implementation": "EM_field_phase_locking",
+  "B_field": 1.0,
+  "threshold_K": 0.5,
+  "results": [
+    {
+      "A": false,
+      "B": false,
+      "expected": false,
+      "actual": true,
+      "correct": false,
+      "diagnostics": {
+        "input_A": false,
+        "input_B": false,
+        "output": true,
+        "channel_A_flow": 0.001,
+        "channel_B_flow": 0.001,
+        "channel_A_current": 9.900990099009901e-06,
+        "channel_B_current": 9.900990099009901e-06,
+        "oscillator_A": {
+          "channel": "Input_A",
+          "A": 9.900990099009902e-07,
+          "omega": 0.1,
+          "theta": 5.267043216813368,
+          "Gamma": 0.010000000000000002,
+          "Q": 10.0
+        },
+        "oscillator_B": {
+          "channel": "Input_B",
+          "A": 9.900990099009902e-07,
+          "omega": 0.1,
+          "theta": 3.354753390889656,
+          "Gamma": 0.010000000000000002,
+          "Q": 10.0
+        },
+        "locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 0.8372368074025305,
+            "omega_i": 0.1,
+            "omega_j": 0.1,
+            "omega_min": 0.1,
+            "epsilon_cap": 5.240514006901525,
+            "s_f": 0.0,
+            "order": 2,
+            "eligible": true
+          },
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "2:1",
+            "K": 0.3199519834413555,
+            "omega_i": 0.1,
+            "omega_j": 0.1,
+            "omega_min": 0.1,
+            "epsilon_cap": 1.9903176013616912,
+            "s_f": 0.050243237527309324,
+            "order": 3,
+            "eligible": true
+          }
+        ],
+        "strong_locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 0.8372368074025305,
+            "omega_i": 0.1,
+            "omega_j": 0.1,
+            "omega_min": 0.1,
+            "epsilon_cap": 5.240514006901525,
+            "s_f": 0.0,
+            "order": 2,
+            "eligible": true
+          }
+        ],
+        "max_K": 0.8372368074025305
+      }
+    },
+    {
+      "A": false,
+      "B": true,
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "diagnostics": {
+        "input_A": false,
+        "input_B": true,
+        "output": false,
+        "channel_A_flow": 0.001,
+        "channel_B_flow": 0.1,
+        "channel_A_current": 9.900990099009901e-06,
+        "channel_B_current": 0.0009900990099009901,
+        "oscillator_A": {
+          "channel": "Input_A",
+          "A": 9.900990099009902e-07,
+          "omega": 0.1,
+          "theta": 1.4196804340865956,
+          "Gamma": 0.010000000000000002,
+          "Q": 10.0
+        },
+        "oscillator_B": {
+          "channel": "Input_B",
+          "A": 9.900990099009902e-05,
+          "omega": 10.0,
+          "theta": 0.8081009845441389,
+          "Gamma": 1.0,
+          "Q": 10.0
+        },
+        "locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 0.08026097251271797,
+            "omega_i": 0.1,
+            "omega_j": 10.0,
+            "omega_min": 0.1,
+            "epsilon_cap": 0.0,
+            "s_f": 99000000000.0,
+            "order": 2,
+            "eligible": false
+          },
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "2:1",
+            "K": 0.09614270282345315,
+            "omega_i": 0.1,
+            "omega_j": 10.0,
+            "omega_min": 0.1,
+            "epsilon_cap": 0.0,
+            "s_f": 98000000000.0,
+            "order": 3,
+            "eligible": false
+          }
+        ],
+        "strong_locks": [],
+        "max_K": 0.09614270282345315
+      }
+    },
+    {
+      "A": true,
+      "B": false,
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "diagnostics": {
+        "input_A": true,
+        "input_B": false,
+        "output": false,
+        "channel_A_flow": 0.1,
+        "channel_B_flow": 0.001,
+        "channel_A_current": 0.0009900990099009901,
+        "channel_B_current": 9.900990099009901e-06,
+        "oscillator_A": {
+          "channel": "Input_A",
+          "A": 9.900990099009902e-05,
+          "omega": 10.0,
+          "theta": 1.7342131247957595,
+          "Gamma": 1.0,
+          "Q": 10.0
+        },
+        "oscillator_B": {
+          "channel": "Input_B",
+          "A": 9.900990099009902e-07,
+          "omega": 0.1,
+          "theta": 0.3839755108392814,
+          "Gamma": 0.010000000000000002,
+          "Q": 10.0
+        },
+        "locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 0.021446410687691438,
+            "omega_i": 10.0,
+            "omega_j": 0.1,
+            "omega_min": 0.1,
+            "epsilon_cap": 0.0,
+            "s_f": 99000000000.0,
+            "order": 2,
+            "eligible": false
+          },
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "2:1",
+            "K": 0.055717960256333236,
+            "omega_i": 10.0,
+            "omega_j": 0.1,
+            "omega_min": 0.1,
+            "epsilon_cap": 0.0,
+            "s_f": 198999999999.99997,
+            "order": 3,
+            "eligible": false
+          }
+        ],
+        "strong_locks": [],
+        "max_K": 0.055717960256333236
+      }
+    },
+    {
+      "A": true,
+      "B": true,
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "diagnostics": {
+        "input_A": true,
+        "input_B": true,
+        "output": true,
+        "channel_A_flow": 0.1,
+        "channel_B_flow": 0.1,
+        "channel_A_current": 0.0009900990099009901,
+        "channel_B_current": 0.0009900990099009901,
+        "oscillator_A": {
+          "channel": "Input_A",
+          "A": 9.900990099009902e-05,
+          "omega": 10.0,
+          "theta": 3.7321216375180604,
+          "Gamma": 1.0,
+          "Q": 10.0
+        },
+        "oscillator_B": {
+          "channel": "Input_B",
+          "A": 9.900990099009902e-05,
+          "omega": 10.0,
+          "theta": 2.8431468936219053,
+          "Gamma": 1.0,
+          "Q": 10.0
+        },
+        "locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 1.5755209829579448,
+            "omega_i": 10.0,
+            "omega_j": 10.0,
+            "omega_min": 10.0,
+            "epsilon_cap": 7.899290291274498,
+            "s_f": 0.0,
+            "order": 2,
+            "eligible": true
+          },
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "2:1",
+            "K": 0.9351333932350601,
+            "omega_i": 10.0,
+            "omega_j": 10.0,
+            "omega_min": 10.0,
+            "epsilon_cap": 3.8756163966275192,
+            "s_f": 2.5802347231015412,
+            "order": 3,
+            "eligible": false
+          }
+        ],
+        "strong_locks": [
+          {
+            "channel_i": "Input_A",
+            "channel_j": "Input_B",
+            "ratio": "1:1",
+            "K": 1.5755209829579448,
+            "omega_i": 10.0,
+            "omega_j": 10.0,
+            "omega_min": 10.0,
+            "epsilon_cap": 7.899290291274498,
+            "s_f": 0.0,
+            "order": 2,
+            "eligible": true
+          }
+        ],
+        "max_K": 1.5755209829579448
+      }
+    }
+  ],
+  "all_correct": false
+}
