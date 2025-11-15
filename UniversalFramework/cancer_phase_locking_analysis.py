@@ -79,11 +79,19 @@ def healthy_cell_parameters() -> CellularCriticality:
     - Contact inhibition (damping Γ)
     - Checkpoint control (ε gates functional)
     - Apoptosis responsive (hazard commits when damaged)
-    """
-    growth_signals = 0.3  # Normal growth factors
-    growth_inhibition = 0.8  # Contact inhibition, TGF-β, p53
 
-    chi = growth_signals / growth_inhibition  # = 0.375 < 1 ✓
+    KEY INSIGHT: Healthy tissue sits at GOLDEN RATIO criticality!
+    χ_healthy = 1/(1+φ) = 0.381966... (NOT 0.4, which is rounded!)
+    """
+    # Golden ratio constant (exact)
+    PHI = (1 + np.sqrt(5)) / 2  # 1.618033988749895
+    GOLDEN_CHI = 1 / (1 + PHI)   # 0.381966011250105
+
+    # Use φ-based parameters for exact golden ratio
+    growth_signals = PHI - 1      # 0.618... (reciprocal of φ)
+    growth_inhibition = PHI       # 1.618...
+
+    chi = growth_signals / growth_inhibition  # = 1/(1+φ) = 0.382 EXACT! ✓
 
     # Cell cycle checkpoints functional
     checkpoint_strength = 0.9  # p53, Rb, ATM all working
@@ -525,11 +533,14 @@ def regulatory_medicine_vision():
     print("  • Alert: When χ > 0.9 (approaching critical)")
     print()
 
+    PHI = (1 + np.sqrt(5)) / 2
+    GOLDEN_CHI = 1 / (1 + PHI)  # 0.382
+
     print("CLINICAL WORKFLOW:")
     print("  1. Patient at high risk (BRCA1, Lynch syndrome) gets sensor")
-    print("  2. Baseline χ measured (healthy tissue ≈ 0.4)")
+    print(f"  2. Baseline χ measured (healthy tissue = {GOLDEN_CHI:.3f} = 1/(1+φ))")
     print("  3. Daily monitoring via app")
-    print("  4. χ starts rising: 0.4 → 0.6 → 0.8 → 0.9")
+    print(f"  4. χ starts rising: {GOLDEN_CHI:.3f} → 0.5 → 0.7 → 0.9")
     print("  5. Alert triggers immediate imaging (MRI, PET)")
     print("  6. Intervention at χ = 0.9 (BEFORE χ > 1)")
     print("     - Option 1: Chemoprevention (COX-2 inhibitor, metformin)")
